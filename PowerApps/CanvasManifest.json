@@ -27,7 +27,7 @@
       "delayloadscreens": true,
       "disablecdsfileandlargeimage": false,
       "dynamicschema": false,
-      "enableappembeddingux": true,
+      "enableappembeddingux": false,
       "enablechatbotfeature": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
@@ -72,7 +72,7 @@
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
       "parallelcodegen": false,
-      "pdffunction": false,
+      "pdffunction": true,
       "powerfxdecimal": false,
       "projectionmapping": true,
       "reactformulabar": false,
@@ -128,8 +128,8 @@
     "UserLocale": "ja-JP"
   },
   "ScreenOrder": [
-    "記録画面",
     "TOP",
+    "記録画面",
     "ログ",
     "設定"
   ]

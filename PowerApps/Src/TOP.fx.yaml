@@ -44,23 +44,14 @@ TOP As screen:
         Width: =768
         ZIndex: =1
 
-    Button_2 As Button:
-        Height: =267
-        LinealGradient: =true
-        Width: =282
-        X: =243
-        Y: =549
-        ZIndex: =2
-
-    "'Glassmorphism BackGround_1' As 'Glassmorphism BackGround'":
-        borderRadiusDL: =10
-        borderRadiusDR: =10
-        borderRadiusTL: =40
-        borderRadiusTR: =40
-        Height: =369
-        lightLevel: =3
-        Width: =632
-        X: =60
-        Y: =475
-        ZIndex: =3
+    Label1 As label:
+        Align: =Align.Center
+        Font: =Font.'Dancing Script'
+        Height: =347
+        Size: =60
+        Text: ="Slot Analytics"
+        Width: =Parent.Width -Self.X*2
+        X: =40
+        Y: =40
+        ZIndex: =5
 
