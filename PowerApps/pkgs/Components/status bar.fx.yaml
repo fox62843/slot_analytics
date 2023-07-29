@@ -1,0 +1,85 @@
+"'status bar' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =120
+    LabelSize: =15
+    LinealGradient1: |-
+        ="#2c3e50" 
+    LinealGradient2: |-
+        ="#3498db"
+    MaxValue: =100
+    metertext: ="テキスト"
+    Value: =50
+    Width: =350
+    X: =0
+    Y: =0
+    ZIndex: =17
+
+    Ppba_HTML As htmlViewer:
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:30px;
+                    width: "&Self.Width-70&"px;
+                    height: "&Self.Height-95&"px;
+                    background: #e8eaec;
+                    box-shadow: 6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2);
+                    border-radius:40px;'
+            >
+            </div>"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Ppba_image As image:
+        Height: =Parent.Height
+        Image: |-
+            ="data:image/svg+xml,
+            " & EncodeUrl(
+                "<svg 
+                    xmlns='http://www.w3.org/2000/svg'
+                    width='0px'
+                    height='0px'
+                    filter='drop-shadow(3px 5px 4px rgb(0 0 0 /  0.5, 0.0) ))'
+                >
+                    <defs>
+                        <linearGradient id='linear' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'>
+                            <stop offset='0%' stop-color='" & Parent.LinealGradient1 & "'/>
+                            <stop offset='100%' stop-color='" & Parent.LinealGradient2 & "'/>
+                        </linearGradient>
+                    </defs>
+            
+                    <rect
+                        transform='translate(0, 0)'
+                        x='40'
+                        y='38'
+                        width='" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & "'
+                        height='"&Self.Height-100&"'
+                        rx='12'
+                        fill='url(#linear)'
+                        stroke-dasharray='" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & ", 500' 
+                    >
+                        <animate
+                            attributeName='width'
+                            values='0;" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & "' 
+                            dur='2s'
+                            repeatCount='1'
+                        />
+                    </rect>
+                </svg>"
+            )
+        ImagePosition: =ImagePosition.Fill
+        PaddingTop: =
+        Width: =Parent.Width
+        ZIndex: =3
+
+    Ppba_Label As label:
+        Align: =Align.Center
+        Color: =RGBA(105, 105, 105, 1)
+        Height: =Parent.Height/2
+        Size: ='status bar'.LabelSize
+        Text: =Parent.metertext & (Parent.Value/Parent.MaxValue)*100 & "%"
+        Width: =Parent.Width
+        Y: =Parent.Height -Self.Height
+        ZIndex: =4
+

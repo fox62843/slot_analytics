@@ -1,0 +1,66 @@
+TOP As screen:
+    Fill: =RGBA(234, 235, 238, 1)
+
+    NeonGlowNavMenu_2 As NeonGlowNavMenu:
+        Height: =131
+        MenuItems: |-
+            =Table(
+                {
+                    //これは画面の名前である
+                    MenuItem: "Home",
+                    // この項目を選択すると、この画面が表示されます。
+                    MenuScreenNavigate: TOP,
+                    //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。
+                    StandardIcon: Icon.Home,
+                    ID: 1
+                },
+            
+                {
+                    MenuItem: "Profile",
+                    MenuScreenNavigate: 記録画面,
+                    StandardIcon: Icon.AddUser,
+                    ID: 2
+                },
+            
+                {
+                    MenuItem: "Balance",
+                    MenuScreenNavigate: ログ,
+                    StandardIcon: Icon.AddDocument,
+                    ID: 3
+                },
+            
+                {
+                    MenuItem: "Settings",
+                    MenuScreenNavigate:設定,
+                    StandardIcon: Icon.Settings,
+                    ID: 4
+                }
+            )
+        Width: =768
+        Y: =1235
+
+    background_2 As background:
+        Height: =1366
+        Width: =768
+        ZIndex: =1
+
+    Button_2 As Button:
+        Height: =267
+        LinealGradient: =true
+        Width: =282
+        X: =243
+        Y: =549
+        ZIndex: =2
+
+    "'Glassmorphism BackGround_1' As 'Glassmorphism BackGround'":
+        borderRadiusDL: =10
+        borderRadiusDR: =10
+        borderRadiusTL: =40
+        borderRadiusTR: =40
+        Height: =369
+        lightLevel: =3
+        Width: =632
+        X: =60
+        Y: =475
+        ZIndex: =3
+

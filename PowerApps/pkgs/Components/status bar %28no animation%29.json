@@ -1,0 +1,69 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "ステータス"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "ステータス",
+    "Name": "status bar (no animation)",
+    "TemplateGuid": "983333bcba1f40f38767c7919724ffdc"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "値 -Value-",
+      "Hidden": false,
+      "Name": "Value",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "値を入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "最大値 -MaxValue-",
+      "Hidden": false,
+      "Name": "MaxValue",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "最大値を入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -LinealGradient1-",
+      "Hidden": false,
+      "Name": "LinealGradient1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -LinealGradient2-",
+      "Hidden": false,
+      "Name": "LinealGradient2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761662476",
+  "Name": "983333bcba1f40f38767c7919724ffdc",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "09497128d91246e195c95997fb868c81",
+  "Version": "637930896049202515"
+}

@@ -1,0 +1,32 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "背景等"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "背景等",
+    "Name": "flame1",
+    "TemplateGuid": "c0bfae28b071494c94c504112dca9990"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761655629",
+  "Name": "c0bfae28b071494c94c504112dca9990",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "a6c1402873fd458aa43cdfcd1ad37d1b",
+  "Version": "638154812608202194"
+}

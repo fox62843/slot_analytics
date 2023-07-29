@@ -1,0 +1,28 @@
+background As CanvasComponent:
+    BorderRadius: =10
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =9
+
+    Cc_HTML As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:30px;
+                    width: "&Parent.Width - 70 &"px;
+                    height: "&Parent.Height - 80 &"px;
+                    background: linear-gradient(145deg, #f8fafd, #d1d3d4);
+                    box-shadow:  12px 12px 15px #b5b7b8,-12px -12px 15px #ffffff;
+                    border-radius:"& Parent.BorderRadius &"px'
+            >
+            </div>"
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        Width: =Parent.Width
+        ZIndex: =3
+

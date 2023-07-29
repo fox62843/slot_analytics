@@ -1,0 +1,47 @@
+"'Glassmorphism BackGround' As CanvasComponent":
+    BackgroundColorB: =30
+    BackgroundColorG: =28
+    BackgroundColorR: =28
+    borderRadiusDL: =50
+    borderRadiusDR: =50
+    borderRadiusTL: =50
+    borderRadiusTR: =50
+    Fill: =RGBA(0, 0, 0, 0)
+    glasslevel: =5
+    Height: =640
+    lightLevel: =1
+    shadowColor: =true
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =5
+
+    GB_HTML As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |
+            ="<div
+                style='
+                    width:"& Self.Width-11&"px;
+                    height: "&Self.Height-11&"px;
+                    backdrop-filter: blur("&'Glassmorphism BackGround'.glasslevel&"px);
+                    -webkit-backdrop-filter: blur(8px);
+                    background-color: rgba(
+                        "&'Glassmorphism BackGround'.BackgroundColorR&",
+                        "&'Glassmorphism BackGround'.BackgroundColorG&",
+                        "&'Glassmorphism BackGround'.BackgroundColorB&",
+                        0."&'Glassmorphism BackGround'.lightLevel&"
+                    );
+                    border-radius:
+                        "&'Glassmorphism BackGround'.borderRadiusTL&"px
+                        "&'Glassmorphism BackGround'.borderRadiusTR&"px
+                        "&'Glassmorphism BackGround'.borderRadiusDL&"px
+                        "&'Glassmorphism BackGround'.borderRadiusDR&"px;
+                    box-shadow:
+                        51px 4px 68px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0)")&",
+                        inset -10px -10px 16px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0.5)")&",
+                        inset 0px 11px 28px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgb(255, 255, 255)","rgb(0, 0, 0)")&";
+            '>
+            </div>"
+        Width: =Parent.Width
+        ZIndex: =2
+

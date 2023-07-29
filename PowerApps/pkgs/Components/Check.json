@@ -1,0 +1,96 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "チェックボタン"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "チェックボタン",
+    "Name": "Check",
+    "TemplateGuid": "31a190caf5f54139b619afc167755adf"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "チェック判別 -Checked-",
+      "Hidden": true,
+      "Name": "Checked",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "チェックされているかを判断できる出力値です",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション有効化 -LinealGradient-",
+      "Hidden": false,
+      "Name": "LinealGradient",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "グラデーションを有効化します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -LinealGradientColor1-",
+      "Hidden": false,
+      "Name": "LinealGradientColor1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションの色を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -LinealGradientColor2-",
+      "Hidden": false,
+      "Name": "LinealGradientColor2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アクティブアイコン色 -IconColorActive-",
+      "Hidden": false,
+      "Name": "IconColorActive",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "アクティブ時のアイコンの色を指定します。 ※LinealGradientを無効化することで有効となります",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アイコン色 -IconColour-",
+      "Hidden": false,
+      "Name": "IconColour",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "アイコンの色を指定します (HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "境界半径 -border-radius-",
+      "Hidden": false,
+      "Name": "Borderradius",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "境界の半径を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761589544",
+  "Name": "31a190caf5f54139b619afc167755adf",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "44f4d3ffa9e548d7a28cf2d9907d58a2",
+  "Version": "637927284351103240"
+}

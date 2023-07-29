@@ -1,0 +1,150 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "スイッチ"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "スイッチ",
+    "Name": "Switch",
+    "TemplateGuid": "47a384fcd5224948aa604a5daad1b5cf"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "選択判別 -ButtonSelected-",
+      "Hidden": true,
+      "Name": "ButtonSelected",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "選択されているかどうかを出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -LinealGradientColor1-",
+      "Hidden": false,
+      "Name": "LinealGradientColor1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アイコンまたはテキスト -icontext-",
+      "Hidden": false,
+      "Name": "icontext",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "オン→アイコン , オフ→テキスト",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "テキスト挿入 -TextInput-",
+      "Hidden": false,
+      "Name": "TextInput",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "表示したいテキストを入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "文字サイズ -fontsize-",
+      "Hidden": false,
+      "Name": "fontsize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "文字の大きさを指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アイコン名 -IconName-",
+      "Hidden": false,
+      "Name": "IconName",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "アイコン名を→のリストから選んで入力してください\u3000[alarm,bookmark,notification,chart,settings,filter,refresh,next,back,new,edit,cancel,trash,phone,print,user,home,email,download,upload,clipboard,basket,bag,calendar,rights,goes,arrowUp,arrowDown]",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アクティブアイコン色 -IconColorActive-",
+      "Hidden": false,
+      "Name": "IconColorActive",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "HEX、RGB、またはテキスト値（赤、青など）のいずれかを指定します。RGBを使用する場合は、必ずこのフォーマットを使用してください - \"rgb(1,2,3,1) \"そうでなければ、エラーが発生します！ ※LinealGradientプロパティを無効化することで使用できます",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アイコン色 -IconColour-",
+      "Hidden": false,
+      "Name": "IconColour",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "HEX、RGB、またはテキスト値（赤、青など）のいずれかを指定します。RGBを使用する場合は、必ずこのフォーマットを使用してください - \"rgb(1,2,3,1) \"そうでなければ、エラーが発生します！",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション有効化 -LinealGradient-",
+      "Hidden": false,
+      "Name": "LinealGradient",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "グラデーションを有効化します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -LinealGradientColor2-",
+      "Hidden": false,
+      "Name": "LinealGradientColor2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "境界半径 -BorderRadius-",
+      "Hidden": false,
+      "Name": "BorderRadius",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "境界の半径を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 2,
+      "DisplayName": "OnSelect",
+      "Hidden": false,
+      "Name": "OnSelect",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "オン・オフ強制化 -vbs-",
+      "Hidden": false,
+      "Name": "vbs",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "オンにしたい場合→true ,オフにしたい場合→false",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761585416",
+  "Name": "47a384fcd5224948aa604a5daad1b5cf",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "07d48a805ab54c1abc8256ee865b3ce2",
+  "Version": "637927277422531343"
+}

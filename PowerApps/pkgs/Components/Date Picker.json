@@ -1,0 +1,69 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "日付確認及び入力"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "日付確認及び入力",
+    "Name": "Date Picker",
+    "TemplateGuid": "3fa9c5e5f1fb4343959d4426d9adcd61"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -IconLinealGradient1-",
+      "Hidden": false,
+      "Name": "IconLinealGradient1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -IconLinealGradient2-",
+      "Hidden": false,
+      "Name": "IconLinealGradient2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "カレンダー表示判別 -CalendarVisibility-",
+      "Hidden": true,
+      "Name": "CalendarVisibility",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "カレンダーが表示されている場合はtrueを出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "選択されている日付 -DateSelected-",
+      "Hidden": true,
+      "Name": "DateSelected",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "選択されている日付を出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761657204",
+  "Name": "3fa9c5e5f1fb4343959d4426d9adcd61",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "7e2e59254b44471b967f1d9b38a5fa14",
+  "Version": "638155694607848975"
+}

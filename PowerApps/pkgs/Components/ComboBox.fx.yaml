@@ -1,0 +1,97 @@
+ComboBox As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    fontsize: =15
+    Height: =50
+    IconLinealGradient1: |-
+        ="#eb1f5a"
+    IconLinealGradient2: |-
+        ="#ffdc3f"
+    iniData: =[11]
+    TableComp: =["1","2","3","4","5","6","7","8","9"]
+    valueSelected: =First(ComboBox1.SelectedItems)
+    Width: =300
+    X: =0
+    Y: =0
+    ZIndex: =3
+    検索を許可: =false
+    複数選択を許可: =false
+
+    CB_HTML_1 As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:0px 14px;
+                    width: "& Self.Width - 40 &"px;
+                    height: "& Self.Height - 20 &"px;
+                    background: #e8eaec;
+                    box-shadow: 6px 6px 15px rgba(13, 39, 80, 0.25),
+                                -5px -5px 11px white,
+                                inset -15px -15px 20px rgba(255, 255, 255, 0.7),
+                                8px 8px 30px rgba(13, 39, 80, 0.2);
+                    border-radius:2px'>
+            </div>"
+        PaddingBottom: =0
+        PaddingRight: =0
+        Width: =Parent.Width
+        ZIndex: =10
+
+    CB_Image_1 As image:
+        Height: =29
+        Image: |-
+            ="data:image/svg+xml;utf8,
+            "&EncodeUrl("
+                        <svg
+                            xmlns='http://www.w3.org/2000/svg'
+                            width='16'
+                            height='16' 
+                            fill='currentColor' 
+                            class='bi bi-calendar'
+                            viewBox='0 0 24 24'
+                        >
+                            <defs>  
+                                <linearGradient id='gradient' x1='0%' y1='0%' x2='0%' y2='100%'>  
+                                    <stop offset='15%' style='stop-color: "& ComboBox.IconLinealGradient1 &" ;'></stop>  
+                                    <stop offset='100%' style='stop-color: "& ComboBox.IconLinealGradient2 &" ;'></stop>  
+                                </linearGradient>  
+                            </defs>
+                            <path 
+                                fill='url(#gradient)' d='M12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2ZM7.47 9.97a.75.75 0 0 0 0 1.06l4 4a.75.75 0 0 0 1.06 0l4-4a.75.75 0 1 0-1.06-1.06L12 13.44 8.53 9.97a.75.75 0 0 0-1.06 0Z'
+                            />
+                        </svg>
+            ")
+        Width: =25
+        X: =CB_HTML_1.Width-(Self.Width*2)
+        Y: =(CB_HTML_1.Height - Self.Height)/2 -5
+        ZIndex: =11
+
+    "ComboBox1 As 'コンボ ボックス'.pcfdataset":
+        AllowMultiSelect: =ComboBox.複数選択を許可
+        AllowSearching: =ComboBox.検索を許可
+        CheckedHoverOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        CheckedOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        ChevronColor: =RGBA(255, 255, 255, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultSelectedItems: =ComboBox.iniData
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(140, 53, 53, 0)
+        FontSize: =ComboBox.fontsize
+        Height: =CB_HTML_1.Height-CB_HTML_1.PaddingTop*3.0 - Self.Y
+        Items: =ComboBox.TableComp
+        Text: =""
+        UncheckedHoverOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        UncheckedOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        Visible: =true
+        Width: =CB_HTML_1.Width - CB_HTML_1.PaddingLeft*4.2-Self.X
+        X: =CB_HTML_1.PaddingLeft +14
+        Y: =CB_HTML_1.PaddingTop
+        ZIndex: =12
+
+        Value1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="Value"
+            FieldName: ="Value"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =5
+

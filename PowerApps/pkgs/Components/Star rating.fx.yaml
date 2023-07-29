@@ -1,0 +1,102 @@
+"'Star rating' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =200
+    LinealGradient1: |-
+        ="#2c3e50"
+    LinealGradient2: |-
+        ="#3498db"
+    MaxRating: =5
+    Value: =varRating
+    Width: =350
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    SR_HTML As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    width:"&Self.Width -16&"px;
+                    height:"&Self.Height-20&"px;
+                    align-self:center;
+                    background: #e8eaec;
+                    box-shadow:3px 6px 7px rgba(13, 39, 80, 0.3);
+                    border-radius: 5rem;
+                    display: inline-flex;
+                    direction: rtl !important;
+              ' >"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    SR_garally As gallery.galleryHorizontal:
+        DisabledBorderColor: =SR_garally.BorderColor
+        DisabledFill: =SR_garally.Fill
+        Height: =If(Parent.Height <=150,Parent.Height - Self.Y*2-10,Parent.Height - Self.Y*2)
+        HoverBorderColor: =SR_garally.BorderColor
+        HoverFill: =SR_garally.Fill
+        Items: =FirstN([1,2,3,4,5],Parent.MaxRating)
+        PressedBorderColor: =SR_garally.BorderColor
+        PressedFill: =SR_garally.Fill
+        TemplatePadding: =0
+        TemplateSize: =Self.Width/5
+        Transition: =Transition.Push
+        Width: =Parent.Width - Self.X*2
+        X: =18
+        Y: =If(Parent.Height <=150,Parent.Height/4-10,Parent.Height/4)
+        ZIndex: =5
+
+        SR_Image As image:
+            FocusedBorderColor: =SR_Image.BorderColor
+            Height: =Self.Width
+            HoverBorderColor: =RGBA(196,196,196,0.2)
+            HoverFill: =RGBA(196,196,196,0.2)
+            Image: |
+                ="data:image/svg+xml;
+                    utf8,
+                        "&EncodeUrl(
+                            "<svg
+                                xmlns='http://www.w3.org/2000/svg'
+                                viewBox='0 0 16 16'
+                            >
+                                <defs>  
+                                    <linearGradient id='gradient' x1='0%' y1='0%' x2='0%' y2='100%'>  
+                                        <stop offset='0%' style='stop-color: "& 'Star rating'.LinealGradient1 &" ;'></stop>  
+                                        <stop offset='100%' style='stop-color: "& 'Star rating'.LinealGradient2 &" ;'></stop>  
+                                    </linearGradient>  
+                                </defs> 
+                                <path
+                                    fill='
+                                        "& If(
+                                            ThisItem.Value<=varRating,
+                                            "url(#gradient)",
+                                            "#666666"
+                                        )&"'
+                                    d='M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z'
+                                />
+                            </svg>"
+                        )
+            ImagePosition: =ImagePosition.Fill
+            OnSelect: =Select(Parent)
+            PaddingBottom: =9
+            PaddingLeft: =9
+            PaddingRight: =9
+            PaddingTop: =9
+            PressedBorderColor: =ColorFade(SR_Image.BorderColor, -20%)
+            PressedFill: =ColorFade(SR_Image.Fill, -20%)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.Y/4
+            ZIndex: =1
+
+        SR_Button As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =SR_Image.Height
+            HoverFill: =RGBA(196,196,196,0.2)
+            OnSelect: =Set(varRating, ThisItem.Value)
+            PressedFill: =RGBA(196,196,196,0.4)
+            Text: =""
+            Width: =SR_Image.Width
+            X: =SR_Image.X
+            Y: =SR_Image.Y
+            ZIndex: =2
+

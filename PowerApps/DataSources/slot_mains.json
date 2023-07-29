@@ -1,0 +1,229 @@
+[
+  {
+    "DisplayName": "slot_mains (ビュー)",
+    "Name": "_crff0_slot_main_views",
+    "RelatedEntityName": "slot_mains",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "042436e2-5b34-433f-83db-bc6046971cf2": "slot_main検索ダイアログ ビュー",
+      "295deed0-1f70-46fc-8a32-32139c3cc8c1": "slot_mainの高度な検索ビュー",
+      "62878439-0e01-49ed-b5de-4dd2cc5e59da": "slot_main関連ビュー",
+      "69412d67-9762-45e2-b9fb-8046259bf80d": "非アクティブなslot_mains",
+      "a3d97f45-4403-4c06-9aac-830fc5e6522d": "アクティブなslot_mains"
+    }
+  },
+  {
+    "DisplayName": "hanahana_bellcherry (slot_mains)",
+    "Name": "crff0_slot_main_crff0_hanahana_bellcherry",
+    "OptionSetInfoNameMapping": {
+      "1": "低",
+      "22": "中",
+      "3": "高"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crff0_hanahana_bellcherry",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crff0_hanahana_bellcherry",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "slotExpectedValue (slot_mains)",
+    "Name": "crff0_slot_main_crff0_slotexpectedvalue",
+    "OptionSetInfoNameMapping": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crff0_slotexpectedvalue",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crff0_slotexpectedvalue",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "slotName (slot_mains)",
+    "Name": "crff0_slot_main_crff0_slotname",
+    "OptionSetInfoNameMapping": {
+      "1": "キングハナハナ-30 (2023)",
+      "2": "Sひぐらしのなく頃に 祭2",
+      "3": "L革命機 ヴァルヴレイヴ",
+      "4": "ハナハナホウオウ～天翔～",
+      "5": "ニューハナハナゴールド-30"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crff0_slotname",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crff0_slotname",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "slotRate (slot_mains)",
+    "Name": "crff0_slot_main_crff0_slotrate",
+    "OptionSetInfoNameMapping": {
+      "1": "2 (1)",
+      "2": "5",
+      "3": "10",
+      "4": "20"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crff0_slotrate",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "crff0_slotrate",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "状態 (slot_mains)",
+    "Name": "crff0_slot_main_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "アクティブ",
+      "1": "非アクティブ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ステータス (slot_mains)",
+    "Name": "crff0_slot_main_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "アクティブ",
+      "2": "非アクティブ"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "slot_mains"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "slot_mains",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crff0_slot_mains",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crff0_slot_main",
+    "MaxGetRowsCount": 500,
+    "Name": "slot_mains",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "所有者",
+      "{Attachments}": "Attachments",
+      "createdby": "作成者",
+      "createdon": "作成日",
+      "createdonbehalfby": "作成者 (代理)",
+      "crff0_braketime": "brakeTime",
+      "crff0_hanahana_bellcherry": "hanahana_bellcherry",
+      "crff0_hanahana_big_color": "hanahana_BIG_color",
+      "crff0_hanahana_big_rainbow": "hanahana_BIG_rainbow",
+      "crff0_hanahana_reg_blue": "hanahana_REG_blue",
+      "crff0_hanahana_reg_green": "hanahana_REG_green",
+      "crff0_hanahana_reg_rainbow": "hanahana_REG_rainbow",
+      "crff0_hanahana_reg_red": "hanahana_REG_red",
+      "crff0_hanahana_reg_side_rainbow": "hanahana_REG_side_rainbow",
+      "crff0_hanahana_reg_yellow": "hanahana_REG_yellow",
+      "crff0_hanahana_wm_big": "hanahana_wm_BIG",
+      "crff0_hanahana_wm_default": "hanahana_wm_default",
+      "crff0_hanahana_wm_default2": "hanahana_wm_default2",
+      "crff0_playbudget": "PlayBudget",
+      "crff0_playbudget_base": "PlayBudget (基本)",
+      "crff0_playdate": "Playdate",
+      "crff0_playendnos": "PlayEndNOS",
+      "crff0_playendtime": "PlayEndTime",
+      "crff0_playid": "PlayID",
+      "crff0_playinvestmentamount": "PlayInvestmentAmount",
+      "crff0_playinvestmentamount_base": "PlayInvestmentAmount (基本)",
+      "crff0_playslotnum": "PlayslotNUM",
+      "crff0_playstartcount": "PlayStartCount",
+      "crff0_playstartcountt": "PlayStartCountT",
+      "crff0_playstartnos": "PlayStartNOS",
+      "crff0_playstarttime": "PlayStartTime",
+      "crff0_playtotalcount": "PlayTotalCount",
+      "crff0_slot_bonus_crff0_slot_main_crff0_sl": "slot_bonus",
+      "crff0_slot_main_Annotations": "メモ ",
+      "crff0_slot_main_AsyncOperations": "システム ジョブ ",
+      "crff0_slot_main_BulkDeleteFailures": "一括削除の失敗 ",
+      "crff0_slot_main_connections1": "つながり (crff0_slot_main_connections1)",
+      "crff0_slot_main_connections2": "つながり (crff0_slot_main_connections2)",
+      "crff0_slot_main_MailboxTrackingFolders": "メールボックス自動追跡フォルダー",
+      "crff0_slot_main_PrincipalObjectAttributeAccesses": "フィールド共有 ",
+      "crff0_slot_main_ProcessSession": "プロセス セッション",
+      "crff0_slot_main_SyncErrors": "同期エラー",
+      "crff0_slot_mainid": "slot_main",
+      "crff0_slotbonus_art": "slotBonus_ART",
+      "crff0_slotbonus_at": "slotBonus_AT",
+      "crff0_slotbonus_bb": "slotBonus_BB",
+      "crff0_slotbonus_rb": "slotBonus_RB",
+      "crff0_slotexpectedvalue": "slotExpectedValue",
+      "crff0_slotname": "slotName",
+      "crff0_slotprobability_big": "slotProbability_BIG",
+      "crff0_slotprobability_reg": "slotProbability_REG",
+      "crff0_slotprobability_total": "slotProbability_Total",
+      "crff0_slotrate": "slotRate",
+      "crff0_slumpgraph": "slumpGraph",
+      "crff0_slumpgraphid": "crff0_slumpGraphId",
+      "exchangerate": "為替レート",
+      "importsequencenumber": "インポート シーケンス番号",
+      "modifiedby": "修正者",
+      "modifiedon": "修正日",
+      "modifiedonbehalfby": "修正者 (代理)",
+      "overriddencreatedon": "レコード作成日",
+      "owningbusinessunit": "所属部署",
+      "owningteam": "所有チーム",
+      "owninguser": "所有ユーザー",
+      "statecode": "状態",
+      "statuscode": "ステータス",
+      "timezoneruleversionnumber": "タイム ゾーン規則のバージョン番号",
+      "transactioncurrencyid": "通貨",
+      "utcconversiontimezonecode": "UTC 変換タイム ゾーン コード",
+      "versionnumber": "バージョン番号"
+    },
+    "PreferredName": "slot_mains",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

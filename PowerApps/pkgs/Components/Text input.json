@@ -1,0 +1,123 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": false,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "テキスト入力"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "テキスト入力",
+    "Name": "Text input",
+    "TemplateGuid": "e91758a4df984b3b8bc87668d67b2aa9"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "文字サイズ -FontSize-",
+      "Hidden": false,
+      "Name": "FontSize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "文字の大きさを指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ヒントテキスト -HintText-",
+      "Hidden": false,
+      "Name": "HintText",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "入力前に表示させたい内容を入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "テキスト出力 -Text-",
+      "Hidden": true,
+      "Name": "Text",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "入力済のテキストを出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "選択状態 -IsSelected-",
+      "Hidden": true,
+      "Name": "IsSelected",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "選択されている状態をtrueとして出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "複数行または単一行 -Mode-",
+      "Hidden": false,
+      "Name": "Mode",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "複数行→TextMode.MultiLine , 単一行→TextMode.SingleLine",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -ActiveLinealGradient1-",
+      "Hidden": false,
+      "Name": "ActiveLinealGradient1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -ActiveLinealGradient2-",
+      "Hidden": false,
+      "Name": "ActiveLinealGradient2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "テキストまたは数字切り替え -text or number-",
+      "Hidden": false,
+      "Name": "textOrNumber",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "テキスト→TextFormat.Text / 数字 →TextFormat.Number",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "最大文字列数 -Max Length-",
+      "Hidden": false,
+      "Name": "MaxLength",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "最大の文字列の長さを数字で指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "初期値 -iniData-",
+      "Hidden": false,
+      "Name": "iniData",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "初期値が必要な場合、入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761665365",
+  "Name": "e91758a4df984b3b8bc87668d67b2aa9",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "0398238bfc754552ac5c3b5b79986025",
+  "Version": "637927284351103240"
+}

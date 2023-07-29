@@ -1,0 +1,105 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentExtraMetadata": {
+    "ComponentDescription": "ドロップダウン"
+  },
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "ドロップダウン",
+    "Name": "ComboBox",
+    "TemplateGuid": "243e4893055d42bba1aa7ee92199165e"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション1 -IconLinealGradient1-",
+      "Hidden": false,
+      "Name": "IconLinealGradient1",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "グラデーション2 -IconLinealGradient2-",
+      "Hidden": false,
+      "Name": "IconLinealGradient2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のグラデーションを指定します(HEX値)",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "選択されている値 -valueSelected-",
+      "Hidden": true,
+      "Name": "valueSelected",
+      "PropertyDataTypeKey": "Record",
+      "Tooltip": "選択されている値を出力します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "データテーブル -Table-",
+      "Hidden": false,
+      "Name": "TableComp",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "このプロパティにテーブル型でデータを挿入してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Value\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "初期値 -iniData-",
+      "Hidden": false,
+      "Name": "iniData",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "初期値をテーブル内から選択します ※入力例：「[1]」",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Value\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "文字サイズ -fontsize-",
+      "Hidden": false,
+      "Name": "fontsize",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "文字の大きさを指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "複数選択を許可",
+      "Hidden": false,
+      "Name": "複数選択を許可",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "複数選択を許可するかを指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "検索を許可",
+      "Hidden": false,
+      "Name": "検索を許可",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "検索を許可",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638261961761568751",
+  "Name": "243e4893055d42bba1aa7ee92199165e",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "b9b5d45b1304487982ad6bc5d7ccf9d0",
+  "Version": "638155694607848975"
+}

@@ -1,0 +1,77 @@
+"'Text input' As CanvasComponent":
+    ActiveLinealGradient1: |-
+        ="#2c3e50"
+    ActiveLinealGradient2: |-
+        ="#3498db"
+    Fill: =RGBA(0, 0, 0, 0)
+    FontSize: =12
+    Height: =120
+    HintText: ="✎ Start typing here"
+    IsSelected: =false
+    MaxLength: =100
+    Mode: =TextMode.SingleLine
+    OnReset: =
+    Text: =If(T_TextInput.Text=Blank(),'Text input'.iniData,T_TextInput.Text)
+    textOrNumber: =TextFormat.Text
+    Width: =250
+    X: =0
+    Y: =0
+    ZIndex: =10
+
+    T_HTML As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:10px;
+                    width: "& T_HTML.Width - 40 &"px;
+                    height: "& T_HTML.Height - 40 &"px;
+                    background: #e8eaec;
+                    box-shadow: 6px 6px 15px rgba(13, 39, 80, 0.25),
+                                -5px -5px 11px white,
+                                inset -15px -15px 20px rgba(255, 255, 255, 0.7),
+                                inset 8px 8px 30px rgba(13, 39, 80, 0.2);
+                    border-radius:10px'
+            >
+                "& If(
+                    varIsSelected = true,
+                    "<div
+                        style='
+                        position:absolute;
+                        transform:translate(9%);
+                        width: "& (Self.Width -45)/1.2  &"px;
+                        height:3px;
+                        background:linear-gradient(to right,
+                                                    "& Parent.ActiveLinealGradient1 &",
+                                                    "& Parent.ActiveLinealGradient2 &"
+                                                );
+                        box-shadow: "&Parent.ActiveLinealGradient2 &"  0px 2px 9px,inset -3px -3px 7px "& Parent.ActiveLinealGradient2 &" ;                                border-radius: 36px'
+                    </div>",
+                    ""
+                )&"
+            </div>"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    T_TextInput As text:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =0
+        Color: =RGBA(69, 69, 69, 1)
+        Default: ='Text input'.iniData
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        Format: ='Text input'.textOrNumber
+        Height: =T_HTML.Height - Self.Y*2 -10
+        HintText: ='Text input'.HintText
+        HoverFill: =RGBA(196,196,196,0.3)
+        MaxLength: ='Text input'.MaxLength
+        Mode: ='Text input'.Mode
+        OnChange: =Set(varIsSelected, false); 
+        OnSelect: =Set(varIsSelected, true); 
+        Size: ='Text input'.FontSize
+        Width: =T_HTML.Width - Self.X*2 -10
+        X: =30
+        Y: =30
+        ZIndex: =2
+

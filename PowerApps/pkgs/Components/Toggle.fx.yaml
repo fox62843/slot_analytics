@@ -1,0 +1,112 @@
+Toggle As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =85
+    IconVisible: =true
+    LinealGradientColour1: |-
+        ="#2c3e50"
+    LinealGradientColour2: |-
+        ="#2398db"
+    Toggled: =If(IsBlank(varToggled), true, varToggled)
+    Width: =150
+    X: =0
+    Y: =0
+    ZIndex: =15
+
+    Toggle_HTML As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:15px;
+                    background: 
+                        "&If(
+                            Toggle.Toggled = false,
+                            "#e8eaec",
+                            "linear-gradient(to right, "& Toggle.LinealGradientColour1 &", "& Toggle.LinealGradientColour2 &")"
+                        )&";
+                    isolation: isolate;
+                    position: relative;
+                    height: "&Self.Height/2&"px;
+                    width: "&Self.Width - Toggle_Button.Width -10&"px;
+                    border-radius: 30px;
+                    overflow: hidden;
+                    box-shadow: inset 4px 4px 7px #bec0c2,inset -2px -5px 7px #ffffff, 12px 3px 12px rgba(13, 39, 80, 0.25), -5px -5px 11px white, inset -15px -1px 10px rgba(13, 39, 80, 0.25), inset 8px 8px 20px rgba(13, 39, 80, 0.2);'
+            >  
+            <div
+                style='
+                    margin:-0px;
+                    width:80px;
+                    height:44px;
+                    background-color:#;
+                    "&If(
+                        Toggle.Toggled = true,
+                        "height: "&Parent.Height/2&"px;
+                          width: "&Parent.Width/3&"px;",
+                        "height: "&Parent.Height/2&"px;
+                          width: "&Parent.Width/3.5&"px;"
+                    )&"
+                    background: #e8eaec;
+                    border-radius: 30px;
+                    transform: translate(
+                        "& If(
+                            Toggle.Toggled = true,
+                            ""&Toggle_Button.X-20&"px",
+                            "0px"
+                        )&"
+                        , 0
+                    );
+                    box-shadow: 
+                        "& If(
+                            Toggle.Toggled = false,
+                            "12px 12px 32px rgba(13, 39, 80, 0.25), -10px -10px 15px white",
+                            "inset 4px 4px 7px #bec0c2,inset -4px -4px 7px #ffffff, inset -15px -15px 20px rgba(255, 255, 255, 0.7), inset 8px 8px 30px rgba(13, 39, 80, 0.2)"
+                        )&";'
+            >  
+            </div>
+            </div>"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Toggle_Image As image:
+        Height: =Toggle_Button.Height/2
+        Image: |-
+            ="data:image/svg+xml;utf8, "&EncodeUrl("
+            <svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='blue' class='bi bi-power' viewBox='0 0 16 16'>
+            
+            "& If(Toggle.Toggled = true,
+            "<defs>  
+             <linearGradient id='gradient' x1='0%' y1='0%' x2='0%' y2='100%'>  
+             <stop offset='%' style='stop-color: "& Toggle.LinealGradientColour1&" ;'></stop>  
+             <stop offset='100%' style='stop-color: "& Toggle.LinealGradientColour2 &" ;'></stop>  
+             </linearGradient>  
+            </defs>", "") &"
+            
+              <path fill= ' "& If(Toggle.Toggled = true,   "url(#gradient)", "#656565") &"' d='M7.5 1v7h1V1h-1z'/>
+              <path fill= ' "& If(Toggle.Toggled = true,   "url(#gradient)", "#656565") &"' d='M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z'/>
+            </svg>
+            ")
+        Visible: =Toggle.IconVisible
+        Width: =Toggle_Button.Width/2
+        X: =Toggle_Button.X + Self.Width/2
+        Y: =Toggle_Button.Y + Self.Height/2
+        ZIndex: =3
+
+    Toggle_Button As button:
+        BorderThickness: =0
+        Fill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =0
+        Height: =Toggle_HTML.Height/2.0
+        HoverFill: =RGBA(196,196,196,0.2)
+        OnSelect: =Set(varToggled, If(Toggle.Toggled = true, false, true))
+        PressedFill: =RGBA(196,196,196,0.5)
+        RadiusBottomLeft: =25
+        RadiusBottomRight: =25
+        RadiusTopLeft: =25
+        RadiusTopRight: =25
+        Size: =24
+        Text: =""
+        Width: =(Toggle_HTML.Width - Toggle_HTML.PaddingRight*2)/3.5
+        X: =If(Toggle.Toggled = true ,Toggle_HTML.Width- Toggle_Button.Width*2+Toggle_Button.PaddingRight+4,20)
+        Y: =21
+        ZIndex: =4
+

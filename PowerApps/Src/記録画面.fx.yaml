@@ -1,0 +1,158 @@
+記録画面 As screen:
+    Fill: =RGBA(234, 235, 238, 1)
+
+    background_1 As background:
+        Height: =1366
+        Width: =768
+        ZIndex: =1
+
+    Button_1 As Button:
+        Height: =310
+        LinealGradient: =true
+        Width: =332
+        X: =218
+        Y: =608
+        ZIndex: =2
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =500
+        Items: =slot_bonus
+        Width: =699
+        X: =27
+        Y: =40
+        ZIndex: =3
+
+        "'作成日列(_C)1' As dataTableColumn.dateTimeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="作成日"
+            FieldName: ="createdon"
+            FieldVariantName: ="dateTimeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =Text(ThisItem.作成日,DateTimeFormat.LongDateTime)
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        "'slot_main列(_C)1' As dataTableColumn.complexTypeColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="台ID"
+            FieldName: ="crff0_slot_main"
+            FieldVariantName: ="complexTypeColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.slot_main.PlayID
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        "'art列(_C)1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="ART当選G数"
+            FieldName: ="crff0_art"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.art
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'at列(_C)1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="AT当選G数"
+            FieldName: ="crff0_at"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.at
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'big列(_C)1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="BIG当選G数"
+            FieldName: ="crff0_big"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.big
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        "'reg列(_C)1' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="REG当選G数"
+            FieldName: ="crff0_reg"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.reg
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+    Label2 As label:
+        Height: =79
+        Text: =LookUp(slot_bonus,slot_main.PlayID="s-0000000002",slot_main.PlayID)
+        Width: =131
+        X: =344
+        Y: =724
+        ZIndex: =4
+
+    NeonGlowNavMenu_1 As NeonGlowNavMenu:
+        Height: =131
+        MenuItems: |-
+            =Table(
+                {
+                    //これは画面の名前である
+                    MenuItem: "Home",
+                    // この項目を選択すると、この画面が表示されます。
+                    MenuScreenNavigate: TOP,
+                    //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。
+                    StandardIcon: Icon.Home,
+                    ID: 1
+                },
+            
+                {
+                    MenuItem: "Profile",
+                    MenuScreenNavigate: 記録画面,
+                    StandardIcon: Icon.AddUser,
+                    ID: 2
+                },
+            
+                {
+                    MenuItem: "Balance",
+                    MenuScreenNavigate: ログ,
+                    StandardIcon: Icon.AddDocument,
+                    ID: 3
+                },
+            
+                {
+                    MenuItem: "Settings",
+                    MenuScreenNavigate:設定,
+                    StandardIcon: Icon.Settings,
+                    ID: 4
+                }
+            )
+        Width: =768
+        Y: =1235
+        ZIndex: =5
+
