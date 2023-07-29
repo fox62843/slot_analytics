@@ -8,7 +8,6 @@
 
     Button_1 As Button:
         Height: =310
-        LinealGradient: =true
         Width: =332
         X: =218
         Y: =608

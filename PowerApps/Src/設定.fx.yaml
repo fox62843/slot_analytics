@@ -46,7 +46,6 @@
 
     Button_4 As Button:
         Height: =267
-        LinealGradient: =true
         Width: =282
         X: =243
         Y: =549

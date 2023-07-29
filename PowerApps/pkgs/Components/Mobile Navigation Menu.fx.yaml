@@ -1,5 +1,5 @@
 "'Mobile Navigation Menu' As CanvasComponent":
-    Animation: =true
+    Animation: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =250
     IconLinealGradient1: |-
@@ -29,7 +29,7 @@
                 StandardIcon: Icon.Add
             },
             {
-                MenuItem: "Profile",
+                MenuItem: "hanahana7",
                 MenuScreenNavigate: App.ActiveScreen,
                 BackgroundHex: "#007FAA",
                 HTMLFill: "rgb(17, 130, 253, 0.2)",
@@ -94,7 +94,7 @@
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =(MNM_HTMLGallery.Height/2)/2
+            Height: =(MNM_HTMLGallery.Height/2)/1.5
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: |-
@@ -318,7 +318,56 @@
                                     )&"
                                 ",
                                 
-                
+                                "hanahana7",
+                                "<!-- Uploaded to SVGRepo https://www.svgrepo.com -->
+                                <svg
+                                    version='1.2'
+                                    baseProfile='tiny'
+                                    id='Layer_1'
+                                    xmlns='http://www.w3.org/2000/svg'
+                                    xmlns:xlink='http://www.w3.org/1999/xlink'
+                	                x='0px'
+                                    y='0px'
+                                    viewBox='0 0 93 43' 
+                                    xml:space='preserve' 
+                                >
+                                    <defs>  
+                                        <linearGradient id='gradient' x1='0%' y1='0%' x2='0%' y2='100%'>  
+                                            <stop offset='15%' style='stop-color: "&'Mobile Navigation Menu'.IconLinealGradient1&" ;'></stop>  
+                                            <stop offset='100%' style='stop-color: "&'Mobile Navigation Menu'.IconLinealGradient2&" ;'></stop>  
+                                        </linearGradient>  
+                                    </defs> 
+                                    <g transform='translate(0.000000,43.000000) scale(0.100000,-0.100000)'
+                fill='#000000' stroke='none'>
+                                    <path
+                                        fill='
+                                            "&If(
+                                                ThisItem.MenuScreenNavigate=App.ActiveScreen,
+                                                "url(#gradient)",
+                                                "#BDBDBD"
+                                            )&"' 
+                                        id='Layer_1_1_'
+                                        d='M25 384 c-19 -20 -22 -213 -3 -232 8 -8 46 -12 105 -12 l94 0 20 34 c20 34 49 46 108 46 26 0 26 0 -9 -27 -19 -15 -54 -46 -78 -71 -35 -36 -43 -49 -40 -75 l3 -32 228 -3 228 -2 18 44 c24 56 72 92 142 107 30 7 60 17 67 22 19 14 17 191 -3 207 -11 9 -44 11 -122 6 -60 -4 -119 -6 -133 -6 -14 0 -157 2 -318 4 -250 4 -294 2 -307 -10z m860 -93 l0 -84 -62 -17 c-77 -21 -123 -55 -148 -109 l-18 -41 -214 0 c-182 0 -213 2 -213 15 0 25 69 93 149 146 42 28 78 53 81 56 5 5 -63 0 -173 -13 -42 -5 -52 -11 -69 -40 l-20 -35 -82 3 -81 3 -3 89 c-2 49 -1 95 2 102 4 10 96 12 428 11 l423 -2 0 -84z'
+                                    />
+                                    </g>
+                                    //snippet responsible for animation 
+                                    "&If(
+                                        'Mobile Navigation Menu'.Animation= true ,
+                                        "<animateTransform
+                                            attributeName='transform'
+                                            type='translate'
+                                            values='
+                                                "&If(
+                                                    ThisItem.MenuScreenNavigate=App.ActiveScreen,
+                                                    "0 0;0 4;0 0",
+                                                    "0 0;0 0;0 0"
+                                                )&"'
+                                            dur='1s'
+                                            repeatCount='indefinite'
+                                        />",
+                                        ""
+                                    )&"
+                                ",
                                 
                                 "Settings",
                                 "<svg
@@ -387,7 +436,7 @@
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Visible: =If('Mobile Navigation Menu'.IconsSVGorStandard = true, true, false)
-            Width: =(MNM_HTMLGallery.Width/2)/2
+            Width: =(MNM_HTMLGallery.Width/2)/1.5
             X: =(MNM_HTMLGallery.Width - Self.Width)/2
             Y: =(MNM_HTMLGallery.Height - Self.Height)/2-5
             ZIndex: =2

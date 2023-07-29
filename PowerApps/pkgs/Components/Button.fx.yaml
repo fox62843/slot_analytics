@@ -9,9 +9,9 @@ Button As CanvasComponent:
         ="#1E56C8"
     IconColour: |-
         ="#454545"
-    IconName: ="calendar"
+    IconName: ="hanahana7"
     icontext: =true
-    LinealGradient: =false
+    LinealGradient: =true
     LinealGradientColor1: |-
         ="#2c3e50"
     LinealGradientColor2: |-
@@ -48,7 +48,7 @@ Button As CanvasComponent:
         ZIndex: =1
 
     B_Image As image:
-        Height: =B_HTML.Height/2.6
+        Height: =B_HTML.Height/1.8
         Image: |-
             ="data:image/svg+xml;
                 utf8,
@@ -69,6 +69,8 @@ Button As CanvasComponent:
                                 "0 0 24 24",
                                 Or(Button.IconName ="rights"),
                                 "0 0 512 512",
+                                Or(Button.IconName ="hanahana7"),
+                                "0 0 183 23",
                                 "0 0 16 19"
                         )&"'
                     >
@@ -93,6 +95,35 @@ Button As CanvasComponent:
             
                     "&Switch(
                         Button.IconName,
+            // ///////////////////////////////////////// ///////////////////////////////////////// ///////////////////////////////////////
+                        "hanahana7",
+                        "<g transform='translate(0.000000,43.000000) scale(0.200000,-0.200000)'
+                            fill='#000000' stroke='none'>
+                        <path 
+                            fill='
+                                "&If(
+                                    Button.LinealGradient= true ,
+                                    ""&If(
+                                        B_Button.Pressed = true ,
+                                        "url(#gradient)",
+                                        Button.IconColour
+                                    )&"",
+                                    ""&If(
+                                        B_Button.Pressed = true ,
+                                        Button.IconColorActive,
+                                        Button.IconColour
+                                    )&""
+                                )&"'
+                            d='M25 384 c-19 -20 -22 -213 -3 -232 8 -8 46 -12 105 -12 l94 0 20 34
+            c20 34 49 46 108 46 26 0 26 0 -9 -27 -19 -15 -54 -46 -78 -71 -35 -36 -43
+            -49 -40 -75 l3 -32 228 -3 228 -2 18 44 c24 56 72 92 142 107 30 7 60 17 67
+            22 19 14 17 191 -3 207 -11 9 -44 11 -122 6 -60 -4 -119 -6 -133 -6 -14 0
+            -157 2 -318 4 -250 4 -294 2 -307 -10z m860 -93 l0 -84 -62 -17 c-77 -21 -123
+            -55 -148 -109 l-18 -41 -214 0 c-182 0 -213 2 -213 15 0 25 69 93 149 146 42
+            28 78 53 81 56 5 5 -63 0 -173 -13 -42 -5 -52 -11 -69 -40 l-20 -35 -82 3 -81
+            3 -3 89 c-2 49 -1 95 2 102 4 10 96 12 428 11 l423 -2 0 -84z'/>
+                        </g>
+                    </svg>",
             // ///////////////////////////////////////// ///////////////////////////////////////// ///////////////////////////////////////
                        "arrowDown",
                         "<path
@@ -735,7 +766,7 @@ Button As CanvasComponent:
         Visible: =If(Button.icontext =true,true,false)
         Width: =B_HTML.Width - Self.X*2 -10
         X: =10
-        Y: =(Button.Height - Self.Height)/2.2
+        Y: =(Button.Height - Self.Height)/2
         ZIndex: =2
 
     B_Button As button:

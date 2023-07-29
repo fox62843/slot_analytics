@@ -1404,8 +1404,22 @@
         "X",
         "Y",
         "ZIndex",
-        "MenuItems",
-        "Animation",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "Table(\n    {\n        //アイコン名\n        MenuItem: \"Home\",\n        // 選択後の遷移先画面を指定\n        MenuScreenNavigate: App.ActiveScreen,\n        // 背景色\n        BackgroundHex: \"#dc582a\",\n        // HTML塗りつぶし色\n        HTMLFill: \"rgb(249, 81, 19, 0.2)\",\n        //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。\n        StandardIcon: Icon.Home\n    },\n    {\n        MenuItem: \"Add new\",\n        MenuScreenNavigate: App.ActiveScreen,\n        BackgroundHex: \"#038761\",\n        HTMLFill: \"rgb(85, 226, 131, 0.1)\",\n        StandardIcon: Icon.Add\n    },\n    {\n        MenuItem: \"Profile\",\n        MenuScreenNavigate: App.ActiveScreen,\n        BackgroundHex: \"#007FAA\",\n        HTMLFill: \"rgb(17, 130, 253, 0.2)\",\n        StandardIcon: Icon.AddUser\n    },\n    {\n        MenuItem: \"Settings\",\n        MenuScreenNavigate: App.ActiveScreen,\n        BackgroundHex: \"#d3273e\",\n        HTMLFill: \"rgb(245, 111, 174, 0.2)\",\n        StandardIcon: Icon.Settings\n    }\n)",
+          "InvariantPropertyName": "MenuItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "true",
+          "InvariantPropertyName": "Animation",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "IconsSVGorStandard",
         "StandardIconColour",
         "IconLinealGradient1",
@@ -1456,12 +1470,12 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -1471,17 +1485,17 @@
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         }
       ],
       "StyleName": "",
