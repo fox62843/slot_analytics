@@ -62,6 +62,7 @@
         borderRadiusTL: =40
         borderRadiusTR: =40
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        glasslevel: =Slider_1.Value
         Height: =369
         lightLevel: =3
         Width: =632

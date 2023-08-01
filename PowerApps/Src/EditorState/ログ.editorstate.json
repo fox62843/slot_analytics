@@ -381,7 +381,7 @@
         {
           "Category": "Data",
           "PropertyName": "glasslevel",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
