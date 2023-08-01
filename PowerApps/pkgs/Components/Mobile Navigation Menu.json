@@ -67,6 +67,15 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "2番目のグラデーションを指定します(HEX値)",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ダークモード -DarkMode-",
+      "Hidden": false,
+      "Name": "DarkMode",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "ダークモードを有効にします",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -77,7 +86,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638262411568030411",
+  "LastModifiedTimestamp": "638264798430429235",
   "Name": "30a7026c783841dd8f012746d66413a6",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

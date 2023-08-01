@@ -99,11 +99,11 @@
         "Name": "Cc_HTML",
         "Parent": "background",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 16,
+        "PublishOrderIndex": 36,
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "\"<div\n    style='\n        margin:30px;\n        width: \"&Parent.Width - 70 &\"px;\n        height: \"&Parent.Height - 80 &\"px;\n        background: linear-gradient(145deg, #f8fafd, #d1d3d4);\n        box-shadow:  12px 12px 15px #b5b7b8,-12px -12px 15px #ffffff;\n        border-radius:\"& Parent.BorderRadius &\"px'\n>\n</div>\"",
+            "InvariantScript": "\"<div\n    style='\n        margin:30px;\n        width: \"&Parent.Width - 70 &\"px;\n        height: \"&Parent.Height - 80 &\"px;\n        background: \"&If(\n            background.DarkMode = true,\n            \"linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)\",\n            \"linear-gradient(145deg, #f8fafd, #d1d3d4)\"\n        )&\";\n        box-shadow:\n            \"&If(\n                background.DarkMode = true,\n                \"-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126\",\n                \"12px 12px 15px #b5b7b8,-12px -12px 15px #ffffff\"\n            )&\";\n        border-radius:\"& Parent.BorderRadius &\"px'\n>\n</div>\"",
             "Property": "HtmlText",
             "RuleProviderType": "Unknown"
           },
@@ -266,15 +266,29 @@
       "X",
       "Y",
       "ZIndex",
-      "BorderRadius"
+      "BorderRadius",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "DarkMode",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
     ],
-    "LastModifiedTimestamp": "638262411567979664",
+    "LastModifiedTimestamp": "638264798430420631",
     "Name": "background",
     "Rules": [
       {
         "Category": "Data",
         "InvariantScript": "10",
         "Property": "BorderRadius",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "InvariantScript": "false",
+        "Property": "DarkMode",
         "RuleProviderType": "System"
       },
       {
@@ -336,6 +350,15 @@
       "PropertyDataTypeKey": "Number",
       "Tooltip": "境界の半径を指定します(数値)",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ダークモード -DarkMode-",
+      "Hidden": false,
+      "Name": "DarkMode",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "ダークモードを有効にします",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -346,7 +369,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638262411567979664",
+  "LastModifiedTimestamp": "638264798430420631",
   "Name": "be0d7d15719c41bb89cd0cdd02d09f23",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

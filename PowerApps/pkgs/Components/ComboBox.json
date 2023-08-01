@@ -37,9 +37,9 @@
       "DisplayName": "選択されている値 -valueSelected-",
       "Hidden": true,
       "Name": "valueSelected",
-      "PropertyDataTypeKey": "Record",
+      "PropertyDataTypeKey": "String",
       "Tooltip": "選択されている値を出力します",
-      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -85,6 +85,15 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "検索を許可",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ダークモード -DarkMode-",
+      "Hidden": false,
+      "Name": "DarkMode",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "ダークモードを有効にします",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -95,7 +104,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638262411567986272",
+  "LastModifiedTimestamp": "638264799857021684",
   "Name": "243e4893055d42bba1aa7ee92199165e",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

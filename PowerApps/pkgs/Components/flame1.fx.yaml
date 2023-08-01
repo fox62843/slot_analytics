@@ -1,4 +1,5 @@
 flame1 As CanvasComponent:
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
     Width: =640
@@ -14,8 +15,17 @@ flame1 As CanvasComponent:
                     margin:30px;
                     width: "& Parent.Width -70 &"px;
                     height: "& Parent.Height - 80 &"px;
-                    background: #e8eaec;
-                    box-shadow: 12px 12px 32px rgba(13, 39, 80, 0.25),-10px -10px 15px white;
+                    background: "&If(
+                        flame1.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    box-shadow:
+                        "&If(
+                            flame1.DarkMode = true,
+                            "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                            "12px 12px 32px rgba(13, 39, 80, 0.25),-10px -10px 15px white"
+                        )&";
                     border-radius:20px'
             >
             </div>"

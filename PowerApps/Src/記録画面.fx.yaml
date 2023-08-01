@@ -1,13 +1,17 @@
 記録画面 As screen:
-    Fill: =RGBA(234, 235, 238, 1)
+    Fill: =If(Toggle_1.DarkMode= true,RGBA(43, 46, 51, 1),RGBA(234, 235, 238, 1))
 
     background_1 As background:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =1366
         Width: =768
         ZIndex: =1
 
     Button_1 As Button:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =310
+        IconColour: |-
+            =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
         Width: =332
         X: =218
         Y: =608
@@ -108,15 +112,8 @@
             Y: =0
             ZIndex: =7
 
-    Label2 As label:
-        Height: =79
-        Text: =LookUp(slot_bonus,slot_main.PlayID="s-0000000002",slot_main.PlayID)
-        Width: =131
-        X: =344
-        Y: =724
-        ZIndex: =4
-
     NeonGlowNavMenu_1 As NeonGlowNavMenu:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =131
         MenuItems: |-
             =Table(

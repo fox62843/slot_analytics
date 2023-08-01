@@ -103,6 +103,15 @@
       "PropertyDataTypeKey": "String",
       "Tooltip": "初期値が必要な場合、入力してください",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ダークモード -DarkMode-",
+      "Hidden": false,
+      "Name": "DarkMode",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "ダークモードを有効にします",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -113,7 +122,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638262411568048919",
+  "LastModifiedTimestamp": "638264798430417375",
   "Name": "e91758a4df984b3b8bc87668d67b2aa9",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

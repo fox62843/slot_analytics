@@ -6,11 +6,11 @@
     borderRadiusDR: =50
     borderRadiusTL: =50
     borderRadiusTR: =50
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     glasslevel: =5
     Height: =640
     lightLevel: =1
-    shadowColor: =true
     Width: =640
     X: =0
     Y: =0
@@ -37,9 +37,9 @@
                         "&'Glassmorphism BackGround'.borderRadiusDL&"px
                         "&'Glassmorphism BackGround'.borderRadiusDR&"px;
                     box-shadow:
-                        51px 4px 68px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0)")&",
-                        inset -10px -10px 16px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0.5)")&",
-                        inset 0px 11px 28px 10px "&If('Glassmorphism BackGround'.shadowColor=true,"rgb(255, 255, 255)","rgb(0, 0, 0)")&";
+                        51px 4px 68px 10px "&If('Glassmorphism BackGround'.DarkMode=false,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0)")&",
+                        inset -10px -10px 16px 10px "&If('Glassmorphism BackGround'.DarkMode=false,"rgba(255, 255, 255, 0)","rgba(0, 0, 0, 0.5)")&",
+                        inset 0px 11px 28px 10px "&If('Glassmorphism BackGround'.DarkMode=false,"rgb(255, 255, 255)","rgb(0, 0, 0)")&";
             '>
             </div>"
         Width: =Parent.Width

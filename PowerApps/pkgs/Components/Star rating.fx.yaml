@@ -1,4 +1,5 @@
 "'Star rating' As CanvasComponent":
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =200
     LinealGradient1: |-
@@ -20,7 +21,11 @@
                     width:"&Self.Width -16&"px;
                     height:"&Self.Height-20&"px;
                     align-self:center;
-                    background: #e8eaec;
+                    background: "&If(
+                        'Star rating'.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
                     box-shadow:3px 6px 7px rgba(13, 39, 80, 0.3);
                     border-radius: 5rem;
                     display: inline-flex;

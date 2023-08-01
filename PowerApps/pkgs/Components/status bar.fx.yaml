@@ -1,4 +1,5 @@
 "'status bar' As CanvasComponent":
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =120
     LabelSize: =15
@@ -8,7 +9,7 @@
         ="#3498db"
     MaxValue: =100
     metertext: ="テキスト"
-    Value: =50
+    Value: =100
     Width: =350
     X: =0
     Y: =0
@@ -23,9 +24,20 @@
                     margin:30px;
                     width: "&Self.Width-70&"px;
                     height: "&Self.Height-95&"px;
-                    background: #e8eaec;
-                    box-shadow: 6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2);
-                    border-radius:40px;'
+                    background:
+                        "&If(
+                            'status bar'.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                    box-shadow:
+                        "&If(
+                            'status bar'.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
+                        )&";
+                    border-radius:40px;
+                '
             >
             </div>"
         Width: =Parent.Width
@@ -55,7 +67,7 @@
                         y='38'
                         width='" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & "'
                         height='"&Self.Height-100&"'
-                        rx='12'
+                        rx='"&Self.Height/8&"'
                         fill='url(#linear)'
                         stroke-dasharray='" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & ", 500' 
                     >

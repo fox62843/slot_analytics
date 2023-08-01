@@ -1,7 +1,8 @@
 設定 As screen:
-    Fill: =RGBA(234, 235, 238, 1)
+    Fill: =If(Toggle_1.DarkMode= true,RGBA(43, 46, 51, 1),RGBA(234, 235, 238, 1))
 
     NeonGlowNavMenu_4 As NeonGlowNavMenu:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =131
         MenuItems: |-
             =Table(
@@ -40,12 +41,16 @@
         Y: =1235
 
     background_4 As background:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =1366
         Width: =768
         ZIndex: =1
 
     Button_4 As Button:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =267
+        IconColour: |-
+            =If(Button_4.DarkMode = true,"#BDBDBD","#454545")
         Width: =282
         X: =243
         Y: =549
@@ -56,6 +61,7 @@
         borderRadiusDR: =10
         borderRadiusTL: =40
         borderRadiusTR: =40
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =369
         lightLevel: =3
         Width: =632

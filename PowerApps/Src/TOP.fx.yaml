@@ -1,7 +1,8 @@
 TOP As screen:
-    Fill: =RGBA(234, 235, 238, 1)
+    Fill: =If(Toggle_1.DarkMode= true,RGBA(43, 46, 51, 1),RGBA(234, 235, 238, 1))
 
     NeonGlowNavMenu_2 As NeonGlowNavMenu:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =131
         MenuItems: |-
             =Table(
@@ -40,12 +41,14 @@ TOP As screen:
         Y: =1235
 
     background_2 As background:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =1366
         Width: =768
         ZIndex: =1
 
     Label1 As label:
         Align: =Align.Center
+        Color: =If(Toggle_1.DarkMode= true,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
         Font: =Font.'Dancing Script'
         Height: =347
         Size: =60
@@ -54,4 +57,12 @@ TOP As screen:
         X: =40
         Y: =40
         ZIndex: =5
+
+    Toggle_1 As Toggle:
+        DarkMode: =If(Toggle_1.Toggled= true,true,false)
+        Height: =287
+        Width: =480
+        X: =188
+        Y: =588
+        ZIndex: =6
 

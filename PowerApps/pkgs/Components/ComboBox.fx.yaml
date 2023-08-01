@@ -1,4 +1,5 @@
 ComboBox As CanvasComponent:
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     fontsize: =15
     Height: =50
@@ -8,7 +9,7 @@ ComboBox As CanvasComponent:
         ="#ffdc3f"
     iniData: =[11]
     TableComp: =["1","2","3","4","5","6","7","8","9"]
-    valueSelected: =First(ComboBox1.SelectedItems)
+    valueSelected: =First(ComboBox1.SelectedItems).Value
     Width: =300
     X: =0
     Y: =0
@@ -24,12 +25,24 @@ ComboBox As CanvasComponent:
                     margin:0px 14px;
                     width: "& Self.Width - 40 &"px;
                     height: "& Self.Height - 20 &"px;
-                    background: #e8eaec;
-                    box-shadow: 6px 6px 15px rgba(13, 39, 80, 0.25),
-                                -5px -5px 11px white,
-                                inset -15px -15px 20px rgba(255, 255, 255, 0.7),
-                                8px 8px 30px rgba(13, 39, 80, 0.2);
-                    border-radius:2px'>
+                    background:
+                        "&If(
+                            ComboBox.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                    box-shadow:
+                        "&If(
+                            ComboBox.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "6px 6px 15px rgba(13, 39, 80, 0.25),
+                            -5px -5px 11px white,
+                            inset -15px -15px 20px rgba(255, 255, 255, 0.7),
+                            8px 8px 30px rgba(13, 39, 80, 0.2)"
+                        )&";
+                    border-radius:2px
+                '
+            >
             </div>"
         PaddingBottom: =0
         PaddingRight: =0
@@ -68,19 +81,24 @@ ComboBox As CanvasComponent:
     "ComboBox1 As 'コンボ ボックス'.pcfdataset":
         AllowMultiSelect: =ComboBox.複数選択を許可
         AllowSearching: =ComboBox.検索を許可
-        CheckedHoverOptionBackgroundFill: =RGBA(0, 0, 0, 0)
-        CheckedOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        CheckedHoverOptionBackgroundFill: =RGBA(141, 198, 63, 1)
+        CheckedOptionBackgroundFill: =RGBA(152, 208, 70, 1)
         ChevronColor: =RGBA(255, 255, 255, 0)
-        Color: =RGBA(0, 0, 0, 1)
+        Color: |-
+            =If(
+                ComboBox.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
         DefaultSelectedItems: =ComboBox.iniData
         DisplayMode: =DisplayMode.Edit
-        FillColor: =RGBA(140, 53, 53, 0)
+        FillColor: =RGBA(224, 20, 20, 0)
         FontSize: =ComboBox.fontsize
         Height: =CB_HTML_1.Height-CB_HTML_1.PaddingTop*3.0 - Self.Y
         Items: =ComboBox.TableComp
         Text: =""
-        UncheckedHoverOptionBackgroundFill: =RGBA(0, 0, 0, 0)
-        UncheckedOptionBackgroundFill: =RGBA(0, 0, 0, 0)
+        UncheckedHoverOptionBackgroundFill: =RGBA(102, 182, 227, 1)
+        UncheckedOptionBackgroundFill: =If(ComboBox.DarkMode=true,RGBA(116, 116, 116, 1),RGBA(224, 20, 20, 0))
         Visible: =true
         Width: =CB_HTML_1.Width - CB_HTML_1.PaddingLeft*4.2-Self.X
         X: =CB_HTML_1.PaddingLeft +14

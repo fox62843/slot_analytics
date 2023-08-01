@@ -1,5 +1,6 @@
 Slider As CanvasComponent:
     borderradius: =100
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
     LinealGradientColour1: |-
@@ -23,12 +24,27 @@ Slider As CanvasComponent:
                 style='
                     width: "& Self.Width -24 &"px;
                     height: "& Self.Height-20 &"px;
-                    background: #e8eaec;
-                    box-shadow: 10px 4px 8px rgba(13, 39, 80, 0.25),
-                                6px -6px 10px white,
-                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
-                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);
-                                border-radius:"&Slider.borderradius&"px'
+                    background: "&If(
+                        Slider.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    "&If(
+                        Slider.DarkMode = true,
+                        "box-shadow:
+                            inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                            inset -2px -2px 1px #fff;
+                        box-shadow:
+                            inset 3px 3px 3px 0px #1e2126,
+                            inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                        "box-shadow:
+                            10px 4px 8px rgba(13, 39, 80, 0.25),
+                            6px -6px 10px white;
+                        box-shadow:
+                            inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                            inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                    )&"
+                    border-radius:"&Slider.borderradius&"px'
             >
             <div
                 style='
@@ -42,8 +58,12 @@ Slider As CanvasComponent:
                             )&"px;
                     height: "& Slider_BorderHTML.Height - 20 &"px;
                     background: linear-gradient(to right, "& Slider.LinealGradientColour1 &", "& Slider.LinealGradientColour2&");
-                    box-shadow: 12px 4px 10px rgba(13, 39, 80, 0.25),
-                                2px 2px 15px white;
+                    box-shadow:
+                        "&If(
+                            Slider.DarkMode = true,
+                            "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                            "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                        )&";
                     border-radius:"&Slider.borderradius&"px'
             >
             </div>"
@@ -58,11 +78,23 @@ Slider As CanvasComponent:
                 style='
                     height:"&Self.Height-10&"px;
                     width:"&Self.Width-10&"px;
-                    background: linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%);
                     box-sizing: border-box;
-                    background: #e8eaec;
-                    box-shadow: inset 3px 3px 2px rgba(13, 39, 80, 0.2),
-                                inset -3px -3px 2px #ffffff;
+                    background:"&If(
+                        Slider.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    background:"&If(
+                        Slider.DarkMode = true,
+                        "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    box-shadow: "&If(
+                        Slider.DarkMode = true,
+                        "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                        "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                        inset -3px -3px 2px #ffffff"
+                    )&";
                     border-radius:"&Slider.borderradius&"px'> 
                  </div>"
         PaddingBottom: =0

@@ -1,5 +1,6 @@
 background As CanvasComponent:
     BorderRadius: =10
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =640
     Width: =640
@@ -15,8 +16,17 @@ background As CanvasComponent:
                     margin:30px;
                     width: "&Parent.Width - 70 &"px;
                     height: "&Parent.Height - 80 &"px;
-                    background: linear-gradient(145deg, #f8fafd, #d1d3d4);
-                    box-shadow:  12px 12px 15px #b5b7b8,-12px -12px 15px #ffffff;
+                    background: "&If(
+                        background.DarkMode = true,
+                        "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                        "linear-gradient(145deg, #f8fafd, #d1d3d4)"
+                    )&";
+                    box-shadow:
+                        "&If(
+                            background.DarkMode = true,
+                            "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                            "12px 12px 15px #b5b7b8,-12px -12px 15px #ffffff"
+                        )&";
                     border-radius:"& Parent.BorderRadius &"px'
             >
             </div>"

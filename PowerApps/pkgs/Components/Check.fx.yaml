@@ -1,12 +1,13 @@
 Check As CanvasComponent:
     Borderradius: =100
     Checked: =If(IsBlank(varChecked), false, varChecked)
+    DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =100
     IconColorActive: |-
         ="#1e56c8"
     IconColour: |-
-        ="#656565"
+        =If(Check.DarkMode=true,"#BDBDBD","#656565")
     LinealGradient: =true
     LinealGradientColor1: |-
         ="#2c3e50"
@@ -25,16 +26,29 @@ Check As CanvasComponent:
                     margin:5px;
                     width: "& Check_HTML.Width -15 &"px;
                     height: "& Check_HTML.Height - 20&"px ;
-                    background: #e8eaec;
+                    background:
+                        "&If(
+                            Check.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
                     box-shadow:
-                        "& If(
-                            Check.Checked = true,
-                            "inset 5px 5px 4px #bec0c2,inset -5px -5px 4px #ffffff",
-                            "4px 7px 10px rgba(13, 39, 80, 0.25), -1px -1px 7px white"
+                        "&If(Check.DarkMode = true,
+                            If(
+                                Check.Checked = true,
+                                "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                                "-2px -2px 11px 0px rgba(61,61,69,1), 4px 6px 10px 0px #1e2126"
+                            ),
+                            If(
+                                Check.Checked = true,
+                                "inset 5px 5px 4px #bec0c2,inset -5px -5px 4px #ffffff",
+                                "4px 7px 10px rgba(13, 39, 80, 0.25), -1px -1px 7px white"
+                            )
                         )&";
                     border-radius:"&Parent.Borderradius&"px
-            '>
-            </div>" 
+                '
+            >
+            </div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
