@@ -66,3 +66,21 @@ TOP As screen:
         Y: =588
         ZIndex: =6
 
+    Check_1 As Check:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =178
+        IconColour: |-
+            =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
+        Width: =183
+        X: =63
+        Y: =300
+        ZIndex: =7
+
+    ComboBox_1 As ComboBox:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =87
+        Width: =466
+        X: =246
+        Y: =300
+        ZIndex: =8
+

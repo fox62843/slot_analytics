@@ -1,6 +1,45 @@
 記録画面 As screen:
     Fill: =If(Toggle_1.DarkMode= true,RGBA(43, 46, 51, 1),RGBA(234, 235, 238, 1))
 
+    NeonGlowNavMenu_1 As NeonGlowNavMenu:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =131
+        MenuItems: |-
+            =Table(
+                {
+                    //これは画面の名前である
+                    MenuItem: "Home",
+                    // この項目を選択すると、この画面が表示されます。
+                    MenuScreenNavigate: TOP,
+                    //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。
+                    StandardIcon: Icon.Home,
+                    ID: 1
+                },
+            
+                {
+                    MenuItem: "Profile",
+                    MenuScreenNavigate: 記録画面,
+                    StandardIcon: Icon.AddUser,
+                    ID: 2
+                },
+            
+                {
+                    MenuItem: "Balance",
+                    MenuScreenNavigate: ログ,
+                    StandardIcon: Icon.AddDocument,
+                    ID: 3
+                },
+            
+                {
+                    MenuItem: "Settings",
+                    MenuScreenNavigate:設定,
+                    StandardIcon: Icon.Settings,
+                    ID: 4
+                }
+            )
+        Width: =768
+        Y: =1235
+
     background_1 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =1366
@@ -9,12 +48,12 @@
 
     Button_1 As Button:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =310
+        Height: =118
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
-        Width: =332
-        X: =218
-        Y: =608
+        Width: =699
+        X: =27
+        Y: =551
         ZIndex: =2
 
     DataTable1 As dataTable.datatable:
@@ -112,43 +151,16 @@
             Y: =0
             ZIndex: =7
 
-    NeonGlowNavMenu_1 As NeonGlowNavMenu:
+    Navigation_1 As Navigation:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =131
-        MenuItems: |-
-            =Table(
-                {
-                    //これは画面の名前である
-                    MenuItem: "Home",
-                    // この項目を選択すると、この画面が表示されます。
-                    MenuScreenNavigate: TOP,
-                    //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。
-                    StandardIcon: Icon.Home,
-                    ID: 1
-                },
-            
-                {
-                    MenuItem: "Profile",
-                    MenuScreenNavigate: 記録画面,
-                    StandardIcon: Icon.AddUser,
-                    ID: 2
-                },
-            
-                {
-                    MenuItem: "Balance",
-                    MenuScreenNavigate: ログ,
-                    StandardIcon: Icon.AddDocument,
-                    ID: 3
-                },
-            
-                {
-                    MenuItem: "Settings",
-                    MenuScreenNavigate:設定,
-                    StandardIcon: Icon.Settings,
-                    ID: 4
-                }
-            )
-        Width: =768
-        Y: =1235
+        Width: =713
+        X: =27
+        Y: =1135
         ZIndex: =5
+
+    "'Date Picker_1' As 'Date Picker'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false) 
+        X: =27
+        Y: =648
+        ZIndex: =6
 

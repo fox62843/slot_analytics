@@ -69,3 +69,14 @@
         Y: =475
         ZIndex: =3
 
+    "'Text input_1' As 'Text input'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        FontSize: =20
+        Height: =253
+        Mode: =TextMode.MultiLine
+        Text: =If(T_TextInput.Text=Blank(),'Text input_1'.iniData,T_TextInput.Text)
+        Width: =698
+        X: =27
+        Y: =36
+        ZIndex: =5
+

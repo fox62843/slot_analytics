@@ -69,3 +69,45 @@
         Y: =475
         ZIndex: =3
 
+    Slider_1 As Slider:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Width: =648
+        X: =60
+        Y: =870
+        ZIndex: =5
+
+    "'Star rating_1' As 'Star rating'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =125
+        Width: =395
+        X: =178
+        Y: =49
+        ZIndex: =6
+
+    "'status bar_1' As 'status bar'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =148
+        Width: =688
+        X: =33
+        Y: =189
+        ZIndex: =7
+
+    "'status bar (no animation)_1' As 'status bar (no animation)'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Width: =698
+        X: =33
+        Y: =337
+        ZIndex: =8
+
+    Switch_1 As Switch:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =260
+        IconColour: |-
+            =If(Switch_1.DarkMode = true ,"#BDBDBD","#454545")
+        LinealGradientColor1: |-
+            ="#6e35ae"
+        Width: =709
+        X: =33
+        Y: =972
+        ZIndex: =9
+
