@@ -17,8 +17,8 @@ TOP As screen:
 
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =478
-        Width: =348
+        Height: =173
+        Width: =268
         X: =1046
         Y: =40
         ZIndex: =6
