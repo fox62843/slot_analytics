@@ -83,20 +83,6 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
-  "group": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/group",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "group",
-    "OverridableProperties": {},
-    "Version": "1"
-  },
   "groupContainer": {
     "FirstParty": true,
     "Id": "http://microsoft.com/appmagic/groupContainer",
@@ -192,20 +178,6 @@
     "OverridableProperties": {},
     "Version": "1.4.0"
   },
-  "rectangle": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/shapes/rectangle",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "rectangle",
-    "OverridableProperties": {},
-    "Version": "2.3.0"
-  },
   "screen": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -277,5 +249,20 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "ラベル",
     "Version": "1.6.0"
+  },
+  "日付の選択": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/Microsoft_CoreControls_DatePicker",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "Microsoft_CoreControls_DatePicker",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "日付の選択",
+    "Version": "1.5.1"
   }
 }

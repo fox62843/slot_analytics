@@ -10,7 +10,7 @@ Button As CanvasComponent:
         ="#1E56C8"
     IconColour: |-
         =If(Button.DarkMode = true,"#BDBDBD","#454545")
-    IconName: ="hanahana"
+    IconName: ="hanahana7"
     icontext: =true
     LinealGradient: =true
     LinealGradientColor1: |-
@@ -22,7 +22,7 @@ Button As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =14
+    ZIndex: =15
 
     B_HTML As htmlViewer:
         Height: =Parent.Height
@@ -61,7 +61,7 @@ Button As CanvasComponent:
         ZIndex: =1
 
     B_Image As image:
-        Height: =If(Button.Height <=160,B_HTML.Height/1.1 -50,B_HTML.Height/1.6 -40)
+        Height: =If(Button.Height <= 100,B_HTML.Height/2-17,B_HTML.Height/2)
         Image: |-
             ="data:image/svg+xml;
                 utf8,
@@ -69,7 +69,7 @@ Button As CanvasComponent:
                     "<svg 
                         xmlns='http://www.w3.org/2000/svg'
                         width='24'
-                        height='24'
+                        height='"&Self.Height&"'
                         fill='
                             "&If(
                                 B_Button.Pressed = true ,
@@ -219,7 +219,7 @@ Button As CanvasComponent:
                     </svg>",
             // ///////////////////////////////////////// ///////////////////////////////////////// ///////////////////////////////////////
                         "hanahana7",
-                        "<g transform='translate(0.000000,43.000000) scale(0.200000,-0.200000)'
+                        "<g transform='translate(0.000000,53.000000) scale(0.200000,-0.200000)'
                             fill='#000000' stroke='none'>
                         <path 
                             fill='
@@ -885,10 +885,11 @@ Button As CanvasComponent:
                     </svg>"
                     )&"
             ")
+        ImagePosition: =ImagePosition.Stretch
         Visible: =If(Button.icontext =true,true,false)
-        Width: =B_HTML.Width - Self.X*0.2 -30
-        X: =10
-        Y: =If(Button.Height <=160,(B_HTML.Height - Self.Height)/2.5,(B_HTML.Height - Self.Height)/2)
+        Width: =B_HTML.Width - Self.X*2 -9
+        X: =11
+        Y: =(B_HTML.Height - Self.Height)/2 -10
         ZIndex: =2
 
     B_Button As button:

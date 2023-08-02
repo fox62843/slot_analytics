@@ -3,7 +3,7 @@
 
     NeonGlowNavMenu_3 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =131
+        Height: =Parent.Height- Self.Y
         MenuItems: |-
             =Table(
                 {
@@ -37,13 +37,13 @@
                     ID: 4
                 }
             )
-        Width: =768
-        Y: =637
+        Width: =Parent.Width
+        Y: =666
 
     background_3 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =768
-        Width: =768
+        Height: =NeonGlowNavMenu_3.Y
+        Width: =Parent.Width
         ZIndex: =1
 
     Button_3 As Button:
@@ -52,8 +52,8 @@
         IconColour: |-
             =If(Button_3.DarkMode = true,"#BDBDBD","#454545")
         Width: =282
-        X: =243
-        Y: =501
+        X: =685
+        Y: =119
         ZIndex: =2
 
     "'Glassmorphism BackGround_2' As 'Glassmorphism BackGround'":
@@ -66,15 +66,15 @@
         Height: =369
         lightLevel: =3
         Width: =632
-        X: =60
-        Y: =399
+        X: =685
+        Y: =49
         ZIndex: =3
 
     Slider_1 As Slider:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Width: =648
-        X: =60
-        Y: =668
+        X: =621
+        Y: =450
         ZIndex: =5
 
     "'Star rating_1' As 'Star rating'":
@@ -99,16 +99,4 @@
         X: =33
         Y: =337
         ZIndex: =8
-
-    Switch_1 As Switch:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =260
-        IconColour: |-
-            =If(Switch_1.DarkMode = true ,"#BDBDBD","#454545")
-        LinealGradientColor1: |-
-            ="#6e35ae"
-        Width: =709
-        X: =33
-        Y: =508
-        ZIndex: =9
 

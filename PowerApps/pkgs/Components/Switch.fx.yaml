@@ -10,7 +10,7 @@ Switch As CanvasComponent:
         ="#1E56C8"
     IconColour: |-
         =If(Switch.DarkMode = true ,"#BDBDBD","#454545")
-    IconName: ="hanahana"
+    IconName: ="hanahana7"
     icontext: =true
     LinealGradient: =true
     LinealGradientColor1: |-
@@ -22,7 +22,7 @@ Switch As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =13
+    ZIndex: =14
 
     S_HTML As htmlViewer:
         Height: =Parent.Height
@@ -62,7 +62,7 @@ Switch As CanvasComponent:
         ZIndex: =1
 
     S_Image As image:
-        Height: =If(Switch.Height <=160,S_HTML.Height/1.1 -50,S_HTML.Height/1.6 -40)
+        Height: =If(Switch.Height <= 100,S_HTML.Height/2-15,S_HTML.Height/2)
         Image: |-
             ="data:image/svg+xml;
                 utf8,
@@ -70,7 +70,7 @@ Switch As CanvasComponent:
                     "<svg 
                         xmlns='http://www.w3.org/2000/svg'
                         width='30'
-                        height='30'
+                        height='"&Self.Height&"'
                         fill='
                             "&If(
                                 varButtonSelected = true ,
@@ -884,10 +884,11 @@ Switch As CanvasComponent:
                     </svg>"
                     )&"
             ")
+        ImagePosition: =ImagePosition.Stretch
         Visible: =If(Switch.icontext =true,true,false)
-        Width: =S_HTML.Width - Self.X*0.2 -30
+        Width: =S_HTML.Width - Self.X*2 -9
         X: =10
-        Y: =If(Switch.Height <=160,(S_HTML.Height - Self.Height)/2.4,(S_HTML.Height - Self.Height)/2)
+        Y: =(S_HTML.Height - Self.Height)/2 -10
         ZIndex: =2
 
     S_Button As button:

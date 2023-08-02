@@ -3,7 +3,7 @@
 
     NeonGlowNavMenu_1 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =131
+        Height: =Parent.Height -Self.Y
         MenuItems: |-
             =Table(
                 {
@@ -37,35 +37,38 @@
                     ID: 4
                 }
             )
-        Width: =768
-        Y: =637
+        Width: =Parent.Width
+        Y: =666
+        ZIndex: =1
 
     background_1 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =768
-        Width: =768
-        ZIndex: =1
+        Height: =NeonGlowNavMenu_1.Y
+        Width: =Parent.Width
+        ZIndex: =2
 
     Button_1 As Button:
+        BorderRadius: =12
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =118
+        Fontsizes: =12
+        Height: =216
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
-        Width: =699
-        X: =27
-        Y: =551
-        ZIndex: =2
+        Width: =249
+        X: =558
+        Y: =378
+        ZIndex: =3
 
     DataTable1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =500
+        Height: =316
         Items: =slot_bonus
-        Width: =699
+        Width: =1339
         X: =27
         Y: =40
-        ZIndex: =3
+        ZIndex: =4
 
         "'作成日列(_C)1' As dataTableColumn.dateTimeColumn":
             DisplayMode: =DisplayMode.Edit
@@ -150,17 +153,4 @@
             X: =0
             Y: =0
             ZIndex: =7
-
-    Navigation_1 As Navigation:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Width: =713
-        X: =27
-        Y: =668
-        ZIndex: =5
-
-    "'Date Picker_1' As 'Date Picker'":
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false) 
-        X: =27
-        Y: =648
-        ZIndex: =6
 

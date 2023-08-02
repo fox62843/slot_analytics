@@ -1,8 +1,9 @@
 NeonGlowNavMenu As CanvasComponent:
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =110
+    Height: =100
     IconsSVGorStandard: =true
+    inversion: =true
     MenuItems: |-
         =Table(
             {
@@ -36,6 +37,7 @@ NeonGlowNavMenu As CanvasComponent:
                 ID: 4
             }
         )
+    selectedID: =B_selected
     StandardIconColour: =Color.LightBlue
     SVGActiveIconColour: |-
         ="#7fba00"
@@ -56,19 +58,20 @@ NeonGlowNavMenu As CanvasComponent:
                     top:0px;
                     width:"&Self.Width&"px;
                     height:"&Self.Height-1&"px;
+                    "&If(NeonGlowNavMenu.inversion = true,"transform:rotate(180deg)","")&";
                     background:
                         "&If(
                             NeonGlowNavMenu.DarkMode = true,
                             "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
-                            "linear-gradient(40deg,#f8fafd 10%,#d1d3d4 90%)"
+                            "linear-gradient(40deg,#f8fafd 70%,#d1d3d4 90%)"
                         )&";
                     box-shadow:
                         "&If(
                             NeonGlowNavMenu.DarkMode = true,
                             "1px 1px 1px 0px rgba(61,61,69,1), 0px 0px 0px 0px #1e2126",
                             "15px 15px 29px 0px rgba(43, 44, 48, 0.5),
-                            inset -8px -8px 16px 0px rgba(43, 44, 48, 0.4),
-                            inset 0px 11px 28px 0px rgb(255, 255, 255, 1)"
+                            inset -8px -8px 17px 0px rgba(43, 44, 48, 0.3),
+                            inset 10px 11px 28px 10px rgb(255, 255, 255, 1)"
                         )&";
                     border-radius:25px 25px 0px 0px;
             '>
@@ -81,23 +84,23 @@ NeonGlowNavMenu As CanvasComponent:
         X: =1
         ZIndex: =1
 
-    "NavMenu As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+    "NavMenu1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
         BorderColor: =RGBA(166, 166, 166, 1)
         Height: =Parent.Height
         Items: =NeonGlowNavMenu.MenuItems
         Layout: =Layout.Vertical
         NavigationStep: =0
         ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: |
-            =110
+        TemplatePadding: |
+            =0
+        TemplateSize: =Self.Height
         Transition: =Transition.Push
-        Width: =NM_HTMLBackgroundMenu.Width
-        WrapCount: =4
+        Width: =Parent.Width
+        WrapCount: =CountRows(NeonGlowNavMenu.MenuItems)
         ZIndex: =2
 
         NM_HtmlText As htmlViewer:
-            Height: =Parent.TemplateHeight
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -135,7 +138,7 @@ NeonGlowNavMenu As CanvasComponent:
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledFill: =RGBA(0, 0, 0, 0)
             FocusedBorderThickness: =4
-            Height: =NM_MenuIcon.Height
+            Height: =If(NM_HtmlText.Height <= 90,NM_HtmlText.Height/2.1,NM_HtmlText.Height/2)
             HoverBorderColor: =RGBA(0, 0, 0, 0)
             HoverFill: =RGBA(0, 0, 0, 0)
             Image: |-
@@ -308,38 +311,41 @@ NeonGlowNavMenu As CanvasComponent:
                     ")&"  
                         </svg>"
                 )
+            ImagePosition: =ImagePosition.Stretch
             OnSelect: =Select(Parent)
             PressedBorderColor: =RGBA(0, 0, 0, 0)
             PressedFill: =RGBA(0, 0, 0, 0)
             Visible: =If(NeonGlowNavMenu.IconsSVGorStandard = true, true, false)
-            Width: =NM_MenuIcon.Width
-            X: =NM_MenuIcon.X
-            Y: =NM_MenuIcon.Y
+            Width: =NM_HtmlText.Width - Self.X*2
+            X: =30
+            Y: =If(NeonGlowNavMenu.Height <=90,16,(NeonGlowNavMenu.Height - Self.Height)/2-7)
             ZIndex: =2
 
         NM_MenuIcon As icon.Add:
             Color: =If(ThisItem.MenuScreenNavigate = App.ActiveScreen, NeonGlowNavMenu.StandardIconColour , RGBA(96,96,96,1))
-            Height: =NM_Button.Height 
+            Height: =NM_MenuLogo.Height
             Icon: =ThisItem.StandardIcon
             OnSelect: =Select(Parent)
             Visible: =If(NeonGlowNavMenu.IconsSVGorStandard = true, false, true)
-            Width: =NM_Button.Width - Self.X
-            X: =NM_Button.X +30
-            Y: =NM_Button.Y
+            Width: =NM_MenuLogo.Width
+            X: =NM_MenuLogo.X
+            Y: =NM_MenuLogo.Y
             ZIndex: =3
 
         NM_Button As button:
             Fill: =RGBA(0, 0, 0, 0)
             FocusedBorderColor: =RGBA(0,79,186,1)
             FocusedBorderThickness: =0.5
-            Height: =(Parent.Height -Self.Y)/1.4
+            Height: =Parent.Height - Self.Y*2
             HoverFill: =RGBA(196,196,196,0.2)
-            OnSelect: =Navigate(ThisItem.MenuScreenNavigate, ScreenTransition.Fade)
+            OnSelect: |-
+                =Navigate(ThisItem.MenuScreenNavigate, ScreenTransition.Fade);
+                Set(B_selected, !B_selected)
             PressedFill: =RGBA(196,196,196,0.4)
             Size: =24
             Text: =""
-            Width: =Parent.TemplateWidth/1.5
-            X: =(NavMenu.TemplateWidth - Self.Width)/2
-            Y: =18
+            Width: =Parent.TemplateWidth - Self.X*2
+            X: =10
+            Y: =13
             ZIndex: =4
 

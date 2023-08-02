@@ -3,6 +3,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =560
     IconsSVGorStandard: =true
+    inversion: =false
     MenuItems: |-
         =Table(
             {
@@ -41,10 +42,10 @@ NeonGlowNavMenu_vertical As CanvasComponent:
         ="#7fba00"
     SVGActiveIconColour2: |-
         ="#1bc457"
-    Width: =200
+    Width: =236
     X: =0
     Y: =0
-    ZIndex: =1
+    ZIndex: =6
 
     NM_HTMLBackgroundMenu_1 As htmlViewer:
         Height: =Parent.Height
@@ -56,11 +57,12 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                     top:0px;
                     width:"&Self.Width&"px;
                     height:"&Self.Height-2&"px;
+                    "&If(NeonGlowNavMenu_vertical.inversion = true,"","transform:rotate(180deg)")&";
                     background:
                         "&If(
                             NeonGlowNavMenu_vertical.DarkMode = true,
                             "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
-                            "linear-gradient(40deg,#f8fafd 10%,#d1d3d4 90%)"
+                            "linear-gradient(90deg,#f8fafd 10%,#d1d3d4 90%)"
                         )&";
                     box-shadow:
                         "&If(
@@ -70,7 +72,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                             inset -8px -8px 16px 0px rgba(43, 44, 48, 0.4),
                             inset 0px 11px 28px 0px rgb(255, 255, 255, 1)"
                         )&";
-                    border-radius:25px 25px 0px 0px;
+                    border-radius:0px 25px 25px 0px;
             '>
             </div>"
         PaddingBottom: =0
@@ -78,7 +80,6 @@ NeonGlowNavMenu_vertical As CanvasComponent:
         PaddingRight: =0
         PaddingTop: =0
         Width: =Parent.Width
-        X: =1
         ZIndex: =1
 
     NavMenu_1 As gallery.BrowseLayout_Horizontal_TwoTextOneImageVariant_pcfCore:
@@ -88,9 +89,9 @@ NeonGlowNavMenu_vertical As CanvasComponent:
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =200
+        TemplateSize: =0
         Width: =Parent.Width
-        WrapCount: =4
+        WrapCount: =CountRows(NeonGlowNavMenu_vertical.MenuItems)
         ZIndex: =2
 
         NM_HtmlText_3 As htmlViewer:
@@ -100,7 +101,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                     style='
                         position:absolute;
                         top:70px;
-                        right:150px;
+                        "&If(NeonGlowNavMenu_vertical.inversion = true,"right:150px","left:"&Self.Width - 200 + 150&"px")&";
                         width:100px;
                         height:6px;
                         transform:rotate(90deg);
@@ -122,6 +123,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                 </div>"
             PaddingTop: =0
             Visible: =If( ThisItem.MenuScreenNavigate = App.ActiveScreen, true, false)
+            Width: =If(NeonGlowNavMenu_vertical.inversion =true,"200",NavMenu_1.Width)
             ZIndex: =5
 
         NM_MenuLogo_3 As image:

@@ -16,7 +16,7 @@ Check As CanvasComponent:
     Width: =100
     X: =0
     Y: =0
-    ZIndex: =16
+    ZIndex: =17
 
     Check_HTML As htmlViewer:
         Height: =Parent.Height

@@ -55,7 +55,7 @@ Navigation As CanvasComponent:
     Width: =670
     X: =0
     Y: =0
-    ZIndex: =7
+    ZIndex: =8
 
     N_HTML As htmlViewer:
         Height: =Parent.Height
@@ -93,7 +93,7 @@ Navigation As CanvasComponent:
         TemplatePadding: =0
         TemplateSize: =Self.Height
         Width: =N_HTML.Width - Self.X*2 - N_HTML.PaddingRight
-        WrapCount: =4
+        WrapCount: =CountRows(Navigation.MenuItems)
         X: =40
         Y: =15
         ZIndex: =2

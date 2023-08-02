@@ -1,4 +1,5 @@
 Toggle As CanvasComponent:
+    borderRadius: =100
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =85
@@ -11,7 +12,7 @@ Toggle As CanvasComponent:
     Width: =150
     X: =0
     Y: =0
-    ZIndex: =15
+    ZIndex: =16
 
     Toggle_HTML As htmlViewer:
         Height: =Parent.Height
@@ -37,7 +38,7 @@ Toggle As CanvasComponent:
                     position: relative;
                     height: "&Self.Height/2&"px;
                     width: "&Self.Width - Toggle_Button.Width -10&"px;
-                    border-radius: 30px;
+                    border-radius: "&Toggle.borderRadius&"px;
                     overflow: hidden;
                     box-shadow:
                         "&If(
@@ -65,7 +66,7 @@ Toggle As CanvasComponent:
                             "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
                             "#e8eaec"
                         )&";
-                    border-radius: 30px;
+                    border-radius: "&Toggle.borderRadius&"px;
                     transform: translate(
                         "& If(
                             Toggle.Toggled = true,
@@ -128,7 +129,7 @@ Toggle As CanvasComponent:
         PressedFill: =RGBA(196,196,196,0.5)
         RadiusBottomLeft: =25
         RadiusBottomRight: =25
-        RadiusTopLeft: =25
+        RadiusTopLeft: =Toggle.borderRadius
         RadiusTopRight: =25
         Size: =24
         Text: =""

@@ -12,3 +12,45 @@ TOP As screen:
         Y: =40
         ZIndex: =5
 
+    Toggle_1 As Toggle:
+        DarkMode: =If(Self.Toggled = true,true,false)
+        Height: =379
+        Width: =631
+        X: =735
+        Y: =102
+        ZIndex: =6
+
+    NeonGlowNavMenu_2 As NeonGlowNavMenu:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =Parent.Height  -Self.Y
+        MenuItems: |-
+            =Table(
+                {
+                    // this is the screen you will navigate to when you select this item
+                    MenuScreenNavigate: App.ActiveScreen,
+                    //if you are not comfortable with SVG's, you can use standard icons instead!  - just make sure you change the icon property of MenuIcon to ThisItem.StandardIcon
+                    StandardIcon: Icon.Home,
+                    ID: 1
+                },
+            
+                {
+                    MenuScreenNavigate: 記録画面,
+                    StandardIcon: Icon.AddUser,
+                    ID: 2
+                },
+                {
+                    MenuScreenNavigate: ログ,
+                    StandardIcon: Icon.Settings,
+                    ID: 3
+                },
+            
+                {
+                    MenuScreenNavigate: 設定,
+                    StandardIcon: Icon.AddDocument,
+                    ID: 4
+                }
+            )
+        Width: =Parent.Width
+        Y: =666
+        ZIndex: =8
+
