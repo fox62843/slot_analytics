@@ -1,51 +1,6 @@
 TOP As screen:
     Fill: =If(Toggle_1.DarkMode= true,RGBA(43, 46, 51, 1),RGBA(234, 235, 238, 1))
 
-    NeonGlowNavMenu_2 As NeonGlowNavMenu:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =131
-        MenuItems: |-
-            =Table(
-                {
-                    //これは画面の名前である
-                    MenuItem: "Home",
-                    // この項目を選択すると、この画面が表示されます。
-                    MenuScreenNavigate: TOP,
-                    //SVGを使うのが苦手な場合は、標準アイコンを使うこともできます！ - MenuIconのiconプロパティをThisItem.StandardIconに変更してください。
-                    StandardIcon: Icon.Home,
-                    ID: 1
-                },
-            
-                {
-                    MenuItem: "Profile",
-                    MenuScreenNavigate: 記録画面,
-                    StandardIcon: Icon.AddUser,
-                    ID: 2
-                },
-            
-                {
-                    MenuItem: "Balance",
-                    MenuScreenNavigate: ログ,
-                    StandardIcon: Icon.AddDocument,
-                    ID: 3
-                },
-            
-                {
-                    MenuItem: "Settings",
-                    MenuScreenNavigate:設定,
-                    StandardIcon: Icon.Settings,
-                    ID: 4
-                }
-            )
-        Width: =768
-        Y: =1235
-
-    background_2 As background:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =1366
-        Width: =768
-        ZIndex: =1
-
     Label1 As label:
         Align: =Align.Center
         Color: =If(Toggle_1.DarkMode= true,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
@@ -53,34 +8,7 @@ TOP As screen:
         Height: =347
         Size: =60
         Text: ="Slot Analytics"
-        Width: =Parent.Width -Self.X*2
-        X: =40
+        Width: =768
         Y: =40
         ZIndex: =5
-
-    Toggle_1 As Toggle:
-        DarkMode: =If(Toggle_1.Toggled= true,true,false)
-        Height: =287
-        Width: =480
-        X: =188
-        Y: =588
-        ZIndex: =6
-
-    Check_1 As Check:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =178
-        IconColour: |-
-            =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
-        Width: =183
-        X: =63
-        Y: =300
-        ZIndex: =7
-
-    ComboBox_1 As ComboBox:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =87
-        Width: =466
-        X: =246
-        Y: =300
-        ZIndex: =8
 

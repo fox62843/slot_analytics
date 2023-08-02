@@ -38,11 +38,11 @@
                 }
             )
         Width: =768
-        Y: =1235
+        Y: =637
 
     background_1 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =1366
+        Height: =768
         Width: =768
         ZIndex: =1
 
@@ -155,7 +155,7 @@
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Width: =713
         X: =27
-        Y: =1135
+        Y: =668
         ZIndex: =5
 
     "'Date Picker_1' As 'Date Picker'":

@@ -38,11 +38,11 @@
                 }
             )
         Width: =768
-        Y: =1235
+        Y: =637
 
     background_4 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =1366
+        Height: =768
         Width: =768
         ZIndex: =1
 
@@ -53,7 +53,7 @@
             =If(Button_4.DarkMode = true,"#BDBDBD","#454545")
         Width: =282
         X: =243
-        Y: =549
+        Y: =501
         ZIndex: =2
 
     "'Glassmorphism BackGround_3' As 'Glassmorphism BackGround'":
@@ -66,7 +66,7 @@
         lightLevel: =3
         Width: =632
         X: =60
-        Y: =475
+        Y: =399
         ZIndex: =3
 
     "'Text input_1' As 'Text input'":

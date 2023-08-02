@@ -1,0 +1,84 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "NeonGlowNavMenu_vertical",
+    "TemplateGuid": "dc5bb63743e1426eb9347ee75153ae99"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "アイコン、その他 -MenuItems-",
+      "Hidden": false,
+      "Name": "MenuItems",
+      "PropertyDataTypeKey": "Table",
+      "Tooltip": "アイコン、その他に関する値をテーブル型で指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"ID\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MenuItem\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"MenuScreenNavigate\",\"Kind\":\"_LimPrimitive\",\"EnumString\":\"\",\"Template\":{\"TemplateName\":\"screen\",\"IsMetaLoc\":false,\"Intangible\":false,\"IsDataLimited\":false,\"ExpandoType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Record\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"BackgroundImage\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"ContentLanguage\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Fill\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Height\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"ImagePosition\",\"Kind\":\"Enum\",\"EnumString\":\"%s[Center:\\\"center\\\", Fill:\\\"fill\\\", Fit:\\\"fit\\\", Stretch:\\\"stretch\\\", Tile:\\\"tile\\\"]\",\"Type\":[{\"Name\":\"Center\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Fill\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Fit\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Stretch\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Tile\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]},{\"Name\":\"LoadingSpinner\",\"Kind\":\"Enum\",\"EnumString\":\"%n[Controls:0, Data:1, None:2]\",\"Type\":[{\"Name\":\"Controls\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Data\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"None\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]},{\"Name\":\"LoadingSpinnerColor\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Name\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Orientation\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Printing\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Size\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Width\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}},\"Properties\":[{\"Name\":\"Fill\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"塗りつぶし\"},{\"Name\":\"BackgroundImage\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Image\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Data\",\"PropertyDisplayName\":\"背景の画像\"},{\"Name\":\"ImagePosition\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Enum\",\"EnumString\":\"%s[Center:\\\"center\\\", Fill:\\\"fill\\\", Fit:\\\"fit\\\", Stretch:\\\"stretch\\\", Tile:\\\"tile\\\"]\",\"Type\":[{\"Name\":\"Center\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Fill\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Fit\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Stretch\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Tile\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"画像の位置\"},{\"Name\":\"Height\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"Height\"},{\"Name\":\"Width\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"Width\"},{\"Name\":\"Size\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"Size\"},{\"Name\":\"Orientation\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"Orientation\"},{\"Name\":\"LoadingSpinner\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Enum\",\"EnumString\":\"%n[Controls:0, Data:1, None:2]\",\"Type\":[{\"Name\":\"Controls\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Data\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"None\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"読み込みスピナー\"},{\"Name\":\"LoadingSpinnerColor\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"読み込みスピナーの色\"},{\"Name\":\"Name\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Design\",\"PropertyDisplayName\":\"Name\"},{\"Name\":\"Printing\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Data\",\"PropertyDisplayName\":\"印刷中\"},{\"Name\":\"ContentLanguage\",\"InvariantType\":{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}},\"PropertyRuleCategory\":\"Data\",\"PropertyDisplayName\":\"コンテンツの言語\"}]}},{\"Name\":\"StandardIcon\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "カスタムSVGまたは標準アイコン -IconsSVGorStandard-",
+      "Hidden": false,
+      "Name": "IconsSVGorStandard",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "オン→カスタムSVG , オフ→標準アイコン",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "ダークモード -DarkMode-",
+      "Hidden": false,
+      "Name": "DarkMode",
+      "PropertyDataTypeKey": "Boolean",
+      "Tooltip": "ダークモードを有効にします",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アクティブカスタムSVG色1 -SVGActiveIconColour-",
+      "Hidden": false,
+      "Name": "SVGActiveIconColour",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "1番目のカスタムSVGのアイコン色を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "アクティブカスタムSVG色2 -SVGActiveIconColour2-",
+      "Hidden": false,
+      "Name": "SVGActiveIconColour2",
+      "PropertyDataTypeKey": "String",
+      "Tooltip": "2番目のカスタムSVGのアイコン色を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "標準アイコン色 -StandardIconColour-",
+      "Hidden": false,
+      "Name": "StandardIconColour",
+      "PropertyDataTypeKey": "Color",
+      "Tooltip": "標準アイコンの色を指定します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Color\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": true,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "638265360728692569",
+  "Name": "dc5bb63743e1426eb9347ee75153ae99",
+  "OverridableProperties": {},
+  "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
+  "SourceLibraryLogicalName": "crff0__59ffd",
+  "TemplateOriginalName": "9c6e22cf761c492ebb75efedd55ae7cd",
+  "Version": "637911007877426544"
+}
