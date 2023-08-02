@@ -38,12 +38,14 @@
                 }
             )
         Width: =Parent.Width
-        Y: =666
+        X: =0.00
+        Y: =600
 
     background_3 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =NeonGlowNavMenu_3.Y
         Width: =Parent.Width
+        X: =0.00
         ZIndex: =1
 
     Button_3 As Button:
@@ -51,8 +53,8 @@
         Height: =267
         IconColour: |-
             =If(Button_3.DarkMode = true,"#BDBDBD","#454545")
-        Width: =282
-        X: =685
+        Width: =322.05
+        X: =782.28
         Y: =119
         ZIndex: =2
 
@@ -65,38 +67,43 @@
         glasslevel: =Slider_1.Value
         Height: =369
         lightLevel: =3
-        Width: =632
-        X: =685
+        Width: =721.76
+        X: =782.28
         Y: =49
         ZIndex: =3
 
     Slider_1 As Slider:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Width: =648
-        X: =621
+        Width: =740.03
+        X: =709.19
         Y: =450
         ZIndex: =5
 
     "'Star rating_1' As 'Star rating'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =125
-        Width: =395
-        X: =178
+        Height: =107
+        Width: =363
+        X: =240
         Y: =49
         ZIndex: =6
 
-    "'status bar_1' As 'status bar'":
+    ComboBox_1 As ComboBox:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =148
-        Width: =688
-        X: =33
-        Y: =189
+        fontsize: =23
+        Height: =79
+        Width: =669
+        X: =40
+        Y: =180
         ZIndex: =7
 
-    "'status bar (no animation)_1' As 'status bar (no animation)'":
+    "'Text input_2' As 'Text input'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Width: =698
-        X: =33
-        Y: =337
+        FontSize: =34
+        Height: =267
+        Mode: =TextMode.MultiLine
+        Text: =If(T_TextInput.Text=Blank(),'Text input_2'.iniData,T_TextInput.Text)
+        Width: =640
+        X: =40
+        Y: =266
         ZIndex: =8
 

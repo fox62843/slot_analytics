@@ -3,10 +3,9 @@
 
     NeonGlowNavMenu_vertical_1 As NeonGlowNavMenu_vertical:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =NeonGlowNavMenu_4.Y - Self.Y*2
+        Height: =NeonGlowNavMenu_4.Y - Self.Y*2 -10
         Width: =Parent.Width - Self.X -40
-        X: |
-            =1200
+        X: =1370.42
         Y: =36
 
     NeonGlowNavMenu_4 As NeonGlowNavMenu:
@@ -46,12 +45,14 @@
                 }
             )
         Width: =Parent.Width
-        Y: =666
+        X: =0.00
+        Y: =600
 
     background_4 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =NeonGlowNavMenu_4.Y
         Width: =Parent.Width
+        X: =0.00
         ZIndex: =1
 
     Button_4 As Button:
@@ -59,23 +60,10 @@
         Height: =267
         IconColour: |-
             =If(Button_4.DarkMode = true,"#BDBDBD","#454545")
-        Width: =282
-        X: =692
-        Y: =226
+        Width: =322.05
+        X: =1035
+        Y: =36
         ZIndex: =2
-
-    "'Glassmorphism BackGround_3' As 'Glassmorphism BackGround'":
-        borderRadiusDL: =10
-        borderRadiusDR: =10
-        borderRadiusTL: =40
-        borderRadiusTR: =40
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =369
-        lightLevel: =3
-        Width: =632
-        X: =27
-        Y: =226
-        ZIndex: =3
 
     "'Text input_1' As 'Text input'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
@@ -83,8 +71,16 @@
         Height: =161
         Mode: =TextMode.MultiLine
         Text: =If(T_TextInput.Text=Blank(),'Text input_1'.iniData,T_TextInput.Text)
-        Width: =866
-        X: =42
+        Width: =988.99
+        X: =47.96
         Y: =36
         ZIndex: =5
+
+    "'Date Picker_1' As 'Date Picker'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =187
+        Width: =937
+        X: =72
+        Y: =222
+        ZIndex: =7
 

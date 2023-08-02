@@ -38,13 +38,15 @@
                 }
             )
         Width: =Parent.Width
-        Y: =666
+        X: =0.00
+        Y: =600
         ZIndex: =1
 
     background_1 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =NeonGlowNavMenu_1.Y
         Width: =Parent.Width
+        X: =0.00
         ZIndex: =2
 
     Button_1 As Button:
@@ -54,8 +56,8 @@
         Height: =216
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
-        Width: =249
-        X: =558
+        Width: =284.36
+        X: =637.25
         Y: =378
         ZIndex: =3
 
@@ -63,10 +65,11 @@
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =316
+        Height: =NeonGlowNavMenu_1.Y -Self.Y*2
         Items: =slot_bonus
-        Width: =1339
-        X: =27
+        Size: =14.85
+        Width: =Parent.Width - Self.X*2
+        X: =30.83
         Y: =40
         ZIndex: =4
 
@@ -79,8 +82,8 @@
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =Text(ThisItem.作成日,DateTimeFormat.LongDateTime)
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =2
 
@@ -93,8 +96,8 @@
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.slot_main.PlayID
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =3
 
@@ -107,8 +110,8 @@
             LayoutHeight: =Parent.Height
             Order: =4
             Text: =ThisItem.art
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =4
 
@@ -121,8 +124,8 @@
             LayoutHeight: =Parent.Height
             Order: =5
             Text: =ThisItem.at
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =5
 
@@ -135,8 +138,8 @@
             LayoutHeight: =Parent.Height
             Order: =6
             Text: =ThisItem.big
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =6
 
@@ -149,8 +152,8 @@
             LayoutHeight: =Parent.Height
             Order: =7
             Text: =ThisItem.reg
-            Width: =100
-            X: =0
+            Width: =114.20
+            X: =0.00
             Y: =0
             ZIndex: =7
 

@@ -6,23 +6,26 @@ TOP As screen:
         Color: =If(Toggle_1.DarkMode= true,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
         Font: =Font.'Dancing Script'
         Height: =347
-        Size: =60
+        PaddingRight: =5.71
+        PaddingTop: =5.71
+        Size: =68.52
         Text: ="Slot Analytics"
-        Width: =768
+        Width: =877.07
+        X: =0.00
         Y: =40
         ZIndex: =5
 
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =379
-        Width: =631
-        X: =735
-        Y: =102
+        Height: =478
+        Width: =348
+        X: =1046
+        Y: =40
         ZIndex: =6
 
     NeonGlowNavMenu_2 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =Parent.Height  -Self.Y
+        Height: =Parent.Height - Self.Y
         MenuItems: |-
             =Table(
                 {
@@ -51,6 +54,49 @@ TOP As screen:
                 }
             )
         Width: =Parent.Width
-        Y: =666
+        X: =0.00
+        Y: =600
         ZIndex: =8
+
+    Container1 As groupContainer.manualLayoutContainer:
+        Height: =NeonGlowNavMenu_2.Y - Self.Y
+        Visible: =If(NeonGlowNavMenu_2.selectedID =true,true,false)
+        Width: =Parent.Width
+        Y: =320
+        ZIndex: =9
+
+        background_2 As background:
+            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+            Height: =Parent.Height
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Switch_1 As Switch:
+            BorderRadius: =10
+            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+            Height: =Parent.Height - Self.X*2
+            IconColour: |-
+                =If(Switch_1.DarkMode = true ,"#BDBDBD","#454545")
+            Width: =200
+            X: =48
+            Y: =38
+            ZIndex: =2
+
+        Slider_2 As Slider:
+            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+            Height: =77
+            Width: =Parent.Width - Self.X -30
+            X: =298
+            Y: =56
+            ZIndex: =3
+
+        "'status bar_2' As 'status bar'":
+            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+            Height: =152
+            metertext: =""
+            Value: =Slider_2.Value
+            Width: =662
+            X: =265
+            Y: =102
+            ZIndex: =4
 

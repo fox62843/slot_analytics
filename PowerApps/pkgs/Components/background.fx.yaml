@@ -30,9 +30,6 @@ background As CanvasComponent:
                     border-radius:"& Parent.BorderRadius &"px'
             >
             </div>"
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
         Width: =Parent.Width
         ZIndex: =3
 

@@ -168,7 +168,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "Button_4",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -270,98 +270,44 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Glassmorphism BackGround_3": {
+    "Date Picker_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
+        "Fill",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
-          "InvariantPropertyName": "Fill",
+          "InvariantPropertyName": "Height",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Height",
         "Width",
         "X",
         "Y",
         "ZIndex",
+        "IconLinealGradient1",
+        "IconLinealGradient2",
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "30",
-          "InvariantPropertyName": "glasslevel",
+          "AutoRuleBindingString": "100",
+          "InvariantPropertyName": "fontsize",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "lightLevel",
+          "AutoRuleBindingString": "DP_Label.Text",
+          "InvariantPropertyName": "DateSelected",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BackgroundColorR",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BackgroundColorG",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "BackgroundColorB",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "borderRadiusTL",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "borderRadiusTR",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "borderRadiusDL",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "borderRadiusDR",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
+          "AutoRuleBindingString": "true",
           "InvariantPropertyName": "DarkMode",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -378,57 +324,32 @@
       "Metadata": {
         "AllowAccessToGlobals": false,
         "AllowCustomization": true,
-        "Description": ""
+        "Description": "日付確認及び入力"
       },
       "MetaDataIDKey": "",
-      "Name": "Glassmorphism BackGround_3",
-      "ParentIndex": 3,
+      "Name": "Date Picker_1",
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Data",
-          "PropertyName": "glasslevel",
+          "PropertyName": "IconLinealGradient1",
           "RuleProviderType": "System"
         },
         {
           "Category": "Data",
-          "PropertyName": "lightLevel",
-          "RuleProviderType": "Unknown"
+          "PropertyName": "IconLinealGradient2",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
-          "PropertyName": "BackgroundColorR",
-          "RuleProviderType": "Unknown"
+          "PropertyName": "fontsize",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
-          "PropertyName": "BackgroundColorG",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "BackgroundColorB",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "borderRadiusTL",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "borderRadiusTR",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "borderRadiusDL",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "borderRadiusDR",
-          "RuleProviderType": "Unknown"
+          "PropertyName": "DateSelected",
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -716,7 +637,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "NeonGlowNavMenu_vertical_1",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

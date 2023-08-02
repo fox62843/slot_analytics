@@ -127,10 +127,10 @@ Toggle As CanvasComponent:
         HoverFill: =RGBA(196,196,196,0.2)
         OnSelect: =Set(varToggled, If(Toggle.Toggled = true, false, true))
         PressedFill: =RGBA(196,196,196,0.5)
-        RadiusBottomLeft: =25
-        RadiusBottomRight: =25
+        RadiusBottomLeft: =Toggle.borderRadius
+        RadiusBottomRight: =Toggle.borderRadius
         RadiusTopLeft: =Toggle.borderRadius
-        RadiusTopRight: =25
+        RadiusTopRight: =Toggle.borderRadius
         Size: =24
         Text: =""
         Width: =(Toggle_HTML.Width - Toggle_HTML.PaddingRight*2)/3.5
