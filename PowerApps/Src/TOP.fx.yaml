@@ -100,3 +100,10 @@ TOP As screen:
             Y: =102
             ZIndex: =4
 
+    "'Mobile Navigation Menu_1' As 'Mobile Navigation Menu'":
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Width: =1376
+        X: =72
+        Y: =363
+        ZIndex: =10
+

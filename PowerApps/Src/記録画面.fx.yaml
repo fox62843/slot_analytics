@@ -56,17 +56,23 @@
         Height: =216
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
+        IconName: ="hanahana"
         Width: =284.36
-        X: =637.25
-        Y: =378
+        X: =30
+        Y: =332
         ZIndex: =3
 
     DataTable1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(255, 255, 255, 1)
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =NeonGlowNavMenu_1.Y -Self.Y*2
+        HeadingFill: =RGBA(49, 53, 58, 1)
+        Height: =280
+        HoverColor: =RGBA(255, 255, 255, 1)
         Items: =slot_bonus
+        SelectedColor: =RGBA(255, 255, 255, 1)
+        SelectedFill: =RGBA(34, 55, 79, 1)
         Size: =14.85
         Width: =Parent.Width - Self.X*2
         X: =30.83
@@ -156,4 +162,26 @@
             X: =0.00
             Y: =0
             ZIndex: =7
+
+    Check_1 As Check:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =191
+        IconColour: |-
+            =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
+        Width: =200
+        X: =339
+        Y: =357
+        ZIndex: =5
+
+    Switch_2 As Switch:
+        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+        Height: =184
+        IconColour: |-
+            =If(Switch_2.DarkMode = true ,"#BDBDBD","#454545")
+        IconName: ="hanahana"
+        vbs: =false
+        Width: =958
+        X: =559
+        Y: =357
+        ZIndex: =6
 
