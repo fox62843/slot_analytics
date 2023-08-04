@@ -2,15 +2,15 @@ ComboBox As CanvasComponent:
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     fontsize: =15
-    Height: =50
+    Height: =131
     IconLinealGradient1: |-
         ="#eb1f5a"
     IconLinealGradient2: |-
         ="#ffdc3f"
     iniData: =[11]
-    TableComp: =["1","2","3","4","5","6","7","8","9"]
+    TableComp: =["1","2","3","4","5","6","7","8","aaaaaaa"]
     valueSelected: =First(ComboBox1.SelectedItems).Value
-    Width: =300
+    Width: =1000
     X: =0
     Y: =0
     ZIndex: =3
@@ -50,7 +50,7 @@ ComboBox As CanvasComponent:
         ZIndex: =10
 
     CB_Image_1 As image:
-        Height: =29
+        Height: =ComboBox1.Height -2
         Image: |-
             ="data:image/svg+xml;utf8,
             "&EncodeUrl("
@@ -73,9 +73,10 @@ ComboBox As CanvasComponent:
                             />
                         </svg>
             ")
-        Width: =25
-        X: =CB_HTML_1.Width-(Self.Width*2)
-        Y: =(CB_HTML_1.Height - Self.Height)/2 -5
+        OnSelect: =ComboBox1.Selected
+        Width: =If(ComboBox.Height >=131,109,Self.Height)
+        X: =(ComboBox1.X + ComboBox1.Width) - Self.Width
+        Y: =(ComboBox1.Y + ComboBox1.Height) - Self.Height -1
         ZIndex: =11
 
     "ComboBox1 As 'コンボ ボックス'.pcfdataset":

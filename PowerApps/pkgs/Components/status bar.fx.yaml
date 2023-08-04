@@ -13,7 +13,7 @@
     Width: =350
     X: =0
     Y: =0
-    ZIndex: =18
+    ZIndex: =20
 
     Ppba_HTML As htmlViewer:
         Fill: =RGBA(0, 0, 0, 0)
@@ -58,6 +58,12 @@
                         <linearGradient id='linear' x1='0%' y1='0%' x2='0%' y2='100%' spreadMethod='pad'>
                             <stop offset='0%' stop-color='" & Parent.LinealGradient1 & "'/>
                             <stop offset='100%' stop-color='" & Parent.LinealGradient2 & "'/>
+                                <animate
+                                    attributeName='width'
+                                    values='0;" & (Parent.Value / Parent.MaxValue) * (Self.Width-80) & "' 
+                                    dur='2s'
+                                    repeatCount='1'
+                                />
                         </linearGradient>
                     </defs>
             

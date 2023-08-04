@@ -1,0 +1,1311 @@
+LinearGradient_Generator_RGBA As CanvasComponent:
+    borderradius: =100
+    ButtonSelected: =varButtonSelected
+    DarkMode: =false
+    Fill: =RGBA(0, 0, 0, 0)
+    G_GL1: =LG1
+    G_GL2: =LG2
+    Height: =640
+    IconLinealGradient1: =Self.G_GL1
+    IconLinealGradient2: =Self.G_GL2
+    Width: =1000
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    LG_flame1 As htmlViewer:
+        Height: =Parent.Height
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:30px;
+                    width: "& Parent.Width -70 &"px;
+                    height: "& Parent.Height - 80 &"px;
+                    background: "&If(
+                        LinearGradient_Generator_RGBA.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    box-shadow:
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                            "12px 12px 32px rgba(13, 39, 80, 0.25),-10px -10px 15px white"
+                        )&";
+                    border-radius:20px'
+            >
+            </div>"
+        Width: =Parent.Width
+        ZIndex: =1
+
+    LG_sampleView As htmlViewer:
+        Height: =110
+        HtmlText: |-
+            ="<div
+                style='
+                    margin:30px;
+                    height: "& Self.Height/4 &"px;
+                    border-radius: 15px;
+                    background: "&If(
+                        LinearGradient_Generator_RGBA.DarkMode = true,
+                        "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                        "#e8eaec"
+                    )&";
+                    border: "&If(
+                        LinearGradient_Generator_RGBA.DarkMode = true,
+                        "4px solid #2f3035",
+                        "4px solid rgba(255, 255, 255, 0.7)"
+                    )&";
+                    box-shadow: "&If(
+                        LinearGradient_Generator_RGBA.DarkMode = true,
+                        "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126;",
+                        "6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
+                    )&";
+            '>
+            
+            
+                <div
+                    style='
+                        width:100%;
+                        height: 100%;
+                        background:linear-gradient(
+                            to right,
+                            "& "#"
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_2.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_2.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_3.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_3.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_4.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_4.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_5.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_5.Value, 16),1)&",
+                            "& "#"
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_6.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_6.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_7.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_7.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_8.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_8.Value, 16),1)
+            & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_9.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_9.Value, 16),1) &"
+                        );
+                        border-radius: 8px;
+                    '>
+                </div>
+            </div>"
+        Width: =Parent.Width -Self.X*2
+        X: =49
+        Y: =(Parent.Height - (Title.Y + Title.Height -20))/10
+        ZIndex: =2
+
+    LG_Slider_8 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG2_A.X + LG2_A.Width
+        Y: =LG2_A.Y
+        ZIndex: =3
+
+        Slider_BorderHTML_9 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_9.Value/Slider1_9.Max) * Parent.Width - Slider_circleHTML_9.Width <= -100,
+                                    Slider_circleHTML_9.Width -20,
+                                    (Slider1_9.Value/Slider1_9.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_9.X + (Slider_circleHTML_9.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_9.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_9 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_8.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_9.Value/Slider1_9.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_9.Value/Slider1_9.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_9.Value/Slider1_9.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_9 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_7 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG2_B.X + LG2_B.Width
+        Y: =LG2_B.Y
+        ZIndex: =4
+
+        Slider_BorderHTML_8 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_8.Value/Slider1_8.Max) * Parent.Width - Slider_circleHTML_8.Width <= -100,
+                                    Slider_circleHTML_8.Width -20,
+                                    (Slider1_8.Value/Slider1_8.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_8.X + (Slider_circleHTML_8.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_8.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_8 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_7.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_8.Value/Slider1_8.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_8.Value/Slider1_8.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_8.Value/Slider1_8.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_8 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_6 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG2_G.X + LG2_G.Width
+        Y: =LG2_G.Y
+        ZIndex: =5
+
+        Slider_BorderHTML_7 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_7.Value/Slider1_7.Max) * Parent.Width - Slider_circleHTML_7.Width <= -100,
+                                    Slider_circleHTML_7.Width -20,
+                                    (Slider1_7.Value/Slider1_7.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_7.X + (Slider_circleHTML_7.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_7.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_7 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_6.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_7.Value/Slider1_7.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_7.Value/Slider1_7.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_7.Value/Slider1_7.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_7 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_5 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG2_R.X + LG2_R.Width
+        Y: =LG2_R.Y
+        ZIndex: =6
+
+        Slider_BorderHTML_6 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_6.Value/Slider1_6.Max) * Parent.Width - Slider_circleHTML_6.Width <= -100,
+                                    Slider_circleHTML_6.Width -20,
+                                    (Slider1_6.Value/Slider1_6.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_6.X + (Slider_circleHTML_6.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_6.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_6 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_5.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_6.Value/Slider1_6.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_6.Value/Slider1_6.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_6.Value/Slider1_6.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_6 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_4 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG1_A.X + LG1_A.Width
+        Y: =LG1_A.Y
+        ZIndex: =7
+
+        Slider_BorderHTML_5 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_5.Value/Slider1_5.Max) * Parent.Width - Slider_circleHTML_5.Width <= -100,
+                                    Slider_circleHTML_5.Width -20,
+                                    (Slider1_5.Value/Slider1_5.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_5.X + (Slider_circleHTML_5.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_5.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_5 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_4.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_5.Value/Slider1_5.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_5.Value/Slider1_5.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_5.Value/Slider1_5.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_5 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_3 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG1_B.X + LG1_B.Width
+        Y: =LG1_B.Y
+        ZIndex: =8
+
+        Slider_BorderHTML_4 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_4.Value/Slider1_4.Max) * Parent.Width - Slider_circleHTML_4.Width <= -100,
+                                    Slider_circleHTML_4.Width -20,
+                                    (Slider1_4.Value/Slider1_4.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_4.X + (Slider_circleHTML_4.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_4.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_4 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_3.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_4.Value/Slider1_4.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_4.Value/Slider1_4.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_4.Value/Slider1_4.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_4 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_2 As groupContainer.manualLayoutContainer:
+        Height: =LG_Slider_1.Height
+        Width: =LG_Slider_1.Width
+        X: =LG1_G.X + LG1_G.Width
+        Y: =LG1_G.Y
+        ZIndex: =9
+
+        Slider_BorderHTML_3 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_3.Value/Slider1_3.Max) * Parent.Width - Slider_circleHTML_3.Width <= -100,
+                                    Slider_circleHTML_3.Width -20,
+                                    (Slider1_3.Value/Slider1_3.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_3.X + (Slider_circleHTML_3.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_3.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_3 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_2.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_3.Value/Slider1_3.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_3.Value/Slider1_3.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_3.Value/Slider1_3.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_3 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG_Slider_1 As groupContainer.manualLayoutContainer:
+        Height: =LG1_R.Height
+        Width: =(Parent.Width- Self.X)/2.4
+        X: =LG1_R.X + LG1_R.Width
+        Y: =LG1_R.Y
+        ZIndex: =10
+
+        Slider_BorderHTML_2 As htmlViewer:
+            Color: =RGBA(250, 250, 250, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        width: "& Self.Width -24 &"px;
+                        height: "& Self.Height-20 &"px;
+                        background: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "box-shadow:
+                                inset 2px 2px 1px rgba(136, 165, 191, 0.48),
+                                inset -2px -2px 1px #fff;
+                            box-shadow:
+                                inset 3px 3px 3px 0px #1e2126,
+                                inset -3px -3px 3px 0px rgba(61,61,69,1);",
+                            "box-shadow:
+                                10px 4px 8px rgba(13, 39, 80, 0.25),
+                                6px -6px 10px white;
+                            box-shadow:
+                                inset -8px -8px 12px rgba(255, 255, 255, 0.7),
+                                inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
+                        )&"
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                <div
+                    style='
+                        margin:1px;
+                        width: "&If(
+                                    (Slider1_2.Value/Slider1_2.Max) * Parent.Width - Slider_circleHTML_2.Width <= -100,
+                                    Slider_circleHTML_2.Width -20,
+                                    (Slider1_2.Value/Slider1_2.Max) * Parent.Width >=Parent.Width -15,
+                                    Parent.Width -Self.Width*2,
+                                    Slider_circleHTML_2.X + (Slider_circleHTML_2.Width/2) +2
+                                )&"px;
+                        height: "& Slider_BorderHTML_2.Height - 20 &"px;
+                        background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
+                                "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
+                >
+                </div>"
+            Width: =Parent.Width
+            ZIndex: =1
+
+        Slider_circleHTML_2 As htmlViewer:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =Parent.Height
+            HtmlText: |-
+                ="<div
+                    style='
+                        height:"&Self.Height-10&"px;
+                        width:"&Self.Width-10&"px;
+                        box-sizing: border-box;
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        background:"&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
+                            "#e8eaec"
+                        )&";
+                        box-shadow: "&If(
+                            LinearGradient_Generator_RGBA.DarkMode = true,
+                            "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                            "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
+                            inset -3px -3px 2px #ffffff"
+                        )&";
+                        border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'> 
+                     </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =
+            PaddingTop: =1
+            Width: =If(LG_Slider_1.Height >=231,231,Self.Height)
+            X: |-
+                =If(
+                    (Slider1_2.Value/Slider1_2.Max) * Parent.Width - Self.Width <= -100,
+                        0,
+                        (Slider1_2.Value/Slider1_2.Max) * Parent.Width >=Parent.Width ,
+                            Parent.Width -Self.Width,
+                            (Slider1_2.Value/Slider1_2.Max) * (Parent.Width -Self.Width)
+                )
+            ZIndex: =2
+
+        Slider1_2 As slider:
+            BorderColor: =RGBA(168, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =10
+            DisabledBorderColor: =
+            FocusedBorderThickness: =0
+            HandleActiveFill: =
+            HandleFill: =RGBA(0, 0, 0, 0)
+            HandleSize: =Self.Height
+            Height: =Parent.Height - Self.Y*3
+            HoverBorderColor: =
+            Max: =255
+            OnChange: =
+            PressedBorderColor: =RGBA(222, 222, 222, 1)
+            RailFill: =RGBA(0, 0, 0, 0)
+            RailThickness: =0
+            ValueFill: =RGBA(0, 0, 0, 0)
+            Width: =Parent.Width -10
+            Y: =5
+            ZIndex: =3
+
+    LG2_A As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="A"
+        Width: =LG1_R.Width
+        X: =LG2_B.X
+        Y: =LG2_B.Y + LG2_B.Height
+        ZIndex: =11
+
+    LG2_B As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="B"
+        Width: =LG1_R.Width
+        X: =LG2_G.X
+        Y: =LG2_G.Y + LG2_G.Height
+        ZIndex: =12
+
+    LG2_G As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="G"
+        Width: =LG1_R.Width
+        X: =LG2_R.X 
+        Y: =LG2_R.Y + LG2_R.Height
+        ZIndex: =13
+
+    LG2_R As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG2_A.Height
+        Text: ="R"
+        Width: =LG1_R.Width
+        X: =LG_Slider_1.X + LG_Slider_1.Width
+        Y: =LG_Slider_1.Y
+        ZIndex: =14
+
+    LG1_A As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="A"
+        Width: =LG1_R.Width
+        X: =LG1_B.X 
+        Y: =LG1_B.Y + LG1_B.Height
+        ZIndex: =15
+
+    LG1_B As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="B"
+        Width: =LG1_R.Width
+        X: =LG1_G.X 
+        Y: =LG1_G.Y + LG1_G.Height
+        ZIndex: =16
+
+    LG1_G As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =LG1_R.Height
+        Text: ="G"
+        Width: =LG1_R.Width
+        X: =LG1_R.X
+        Y: =LG1_R.Y + LG1_R.Height
+        ZIndex: =17
+
+    LG1_R As ラベル:
+        Alignment: =Align.Center
+        Color: |-
+            =If(
+                LinearGradient_Generator_RGBA.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =Self.Height/2.45
+        Height: =(Parent.Height - Self.Y)/6
+        Text: ="R"
+        Width: =(Parent.Width - Self.X)/10
+        X: =53
+        Y: =LG_sampleView.Y + LG_sampleView.Height -30
+        ZIndex: =18
+
+    LG_Button As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height - Self.Y -22
+        Width: =Parent.Width/2
+        X: =Parent.Width/4
+        Y: =LG_Slider_4.Y + LG_Slider_4.Height -10
+        ZIndex: =19
+
+        B_HTML_1 As htmlViewer:
+            Height: =Parent.Height
+            HtmlText: |
+                ="<div
+                    style='
+                        margin:10px;
+                        width: "& B_HTML_1.Width - 30 &"px;
+                        height: "& B_HTML_1.Height - 40 &"px;
+                        background:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                                "#e8eaec"
+                            )&";
+                        box-shadow:
+                            "&If(
+                                LinearGradient_Generator_RGBA.DarkMode = true,
+                                If(B_Button_1.Pressed = true,
+                                    "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
+                                    " -2px -2px 4px 0px rgba(61,61,69,1), 2px 2px 4px 0px #1e2126"
+                                ),
+                                If(B_Button_1.Pressed = true,
+                                    "inset 5px 5px 4px #bec0c2,inset -5px -5px 4px #ffffff",
+                                    "6px 15px 14px rgba(13, 39, 80, 0.25), -5px -5px 6px white"
+                                )
+                            )&";
+                        border-radius:"& LinearGradient_Generator_RGBA.borderradius &"px'
+                >
+                </div>"
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Width: =Parent.Width
+            ZIndex: =1
+
+        B_Button_1 As button:
+            Color: |-
+                =If(
+                    LinearGradient_Generator_RGBA.DarkMode = true,
+                    RGBA(219, 219, 219, 1),
+                    RGBA(87, 87, 87, 1)
+                )
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =B_HTML_1.Height - 40
+            HoverColor: =RGBA(102, 102, 102, 1)
+            HoverFill: =RGBA(196,196,196,0.2)
+            OnSelect: |-
+                =Set(LG1,"#"
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_2.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_2.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_3.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_3.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_4.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_4.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_5.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_5.Value, 16),1));
+                Set(LG2,"#"
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_6.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_6.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_7.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_7.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_8.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_8.Value, 16),1)
+                & Mid("0123456789ABCDEF", 1 + Mod(RoundDown(Slider1_9.Value / 16, 0), 16),1)&Mid("0123456789ABCDEF", 1 + Mod(Slider1_9.Value, 16),1));
+                Set(varButtonSelected, !varButtonSelected);
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedColor: =RGBA(51, 51, 51, 1)
+            PressedFill: =RGBA(196,196,196,0.4)
+            RadiusBottomLeft: =LinearGradient_Generator_RGBA.borderradius
+            RadiusBottomRight: =LinearGradient_Generator_RGBA.borderradius
+            RadiusTopLeft: =LinearGradient_Generator_RGBA.borderradius
+            RadiusTopRight: =LinearGradient_Generator_RGBA.borderradius
+            Size: =Self.Height/2.3
+            Text: ="適用する"
+            Width: =B_HTML_1.Width - 30
+            X: =B_HTML_1.X + 10
+            Y: =B_HTML_1.Y + 10
+            ZIndex: =3
+

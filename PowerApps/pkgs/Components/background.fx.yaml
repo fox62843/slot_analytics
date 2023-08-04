@@ -6,7 +6,7 @@ background As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =10
+    ZIndex: =12
 
     Cc_HTML As htmlViewer:
         Height: =Parent.Height

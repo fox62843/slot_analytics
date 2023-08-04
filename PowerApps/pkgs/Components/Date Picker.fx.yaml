@@ -3,7 +3,7 @@
     DateSelected: =DatePicker1.Value
     Fill: =RGBA(0, 0, 0, 0)
     fontsize: =Self.Width/15
-    Height: =200
+    Height: =146
     IconLinealGradient1: |-
         ="#2c3e50"
     IconLinealGradient2: |-
@@ -43,7 +43,7 @@
         ZIndex: =1
 
     DP_Image As image:
-        Height: =DatePicker1.Height -8
+        Height: =DatePicker1.Height -2
         Image: |-
             ="data:image/svg+xml;
                 utf8,
@@ -51,8 +51,8 @@
                         <svg
                             xmlns='http://www.w3.org/2000/svg'
                             width='25'
-                            height='20' 
-                            fill='currentColor' 
+                            height='20'
+                            fill='currentColor'
                             class='bi bi-calendar'
                             viewBox='0 0 16 16'
                         >
@@ -68,9 +68,10 @@
                             />
                         </svg>
                     ")
-        Width: =50
+        PaddingRight: =
+        Width: =If('Date Picker'.Height >=146,104,Self.Height)
         X: =(DatePicker1.X + DatePicker1.Width) - Self.Width
-        Y: =(DatePicker1.Y + DatePicker1.Height) - Self.Height -5
+        Y: =(DatePicker1.Y + DatePicker1.Height) - Self.Height -1
         ZIndex: =2
 
     DatePicker1 As 日付の選択:
@@ -81,7 +82,7 @@
         FontWeight: =FontWeight.Semibold
         Height: =Parent.Height -Self.Y*2 -8
         IconFill: =RGBA(255, 255, 255, 0)
-        IconSize: =40
+        IconSize: =DP_Image.Width + 20
         ShowGoToToday: =true
         ShowWeekNumbers: =true
         TextColor: |-

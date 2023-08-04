@@ -56,7 +56,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                     justify-content:center;
                     top:0px;
                     width:"&Self.Width&"px;
-                    height:"&Self.Height-2&"px;
+                    height:"&Self.Height -1&"px;
                     "&If(NeonGlowNavMenu_vertical.inversion = true,"","transform:rotate(180deg)")&";
                     background:
                         "&If(
@@ -68,9 +68,9 @@ NeonGlowNavMenu_vertical As CanvasComponent:
                         "&If(
                             NeonGlowNavMenu_vertical.DarkMode = true,
                             "1px 1px 1px 0px rgba(61,61,69,1), 0px 0px 0px 0px #1e2126",
-                            "15px 15px 29px 0px rgba(43, 44, 48, 0.5),
-                            inset -8px -8px 16px 0px rgba(43, 44, 48, 0.4),
-                            inset 0px 11px 28px 0px rgb(255, 255, 255, 1)"
+                            "
+                            inset -5px -4px 16px 0px rgba(43, 44, 48, 0.4),
+                            inset 80px 7px 25px 10px rgb(255, 255, 255, 0.2)"
                         )&";
                     border-radius:0px 25px 25px 0px;
             '>
@@ -90,6 +90,7 @@ NeonGlowNavMenu_vertical As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =0
+        Transition: =Transition.Push
         Width: =Parent.Width
         WrapCount: =CountRows(NeonGlowNavMenu_vertical.MenuItems)
         ZIndex: =2
@@ -335,6 +336,10 @@ NeonGlowNavMenu_vertical As CanvasComponent:
             HoverFill: =RGBA(196,196,196,0.2)
             OnSelect: =Navigate(ThisItem.MenuScreenNavigate, ScreenTransition.Fade)
             PressedFill: =RGBA(196,196,196,0.4)
+            RadiusBottomLeft: =25
+            RadiusBottomRight: =25
+            RadiusTopLeft: =25
+            RadiusTopRight: =25
             Size: =24
             Text: =""
             Width: =Parent.Width - Self.X*2

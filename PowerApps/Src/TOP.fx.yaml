@@ -13,7 +13,7 @@ TOP As screen:
         Width: =877.07
         X: =0.00
         Y: =40
-        ZIndex: =5
+        ZIndex: =1
 
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
@@ -21,7 +21,7 @@ TOP As screen:
         Width: =268
         X: =1046
         Y: =40
-        ZIndex: =6
+        ZIndex: =2
 
     NeonGlowNavMenu_2 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
@@ -56,54 +56,66 @@ TOP As screen:
         Width: =Parent.Width
         X: =0.00
         Y: =600
-        ZIndex: =8
+        ZIndex: =3
+
+    Button_2 As Button:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        Height: =174
+        IconColour: |-
+            =If(Button_2.DarkMode = true,"#BDBDBD","#454545")
+        IconName: ="edit"
+        OnSelect: =Set(vis1,true)
+        Width: =294
+        X: =1020
+        Y: =238
+        ZIndex: =4
 
     Container1 As groupContainer.manualLayoutContainer:
-        Height: =NeonGlowNavMenu_2.Y - Self.Y
-        Visible: =If(NeonGlowNavMenu_2.selectedID =true,true,false)
-        Width: =Parent.Width
-        Y: =320
-        ZIndex: =9
+        Height: =600
+        Visible: =vis1
+        Width: =1560
+        ZIndex: =5
 
         background_2 As background:
-            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =Parent.Height
             Width: =Parent.Width
             ZIndex: =1
 
-        Switch_1 As Switch:
-            BorderRadius: =10
-            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-            Height: =Parent.Height - Self.X*2
+        Button_5 As Button:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
+            Height: =174
             IconColour: |-
-                =If(Switch_1.DarkMode = true ,"#BDBDBD","#454545")
-            Width: =200
-            X: =48
-            Y: =38
+                =If(Button_5.DarkMode = true,"#BDBDBD","#454545")
+            IconName: ="back"
+            LinealGradientColor1: |-
+                =If(
+                    LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                    LinearGradient_Generator_RGBA_1.G_GL1,
+                    If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                    LinearGradient_Generator_HEX_1.G_GL1))
+            LinealGradientColor2: |-
+                =If(
+                    LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                    LinearGradient_Generator_RGBA_1.G_GL2,
+                    If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                    LinearGradient_Generator_HEX_1.G_GL2))
+            OnSelect: =Set(vis1,false)
+            Width: =294
+            X: =1233
+            Y: =399
             ZIndex: =2
 
-        Slider_2 As Slider:
-            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-            Height: =77
-            Width: =Parent.Width - Self.X -30
-            X: =298
-            Y: =56
+        LinearGradient_Generator_HEX_1 As LinearGradient_Generator_HEX:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
+            Height: =239
+            Width: =1067
+            Y: =333
             ZIndex: =3
 
-        "'status bar_2' As 'status bar'":
-            DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-            Height: =152
-            metertext: =""
-            Value: =Slider_2.Value
-            Width: =662
-            X: =265
-            Y: =102
+        LinearGradient_Generator_RGBA_1 As LinearGradient_Generator_RGBA:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
+            Height: =387
+            Width: =1560
             ZIndex: =4
-
-    "'Mobile Navigation Menu_1' As 'Mobile Navigation Menu'":
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Width: =1376
-        X: =72
-        Y: =363
-        ZIndex: =10
 

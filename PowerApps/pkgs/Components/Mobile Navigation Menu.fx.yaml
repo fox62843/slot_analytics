@@ -60,7 +60,7 @@
     Width: =670
     X: =0
     Y: =0
-    ZIndex: =7
+    ZIndex: =9
 
     MNM_HTML As htmlViewer:
         Height: =Parent.Height

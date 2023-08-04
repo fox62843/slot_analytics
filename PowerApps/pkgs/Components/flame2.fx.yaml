@@ -5,7 +5,7 @@ flame2 As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =9
+    ZIndex: =11
 
     flame_under_HtmlText As htmlViewer:
         Height: =Parent.Height

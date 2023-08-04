@@ -55,7 +55,7 @@ Navigation As CanvasComponent:
     Width: =670
     X: =0
     Y: =0
-    ZIndex: =8
+    ZIndex: =10
 
     N_HTML As htmlViewer:
         Height: =Parent.Height

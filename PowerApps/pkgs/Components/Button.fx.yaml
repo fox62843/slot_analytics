@@ -22,7 +22,7 @@ Button As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =15
+    ZIndex: =17
 
     B_HTML As htmlViewer:
         Height: =Parent.Height
@@ -219,7 +219,7 @@ Button As CanvasComponent:
                     </svg>",
             // ///////////////////////////////////////// ///////////////////////////////////////// ///////////////////////////////////////
                         "hanahana7",
-                        "<g transform='translate(0.000000,53.000000) scale(0.200000,-0.200000)'
+                        "<g transform='translate(0.000000,56.000000) scale(0.200000,-0.200000)'
                             fill='#000000' stroke='none'>
                         <path 
                             fill='
@@ -888,12 +888,17 @@ Button As CanvasComponent:
         ImagePosition: =ImagePosition.Stretch
         Visible: =If(Button.icontext =true,true,false)
         Width: =B_HTML.Width - Self.X*2 -9
-        X: =11
+        X: =25
         Y: =(B_HTML.Height - Self.Height)/2 -10
         ZIndex: =2
 
     B_Button As button:
-        Color: =RGBA(0, 0, 0, 1)
+        Color: |-
+            =If(
+                Button.DarkMode = true,
+                RGBA(219, 219, 219, 1),
+                RGBA(87, 87, 87, 1)
+            )
         Fill: =RGBA(0, 0, 0, 0)
         Height: =B_HTML.Height - 40
         HoverColor: =RGBA(102, 102, 102, 1)
