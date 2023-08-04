@@ -300,8 +300,22 @@
         "X",
         "Y",
         "ZIndex",
-        "IconLinealGradient1",
-        "IconLinealGradient2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#eb1f5a\"",
+          "InvariantPropertyName": "IconLinealGradient1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#ffdc3f\"",
+          "InvariantPropertyName": "IconLinealGradient2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -379,12 +393,12 @@
         {
           "Category": "Data",
           "PropertyName": "IconLinealGradient1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "IconLinealGradient2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -739,7 +753,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -749,7 +763,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -840,8 +854,22 @@
         },
         "Max",
         "Min",
-        "LinealGradientColour1",
-        "LinealGradientColour2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradientColour1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradientColour2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "borderradius",
         {
           "AFDDataSourceName": "",
@@ -888,12 +916,12 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColour1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColour2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -964,8 +992,22 @@
         "ZIndex",
         "Value",
         "MaxRating",
-        "LinealGradient1",
-        "LinealGradient2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradient1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradient2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -996,7 +1038,7 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradient1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -1006,7 +1048,7 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradient2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -1108,8 +1150,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ActiveLinealGradient1",
-        "ActiveLinealGradient2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "ActiveLinealGradient1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "ActiveLinealGradient2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "textOrNumber",
         "MaxLength",
         "OnReset",
@@ -1158,12 +1214,12 @@
         {
           "Category": "Data",
           "PropertyName": "ActiveLinealGradient1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "ActiveLinealGradient2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

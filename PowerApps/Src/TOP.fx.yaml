@@ -18,6 +18,18 @@ TOP As screen:
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
         Height: =173
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =268
         X: =1046
         Y: =40
@@ -53,6 +65,18 @@ TOP As screen:
                     ID: 4
                 }
             )
+        SVGActiveIconColour: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        SVGActiveIconColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =Parent.Width
         X: =0.00
         Y: =600
@@ -64,6 +88,18 @@ TOP As screen:
         IconColour: |-
             =If(Button_2.DarkMode = true,"#BDBDBD","#454545")
         IconName: ="edit"
+        LinealGradientColor1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColor2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         OnSelect: =Set(vis1,true)
         Width: =294
         X: =1020

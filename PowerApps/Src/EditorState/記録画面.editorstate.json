@@ -445,8 +445,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "LinealGradientColor1",
-        "LinealGradientColor2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradientColor1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradientColor2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -500,12 +514,12 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -632,8 +646,22 @@
           "NameMapSourceSchema": "?"
         },
         "LinealGradient",
-        "LinealGradientColor1",
-        "LinealGradientColor2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradientColor1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradientColor2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Borderradius",
         {
           "AFDDataSourceName": "",
@@ -675,12 +703,12 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -1098,7 +1126,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -1108,7 +1136,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -1409,8 +1437,22 @@
           "NameMapSourceSchema": "?"
         },
         "LinealGradient",
-        "LinealGradientColor1",
-        "LinealGradientColor2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradientColor1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradientColor2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderRadius",
         "icontext",
         "TextInput",
@@ -1458,12 +1500,12 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

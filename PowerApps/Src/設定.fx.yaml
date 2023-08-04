@@ -4,6 +4,18 @@
     NeonGlowNavMenu_vertical_1 As NeonGlowNavMenu_vertical:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =NeonGlowNavMenu_4.Y - Self.Y*2 -10
+        SVGActiveIconColour: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        SVGActiveIconColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =Parent.Width - Self.X -40
         X: =1370.42
         Y: =36
@@ -44,6 +56,18 @@
                     ID: 4
                 }
             )
+        SVGActiveIconColour: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        SVGActiveIconColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =Parent.Width
         X: =0.00
         Y: =600
@@ -60,17 +84,40 @@
         Height: =267
         IconColour: |-
             =If(Button_4.DarkMode = true,"#BDBDBD","#454545")
+        LinealGradientColor1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColor2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =322.05
         X: =1035
         Y: =36
         ZIndex: =2
 
     "'Text input_1' As 'Text input'":
+        ActiveLinealGradient1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        ActiveLinealGradient2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         FontSize: =20
         Height: =161
         Mode: =TextMode.MultiLine
-        Text: =If(T_TextInput.Text=Blank(),'Text input_1'.iniData,T_TextInput.Text)
         Width: =988.99
         X: =47.96
         Y: =36
@@ -79,6 +126,18 @@
     "'Date Picker_1' As 'Date Picker'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =187
+        IconLinealGradient1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        IconLinealGradient2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
         Width: =937
         X: =72
         Y: =222

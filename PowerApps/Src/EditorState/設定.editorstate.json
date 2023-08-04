@@ -138,8 +138,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "LinealGradientColor1",
-        "LinealGradientColor2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "LinealGradientColor1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "LinealGradientColor2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "BorderRadius",
         "icontext",
         "TextInput",
@@ -179,12 +193,12 @@
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "LinealGradientColor1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -286,8 +300,22 @@
         "X",
         "Y",
         "ZIndex",
-        "IconLinealGradient1",
-        "IconLinealGradient2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "IconLinealGradient1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "IconLinealGradient2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -334,12 +362,12 @@
         {
           "Category": "Data",
           "PropertyName": "IconLinealGradient1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "IconLinealGradient2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -495,7 +523,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -505,7 +533,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -653,7 +681,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -663,7 +691,7 @@
         {
           "Category": "Data",
           "PropertyName": "SVGActiveIconColour2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -765,8 +793,22 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ActiveLinealGradient1",
-        "ActiveLinealGradient2",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#2c3e50\"",
+          "InvariantPropertyName": "ActiveLinealGradient1",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "\"#3498db\"",
+          "InvariantPropertyName": "ActiveLinealGradient2",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "textOrNumber",
         "MaxLength",
         "OnReset",
@@ -815,12 +857,12 @@
         {
           "Category": "Data",
           "PropertyName": "ActiveLinealGradient1",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
           "PropertyName": "ActiveLinealGradient2",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
