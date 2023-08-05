@@ -1133,14 +1133,7 @@
         "X",
         "Y",
         "ZIndex",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "true",
-          "InvariantPropertyName": "DarkMode",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "DarkMode",
         "borderradius",
         {
           "AFDDataSourceName": "",
@@ -1219,7 +1212,7 @@
         {
           "Category": "Data",
           "PropertyName": "DarkMode",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Data",
@@ -1244,12 +1237,12 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

@@ -138,20 +138,20 @@ TOP As screen:
                     LinearGradient_Generator_HEX_1.G_GL2))
             OnSelect: =Set(vis1,false)
             Width: =294
-            X: =1233
-            Y: =399
+            X: =1045
+            Y: =357
             ZIndex: =2
 
         LinearGradient_Generator_HEX_1 As LinearGradient_Generator_HEX:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
-            Height: =239
-            Width: =1067
-            Y: =333
+            Height: =306
+            Width: =736
+            X: =824
+            Y: =36
             ZIndex: =3
 
         LinearGradient_Generator_RGBA_1 As LinearGradient_Generator_RGBA:
-            DarkMode: =If(Toggle_1.Toggled = true,true,false)
-            Height: =387
-            Width: =1560
+            Height: =600
+            Width: =870
             ZIndex: =4
 

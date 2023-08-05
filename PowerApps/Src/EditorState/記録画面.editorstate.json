@@ -1327,7 +1327,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "slot_main列(_C)1",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1697,7 +1697,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "作成日列(_C)1",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

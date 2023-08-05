@@ -73,8 +73,8 @@ LinearGradient_Generator_HEX As CanvasComponent:
                         height: 100%;
                         background:linear-gradient(
                             to right,
-                            "& T_TextInput_1.Text&",
-                            "& T_TextInput_2.Text&"
+                            "&"#"& T_TextInput_1.Text&",
+                            "&"#"& T_TextInput_2.Text&"
                         );
                         border-radius: 8px;
                     '>
@@ -140,8 +140,8 @@ LinearGradient_Generator_HEX As CanvasComponent:
             HoverColor: =RGBA(102, 102, 102, 1)
             HoverFill: =RGBA(196,196,196,0.2)
             OnSelect: |-
-                =Set(LG1,T_TextInput_1.Text);
-                Set(LG2,T_TextInput_2.Text);
+                =Set(LG1,"#" & T_TextInput_1.Text);
+                Set(LG2,"#" & T_TextInput_2.Text);
                 Set(varButtonSelected, !varButtonSelected);
             PaddingBottom: =0
             PaddingLeft: =0
@@ -235,7 +235,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
             Font: =Font.'Segoe UI'
             Height: =T_HTML_2.Height - Self.Y*2 -10
             HintText: |-
-                ="2番目の「#XXXXXX」"
+                ="②#＜XXXXXX＞"
             HoverFill: =RGBA(196,196,196,0.3)
             MaxLength: =10
             OnChange: =Set(varIsSelected, false); 
@@ -321,7 +321,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
             Font: =Font.'Segoe UI'
             Height: =T_HTML_1.Height - Self.Y*2 -10
             HintText: |-
-                ="1番目の「#XXXXXX」"
+                ="①#＜XXXXXX＞"
             HoverFill: =RGBA(196,196,196,0.3)
             MaxLength: =10
             OnChange: =Set(varIsSelected, false); 

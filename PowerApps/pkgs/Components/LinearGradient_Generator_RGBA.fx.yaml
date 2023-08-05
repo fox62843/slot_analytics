@@ -1,7 +1,7 @@
 LinearGradient_Generator_RGBA As CanvasComponent:
     borderradius: =100
     ButtonSelected: =varButtonSelected
-    DarkMode: =false
+    DarkMode: =true
     Fill: =RGBA(0, 0, 0, 0)
     G_GL1: =LG1
     G_GL2: =LG2
@@ -39,12 +39,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         ZIndex: =1
 
     LG_sampleView As htmlViewer:
-        Height: =110
+        Height: =60
         HtmlText: |-
             ="<div
                 style='
-                    margin:30px;
-                    height: "& Self.Height/4 &"px;
+                    margin:5px;
+                    height: "& Self.Height/1.6 &"px;
                     border-radius: 15px;
                     background: "&If(
                         LinearGradient_Generator_RGBA.DarkMode = true,
@@ -58,8 +58,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                     )&";
                     box-shadow: "&If(
                         LinearGradient_Generator_RGBA.DarkMode = true,
-                        "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126;",
-                        "6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
+                        "-2px -2px 10px 0px rgba(61,61,69,1),
+                        3px 3px 10px 0px #1e2126;",
+                        "2px 2px 4px rgba(13, 39, 80, 0.25),
+                        -2px -2px 4px white,
+                        inset -6px -8px 12px rgba(255, 255, 255, 0.7),
+                        inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
                     )&";
             '>
             
@@ -87,7 +91,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             </div>"
         Width: =Parent.Width -Self.X*2
         X: =49
-        Y: =(Parent.Height - (Title.Y + Title.Height -20))/10
+        Y: =35
         ZIndex: =2
 
     LG_Slider_8 As groupContainer.manualLayoutContainer:
@@ -100,7 +104,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_9 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -154,7 +158,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_9 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -225,7 +229,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_8 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -279,7 +283,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_8 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -350,7 +354,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_7 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -404,7 +408,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_7 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -475,7 +479,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_6 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -529,7 +533,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_6 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -600,7 +604,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_5 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -654,7 +658,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_5 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -725,7 +729,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_4 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -779,7 +783,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_4 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -850,7 +854,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_3 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -904,7 +908,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_3 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -975,7 +979,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_2 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -1029,7 +1033,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
 
         Slider_circleHTML_2 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =Parent.Height
+            Height: =85.33333333333333
             HtmlText: |-
                 ="<div
                     style='
@@ -1223,7 +1227,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Text: ="R"
         Width: =(Parent.Width - Self.X)/10
         X: =53
-        Y: =LG_sampleView.Y + LG_sampleView.Height -30
+        Y: =LG_sampleView.Y + LG_sampleView.Height -7
         ZIndex: =18
 
     LG_Button As groupContainer.manualLayoutContainer:
@@ -1234,7 +1238,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         ZIndex: =19
 
         B_HTML_1 As htmlViewer:
-            Height: =Parent.Height
+            Height: =158.66666666666674
             HtmlText: |
                 ="<div
                     style='
