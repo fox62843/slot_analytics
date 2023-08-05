@@ -15,26 +15,6 @@ TOP As screen:
         Y: =40
         ZIndex: =1
 
-    Toggle_1 As Toggle:
-        DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =173
-        LinealGradientColour1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColour2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
-        Width: =268
-        X: =1046
-        Y: =40
-        ZIndex: =2
-
     NeonGlowNavMenu_2 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =Parent.Height - Self.Y
@@ -80,6 +60,26 @@ TOP As screen:
         Width: =Parent.Width
         X: =0.00
         Y: =600
+        ZIndex: =2
+
+    Toggle_1 As Toggle:
+        DarkMode: =If(Self.Toggled = true,true,false)
+        Height: =250
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =478
+        X: =900
+        Y: =28
         ZIndex: =3
 
     Button_2 As Button:
@@ -102,8 +102,8 @@ TOP As screen:
                 LinearGradient_Generator_HEX_1.G_GL2))
         OnSelect: =Set(vis1,true)
         Width: =294
-        X: =1020
-        Y: =238
+        X: =1266
+        Y: =28
         ZIndex: =4
 
     Container1 As groupContainer.manualLayoutContainer:
@@ -151,6 +151,7 @@ TOP As screen:
             ZIndex: =3
 
         LinearGradient_Generator_RGBA_1 As LinearGradient_Generator_RGBA:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =600
             Width: =870
             ZIndex: =4
