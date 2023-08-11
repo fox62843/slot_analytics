@@ -1,36 +1,38 @@
-Slider As CanvasComponent:
+Slider_2 As CanvasComponent:
     borderradius: =100
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =100
+    Height: =1000
     LinealGradientColour1: |-
         ="#2c3e50"
     LinealGradientColour2: |-
         ="#3498db"
     Max: =100
     Min: =0
-    Value: =Slider1.Value
-    Width: =1000
+    Value: =Slider2_1.Value
+    Width: =127
     X: =0
     Y: =0
-    ZIndex: =15
+    ZIndex: =7
 
-    Slider_BorderHTML As htmlViewer:
+    Slider_BorderHTML_2_2 As htmlViewer:
         Color: =RGBA(250, 250, 250, 1)
         Fill: =RGBA(0, 0, 0, 0)
         Height: =Parent.Height
         HtmlText: |-
             ="<div
                 style='
+                    margin:3px;
+                    transform: scaleY(-1);
                     width: "& Self.Width -24 &"px;
                     height: "& Self.Height-20 &"px;
                     background: "&If(
-                        Slider.DarkMode = true,
+                        Slider_2.DarkMode = true,
                         "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
                         "#e8eaec"
                     )&";
                     "&If(
-                        Slider.DarkMode = true,
+                        Slider_2.DarkMode = true,
                         "box-shadow:
                             inset 2px 2px 1px rgba(136, 165, 191, 0.48),
                             inset -2px -2px 1px #fff;
@@ -44,35 +46,35 @@ Slider As CanvasComponent:
                             inset -8px -8px 12px rgba(255, 255, 255, 0.7),
                             inset 5px 5px 3px rgba(13, 39, 80, 0.2);"
                     )&"
-                    border-radius:"&Slider.borderradius&"px'
+                    border-radius:"&Slider_2.borderradius&"px'
             >
             <div
                 style='
                     margin:1px;
-                    width: "&If(
-                                (Slider1.Value/Slider1.Max) * Parent.Width - Slider_circleHTML.Width <= -100,
-                                Slider_circleHTML.Width -20,
-                                (Slider1.Value/Slider1.Max) * Parent.Width >=Parent.Width -2,
-                                Parent.Width -Self.Width*2,
-                                Slider_circleHTML.X + (Slider_circleHTML.Width/1.5-5) -10
+                    height: "&If(
+                                (Slider2_1.Value/Slider2_1.Max) * Parent.Height - Slider_circleHTML_2_1.Height <= -100,
+                                Slider_circleHTML_2_1.Height -20,
+                                (Slider2_1.Value/Slider2_1.Max) * Parent.Height >=Parent.Height,
+                                    Parent.Height - 20,
+                                    Parent.Height -  Slider_circleHTML_2_1.Y-20
                             )&"px;
-                    height: "& Slider_BorderHTML.Height - 20 &"px;
-                    background: linear-gradient(to right, "& Slider.LinealGradientColour1 &", "& Slider.LinealGradientColour2&");
+                    width: "& Self.Width - 25 &"px;
+                    background: linear-gradient(to right, "& Slider_2.LinealGradientColour1 &", "& Slider_2.LinealGradientColour2&");
                     box-shadow:
                         "&If(
-                            Slider.DarkMode = true,
+                            Slider_2.DarkMode = true,
                             "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
                             "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
                         )&";
-                    border-radius:"&Slider.borderradius&"px'
+                    border-radius:"&Slider_2.borderradius&"px'
             >
             </div>"
         Width: =Parent.Width
         ZIndex: =1
 
-    Slider_circleHTML As htmlViewer:
+    Slider_circleHTML_2_1 As htmlViewer:
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =Parent.Height
+        Height: =If(Slider_2.Width >=231,231,Self.Width)
         HtmlText: |-
             ="<div
                 style='
@@ -80,42 +82,40 @@ Slider As CanvasComponent:
                     width:"&Self.Width-10&"px;
                     box-sizing: border-box;
                     background:"&If(
-                        Slider.DarkMode = true,
+                        Slider_2.DarkMode = true,
                         "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
                         "#e8eaec"
                     )&";
                     background:"&If(
-                        Slider.DarkMode = true,
+                        Slider_2.DarkMode = true,
                         "linear-gradient(135deg, rgba(52,57,61,1) 0%, rgba(36,36,44,1) 100%)",
                         "#e8eaec"
                     )&";
                     box-shadow: "&If(
-                        Slider.DarkMode = true,
+                        Slider_2.DarkMode = true,
                         "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
                         "inset 3px 3px 2px rgba(13, 39, 80, 0.2),
                         inset -3px -3px 2px #ffffff"
                     )&";
-                    border-radius:"&Slider.borderradius&"px'> 
+                    border-radius:"&Slider_2.borderradius&"px'> 
                  </div>"
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =
         PaddingTop: =1
-        Width: =If(Slider.Height >=231,231,Self.Height)
-        X: |-
+        Width: =Parent.Width
+        X: =
+        Y: |-
             =If(
-                //「現在の位置が0以下になる場合、0とする」
-                ((Slider1.Value/Slider1.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
+                (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98 <= 0,
                     0,
-                    //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
-                    ((Slider1.Value/Slider1.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
-                        Parent.Width -Self.Width,
-                        //「現在の位置」
-                        ((Slider1.Value/Slider1.Max) * (Parent.Width -Self.Width))*1.1 -40
+                    (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98 >=Parent.Height -Self.Height ,
+                        Parent.Height -Self.Height,
+                        (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98
             )
         ZIndex: =2
 
-    Slider1 As slider:
+    Slider2_1 As slider:
         BorderColor: =RGBA(168, 0, 0, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =10
@@ -123,17 +123,17 @@ Slider As CanvasComponent:
         FocusedBorderThickness: =0
         HandleActiveFill: =
         HandleFill: =RGBA(0, 0, 0, 0)
-        HandleSize: =Self.Height
-        Height: =Parent.Height - Self.Y*3
+        HandleSize: =Self.Width/1.5
+        Height: =Parent.Height
         HoverBorderColor: =
-        Max: =Slider.Max
-        Min: =Slider.Min
+        Layout: =Layout.Vertical
+        Max: =Slider_2.Max
+        Min: =Slider_2.Min
         OnChange: =
         PressedBorderColor: =RGBA(222, 222, 222, 1)
         RailFill: =RGBA(0, 0, 0, 0)
         RailThickness: =0
         ValueFill: =RGBA(0, 0, 0, 0)
-        Width: =Parent.Width -10
-        Y: =5
+        Width: =Parent.Width
         ZIndex: =3
 

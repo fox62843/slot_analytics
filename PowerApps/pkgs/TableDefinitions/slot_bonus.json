@@ -21,5 +21,6 @@
     "TableName": "crff0_slot_bonus",
     "Views": "{\"@odata.context\":\"https://org9b111cf8.crm7.dynamics.com/api/data/v9.0/$metadata#savedqueries(savedqueryid,name,querytype)\",\"value\":[{\"@odata.etag\":\"W/\\\"7730595\\\"\",\"savedqueryid\":\"bef35d94-4d47-49fc-ae0c-0f95b25b705f\",\"name\":\"slot_bonus\\u95a2\\u9023\\u30d3\\u30e5\\u30fc\",\"querytype\":2},{\"@odata.etag\":\"W/\\\"7730619\\\"\",\"savedqueryid\":\"28a6783f-0747-4bf8-ad4c-6b7d2b83db7c\",\"name\":\"slot_bonus\\u306e\\u9ad8\\u5ea6\\u306a\\u691c\\u7d22\\u30d3\\u30e5\\u30fc\",\"querytype\":1},{\"@odata.etag\":\"W/\\\"7730607\\\"\",\"savedqueryid\":\"5e144761-b232-48a3-8223-8cb7c69cde5c\",\"name\":\"slot_bonus\\u691c\\u7d22\\u30c0\\u30a4\\u30a2\\u30ed\\u30b0 \\u30d3\\u30e5\\u30fc\",\"querytype\":64},{\"@odata.etag\":\"W/\\\"7730583\\\"\",\"savedqueryid\":\"336b0c9b-5894-4aba-b5ed-8d77c3c9512e\",\"name\":\"\\u975e\\u30a2\\u30af\\u30c6\\u30a3\\u30d6\\u306aslot_bonus\",\"querytype\":0},{\"@odata.etag\":\"W/\\\"7730571\\\"\",\"savedqueryid\":\"e99a3717-7c1e-4a95-a335-e8b108338d6d\",\"name\":\"\\u30a2\\u30af\\u30c6\\u30a3\\u30d6\\u306aslot_bonus\",\"querytype\":0}]}"
   },
+  "UnusedDataSources": {},
   "webApiVersion": "v9.0"
 }

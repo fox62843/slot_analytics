@@ -156,3 +156,23 @@ TOP As screen:
             Width: =870
             ZIndex: =4
 
+    Slider_3 As Slider_2:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        Height: =493
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =93
+        X: =765
+        Y: =66
+        ZIndex: =6
+

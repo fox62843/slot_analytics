@@ -1,6 +1,7 @@
 App As appinfo:
     BackEnabled: =false
     StartScreen: =TOP
+    Theme: =PowerAppsTheme
 
     Host As hostControl.DefaultHostControlVariant:
         OnCancel: =false
