@@ -22,7 +22,7 @@ Button As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =17
+    ZIndex: =18
 
     B_HTML As htmlViewer:
         Height: =Parent.Height

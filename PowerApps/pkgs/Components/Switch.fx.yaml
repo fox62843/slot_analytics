@@ -22,7 +22,7 @@ Switch As CanvasComponent:
     Width: =640
     X: =0
     Y: =0
-    ZIndex: =16
+    ZIndex: =17
 
     S_HTML As htmlViewer:
         Height: =Parent.Height

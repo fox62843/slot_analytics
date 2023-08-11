@@ -12,7 +12,7 @@ Toggle As CanvasComponent:
     Width: =150
     X: =0
     Y: =0
-    ZIndex: =18
+    ZIndex: =19
 
     Toggle_HTML As htmlViewer:
         Height: =Parent.Height

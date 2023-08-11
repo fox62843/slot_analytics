@@ -104,7 +104,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_9 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -153,12 +153,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_9 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -190,11 +190,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_8.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_9.Value/Slider1_9.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_9.Value/Slider1_9.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_9.Value/Slider1_9.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_9.Value/Slider1_9.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_9.Value/Slider1_9.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_9.Value/Slider1_9.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -215,7 +218,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -229,7 +232,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_8 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -278,12 +281,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_8 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -315,11 +318,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_7.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_8.Value/Slider1_8.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_8.Value/Slider1_8.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_8.Value/Slider1_8.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_8.Value/Slider1_8.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_8.Value/Slider1_8.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_8.Value/Slider1_8.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -340,7 +346,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -354,7 +360,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_7 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -403,12 +409,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_7 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -440,11 +446,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_6.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_7.Value/Slider1_7.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_7.Value/Slider1_7.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_7.Value/Slider1_7.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_7.Value/Slider1_7.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_7.Value/Slider1_7.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_7.Value/Slider1_7.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -465,7 +474,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -479,7 +488,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_6 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -528,12 +537,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_6 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -565,11 +574,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_5.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_6.Value/Slider1_6.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_6.Value/Slider1_6.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_6.Value/Slider1_6.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_6.Value/Slider1_6.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_6.Value/Slider1_6.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_6.Value/Slider1_6.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -590,7 +602,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -604,7 +616,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_5 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -653,12 +665,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_5 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -690,11 +702,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_4.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_5.Value/Slider1_5.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_5.Value/Slider1_5.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_5.Value/Slider1_5.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_5.Value/Slider1_5.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_5.Value/Slider1_5.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_5.Value/Slider1_5.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -715,7 +730,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -729,7 +744,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_4 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -778,12 +793,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_4 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -815,11 +830,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_3.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_4.Value/Slider1_4.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_4.Value/Slider1_4.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_4.Value/Slider1_4.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_4.Value/Slider1_4.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_4.Value/Slider1_4.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_4.Value/Slider1_4.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -840,7 +858,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -854,7 +872,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_3 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -903,12 +921,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_3 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -940,11 +958,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_2.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_3.Value/Slider1_3.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_3.Value/Slider1_3.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_3.Value/Slider1_3.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_3.Value/Slider1_3.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_3.Value/Slider1_3.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_3.Value/Slider1_3.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -965,7 +986,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -979,7 +1000,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Slider_BorderHTML_2 As htmlViewer:
             Color: =RGBA(250, 250, 250, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -1028,12 +1049,12 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                         border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                 >
                 </div>"
-            Width: =306.375
+            Width: =Parent.Width
             ZIndex: =1
 
         Slider_circleHTML_2 As htmlViewer:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =83.66666666666667
+            Height: =Parent.Height
             HtmlText: |-
                 ="<div
                     style='
@@ -1065,11 +1086,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             Width: =If(LG_Slider_1.Height >=231,231,Self.Height)
             X: |-
                 =If(
-                    (Slider1_2.Value/Slider1_2.Max) * Parent.Width - Self.Width <= -100,
+                    //「現在の位置が0以下になる場合、0とする」
+                    ((Slider1_2.Value/Slider1_2.Max) * (Parent.Width -Self.Width))*1.1 -40  <= 0,
                         0,
-                        (Slider1_2.Value/Slider1_2.Max) * Parent.Width >=Parent.Width ,
+                        //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                        ((Slider1_2.Value/Slider1_2.Max) * (Parent.Width -Self.Width))*1.1 -40 >=Parent.Width -Self.Width ,
                             Parent.Width -Self.Width,
-                            (Slider1_2.Value/Slider1_2.Max) * (Parent.Width -Self.Width)
+                            //「現在の位置」
+                            ((Slider1_2.Value/Slider1_2.Max) * (Parent.Width -Self.Width))*1.1 -40
                 )
             ZIndex: =2
 
@@ -1090,7 +1114,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             RailFill: =RGBA(0, 0, 0, 0)
             RailThickness: =0
             ValueFill: =RGBA(0, 0, 0, 0)
-            Width: =306.375
+            Width: =Parent.Width -10
             Y: =5
             ZIndex: =3
 
@@ -1238,7 +1262,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         ZIndex: =19
 
         B_HTML_1 As htmlViewer:
-            Height: =155.33333333333326
+            Height: =Parent.Height
             HtmlText: |
                 ="<div
                     style='
@@ -1270,7 +1294,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Width: =435
+            Width: =Parent.Width
             ZIndex: =1
 
         B_Button_1 As button:

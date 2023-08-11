@@ -5,13 +5,13 @@ TOP As screen:
         Align: =Align.Center
         Color: =If(Toggle_1.DarkMode= true,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
         Font: =Font.'Dancing Script'
-        Height: =347
+        Height: =120
         PaddingRight: =5.71
         PaddingTop: =5.71
         Size: =68.52
         Text: ="Slot Analytics"
-        Width: =877.07
-        X: =0.00
+        Width: =877
+        X: =34
         Y: =40
         ZIndex: =1
 
@@ -78,8 +78,8 @@ TOP As screen:
                 If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
                 LinearGradient_Generator_HEX_1.G_GL2))
         Width: =478
-        X: =900
-        Y: =28
+        X: =128
+        Y: =175
         ZIndex: =3
 
     Button_2 As Button:
@@ -102,15 +102,89 @@ TOP As screen:
                 LinearGradient_Generator_HEX_1.G_GL2))
         OnSelect: =Set(vis1,true)
         Width: =294
-        X: =1266
-        Y: =28
+        X: =947
+        Y: =13
         ZIndex: =4
+
+    Slider_3 As Slider_2:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        Height: =600
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =126
+        X: =1413
+        ZIndex: =5
+
+    Slider_4 As Slider:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =1251
+        Y: =362
+        ZIndex: =6
+
+    Slider_5 As Slider_2:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        Height: =600
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =93
+        X: =1278
+        ZIndex: =7
+
+    Slider_6 As Slider:
+        DarkMode: =If(Toggle_1.Toggled = true,true,false)
+        LinealGradientColour1: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL1,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL1))
+        LinealGradientColour2: |-
+            =If(
+                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
+                LinearGradient_Generator_RGBA_1.G_GL2,
+                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
+                LinearGradient_Generator_HEX_1.G_GL2))
+        Width: =1251
+        Y: =462
+        ZIndex: =8
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =600
         Visible: =vis1
         Width: =1560
-        ZIndex: =5
+        ZIndex: =9
 
         background_2 As background:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
@@ -155,24 +229,4 @@ TOP As screen:
             Height: =600
             Width: =870
             ZIndex: =4
-
-    Slider_3 As Slider_2:
-        DarkMode: =If(Toggle_1.Toggled = true,true,false)
-        Height: =493
-        LinealGradientColour1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColour2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
-        Width: =93
-        X: =765
-        Y: =66
-        ZIndex: =6
 
