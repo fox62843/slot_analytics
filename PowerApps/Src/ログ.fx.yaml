@@ -37,18 +37,8 @@
                     ID: 4
                 }
             )
-        SVGActiveIconColour: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        SVGActiveIconColour2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2)) 
+        SVGActiveIconColour: =gradation1
+        SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
         Y: =600
@@ -86,38 +76,19 @@
 
     Slider_1 As Slider:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        LinealGradientColour1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColour2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
-        Width: =740.03
-        X: =709.19
-        Y: =450
+        Height: =110
+        LinealGradientColour1: =gradation1
+        LinealGradientColour2: =gradation2
+        Width: =832
+        X: =680
+        Y: =426
         ZIndex: =5
 
     "'Star rating_1' As 'Star rating'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =107
-        LinealGradient1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradient2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        LinealGradient1: =gradation1
+        LinealGradient2: =gradation2
         Width: =363
         X: =240
         Y: =49
@@ -127,36 +98,18 @@
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         fontsize: =23
         Height: =79
-        IconLinealGradient1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        IconLinealGradient2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        IconLinealGradient1: =gradation1
+        IconLinealGradient2: =gradation2
+        iniData: =[1]
+        TableComp: =["俺は","ジャイアン","だと","思った？","残念！","岸田","でした","ｳﾞｧｰｶ","嘘だｯ"]
         Width: =669
         X: =40
         Y: =180
         ZIndex: =7
 
     "'Text input_2' As 'Text input'":
-        ActiveLinealGradient1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        ActiveLinealGradient2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        ActiveLinealGradient1: =gradation1
+        ActiveLinealGradient2: =gradation2
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         FontSize: =34
         Height: =267

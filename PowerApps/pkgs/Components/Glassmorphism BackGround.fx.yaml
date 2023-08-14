@@ -16,7 +16,7 @@
     Y: =0
     ZIndex: =5
 
-    GB_HTML As htmlViewer:
+    Blur_HTML As htmlViewer:
         Height: =Parent.Height
         HtmlText: |
             ="<div

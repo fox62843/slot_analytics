@@ -37,18 +37,8 @@
                     ID: 4
                 }
             )
-        SVGActiveIconColour: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        SVGActiveIconColour2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        SVGActiveIconColour: =gradation1
+        SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
         Y: =600
@@ -69,18 +59,8 @@
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
         IconName: ="hanahana"
-        LinealGradientColor1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColor2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        LinealGradientColor1: =gradation1
+        LinealGradientColor2: =gradation2
         Width: =284.36
         X: =30
         Y: =332
@@ -192,44 +172,23 @@
         Height: =191
         IconColour: |-
             =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
-        LinealGradientColor1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColor2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
+        LinealGradientColor1: =gradation1
+        LinealGradientColor2: =gradation2
         Width: =200
         X: =336
         Y: =344
         ZIndex: =5
 
-    Switch_2 As Switch:
+    Button_7 As Button:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =184
+        Height: =189
         IconColour: |-
-            =If(Switch_2.DarkMode = true ,"#BDBDBD","#454545")
+            =If(Button_7.DarkMode = true,"#BDBDBD","#454545")
         IconName: ="hanahana"
-        LinealGradientColor1: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL1,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL1))
-        LinealGradientColor2: |-
-            =If(
-                LinearGradient_Generator_RGBA_1.ButtonSelected = true,
-                LinearGradient_Generator_RGBA_1.G_GL2,
-                If(LinearGradient_Generator_HEX_1.ButtonSelected = true,
-                LinearGradient_Generator_HEX_1.G_GL2))
-        vbs: =false
-        Width: =958
-        X: =559
-        Y: =357
+        LinealGradientColor1: =gradation1
+        LinealGradientColor2: =gradation2
+        Width: =919
+        X: =567
+        Y: =344
         ZIndex: =6
 

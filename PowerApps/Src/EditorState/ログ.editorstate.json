@@ -324,7 +324,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "TableComp",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "[\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"aaaaaaa\"]",
+          "InvariantPropertyName": "TableComp",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -333,7 +340,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "iniData",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "iniData",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -383,7 +397,7 @@
         {
           "Category": "Data",
           "PropertyName": "iniData",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
@@ -408,7 +422,7 @@
         {
           "Category": "Data",
           "PropertyName": "TableComp",
-          "RuleProviderType": "System"
+          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",

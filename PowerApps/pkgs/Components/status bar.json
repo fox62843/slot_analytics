@@ -76,6 +76,24 @@
       "PropertyDataTypeKey": "Boolean",
       "Tooltip": "ダークモードを有効にします",
       "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "境界半径 -border-radius-",
+      "Hidden": false,
+      "Name": "borderradius",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "境界の半径を入力してください",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "現在の値 -Cvalue-",
+      "Hidden": true,
+      "Name": "Cvalue",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "現在の値を取得します",
+      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -86,7 +104,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638273614398248284",
+  "LastModifiedTimestamp": "638276271196899478",
   "Name": "678cd575fef94a1aa5e476ce93596c91",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

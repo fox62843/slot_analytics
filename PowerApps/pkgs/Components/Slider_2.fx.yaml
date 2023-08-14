@@ -10,7 +10,7 @@ Slider_2 As CanvasComponent:
     Max: =100
     Min: =0
     Value: =Slider2_1.Value
-    Width: =127
+    Width: =100
     X: =0
     Y: =0
     ZIndex: =16
@@ -63,8 +63,8 @@ Slider_2 As CanvasComponent:
                     box-shadow:
                         "&If(
                             Slider_2.DarkMode = true,
-                            "1px 1px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126",
-                            "12px 4px 10px rgba(13, 39, 80, 0.25),2px 2px 15px white"
+                            "1px 1px 10px 0px rgba(61,61,69,1), 4px 1px 7px 0px #1e2126",
+                            "6px 4px 5px rgba(13, 39, 80, 0.35),2px 2px 15px white"
                         )&";
                     border-radius:"&Slider_2.borderradius&"px'
             >
@@ -107,24 +107,27 @@ Slider_2 As CanvasComponent:
         X: =
         Y: |-
             =If(
-                (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98 <= 0,
+                //「現在の位置が0以下になる場合、0とする」
+                (Parent.Height - ((Slider2_1.Value/Slider2_1.Max) *Slider2_1.Height) - Parent.Width/2) <= 0,
                     0,
-                    (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98 >=Parent.Height -Self.Height ,
+                    //「現在の位置が親コンの幅を超える場合、親コンの最大幅で停止とする」
+                    ((Parent.Height - ((Slider2_1.Value/Slider2_1.Max) *Slider2_1.Height) - Parent.Width/2) + Self.Height) >=Parent.Height ,
                         Parent.Height -Self.Height,
-                        (Parent.Height - (Slider2_1.Value/Slider2_1.Max) *(Parent.Height + Self.Height))*0.98
+                        //「現在の位置」
+                        (Parent.Height - ((Slider2_1.Value/Slider2_1.Max) *Slider2_1.Height) - Parent.Width/2)
             )
         ZIndex: =2
 
     Slider2_1 As slider:
         BorderColor: =RGBA(168, 0, 0, 1)
         BorderStyle: =BorderStyle.None
-        BorderThickness: =10
+        BorderThickness: =1
         DisabledBorderColor: =
         FocusedBorderThickness: =0
         HandleActiveFill: =
         HandleFill: =RGBA(0, 0, 0, 0)
-        HandleSize: =Self.Width/1.5
-        Height: =Parent.Height
+        HandleSize: =Self.Width-20
+        Height: =Parent.Height - Self.Y*2
         HoverBorderColor: =
         Layout: =Layout.Vertical
         Max: =Slider_2.Max
@@ -135,5 +138,7 @@ Slider_2 As CanvasComponent:
         RailThickness: =0
         ValueFill: =RGBA(0, 0, 0, 0)
         Width: =Parent.Width
+        X: |
+            =0
         ZIndex: =3
 

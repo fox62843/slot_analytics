@@ -1986,101 +1986,11 @@
               "message": {
                 "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
               }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
-              }
-            },
-            {
-              "associatedRule": {
-                "id": "app-InefficientDelayLoading",
-                "index": 5
-              },
-              "descriptor": {
-                "id": "app-InefficientDelayLoading"
-              },
-              "message": {
-                "text": "ルール app-InefficientDelayLoading の実行中にエラーが発生しました。"
-              }
             }
           ]
         }
       ],
       "results": [
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "LinearGradient_Generator_HEX",
-                "type": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
         {
           "locations": [
             {
@@ -2099,6 +2009,36 @@
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_HEX",
                 "type": "LinearGradient_Generator_HEX.TextInput2.T_TextInput_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "LinearGradient_Generator_HEX",
+                "type": "LinearGradient_Generator_HEX.TextInput1.T_TextInput_1"
               }
             }
           ],
@@ -2176,19 +2116,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9"
               }
             }
           ],
@@ -2206,19 +2146,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_8.Slider1_9"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_8.Slider1_9"
               }
             }
           ],
@@ -2236,19 +2176,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5"
               }
             }
           ],
@@ -2266,19 +2206,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_4.Slider1_5"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_4.Slider1_5"
               }
             }
           ],
@@ -2296,19 +2236,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8"
               }
             }
           ],
@@ -2326,19 +2266,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_7.Slider1_8"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_7.Slider1_8"
               }
             }
           ],
@@ -2356,19 +2296,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4"
               }
             }
           ],
@@ -2386,19 +2326,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_3.Slider1_4"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_3.Slider1_4"
               }
             }
           ],
@@ -2416,19 +2356,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7"
               }
             }
           ],
@@ -2446,19 +2386,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_6.Slider1_7"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_6.Slider1_7"
               }
             }
           ],
@@ -2476,19 +2416,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3"
               }
             }
           ],
@@ -2506,19 +2446,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_2.Slider1_3"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_2.Slider1_3"
               }
             }
           ],
@@ -2536,19 +2476,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6"
               }
             }
           ],
@@ -2566,19 +2506,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_5.Slider1_6"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_5.Slider1_6"
               }
             }
           ],
@@ -2596,19 +2536,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2.AccessibleLabel"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2.AccessibleLabel",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2"
               }
             }
           ],
@@ -2626,19 +2566,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2.FocusedBorderThickness"
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2.FocusedBorderThickness",
+                  "fullyQualifiedName": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "LinearGradient_Generator_RGBA",
-                "type": "LinearGradient_Generator_RGBA.LG_Slider_1.Slider1_2"
+                "type": "LinearGradient_Generator_RGBA.Container1_1.LG_Slider_1.Slider1_2"
               }
             }
           ],
@@ -2836,36 +2776,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ComboBox.ComboBox1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ComboBox.ComboBox1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ComboBox",
-                "type": "ComboBox.ComboBox1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ComboBox.CB_Image_1.AccessibleLabel"
                 }
               ],
@@ -2920,6 +2830,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ComboBox.ComboBox1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ComboBox.ComboBox1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ComboBox",
+                "type": "ComboBox.ComboBox1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [

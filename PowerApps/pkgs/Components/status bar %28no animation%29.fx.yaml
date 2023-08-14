@@ -1,14 +1,14 @@
 "'status bar (no animation)' As CanvasComponent":
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =100
+    Height: =80
     LinealGradient1: |-
         ="#2c3e50" 
     LinealGradient2: |-
         ="#3498db"
     MaxValue: =100
     Value: =100
-    Width: =350
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =14
@@ -18,8 +18,9 @@
         HtmlText: |-
             ="<div
                 style='
-                    margin:30px;
-                    height: "& Parent.Height/4 &"px;
+                    margin:6px;
+                    height: "& Parent.Height -33 &"px;
+                    width:"&Parent.Width -25&"px;
                     border-radius: 15px;
                     background: "&If(
                         'status bar (no animation)'.DarkMode = true,
@@ -33,8 +34,8 @@
                     )&";
                     box-shadow: "&If(
                         'status bar (no animation)'.DarkMode = true,
-                        "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126;",
-                        "6px 6px 8px rgba(13, 39, 80, 0.25), -6px -6px 10px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
+                        "-2px -2px 16px 0px rgba(61,61,69,0.53), 3px 7px 10px 0px #1e2126;",
+                        "6px 6px 8px rgba(13, 39, 80, 0.25), -3px -3px 16px white, inset -8px -8px 12px rgba(255, 255, 255, 0.7), inset 5px 5px 8px rgba(13, 39, 80, 0.2)"
                     )&";
             '>
             
@@ -42,9 +43,9 @@
                 <div
                     style='
                         width:"& ('status bar (no animation)'.Value/'status bar (no animation)'.MaxValue)*100 &"%;
-                        height: 100%;
+                        height: 101%;
                         background:linear-gradient(to right, "& 'status bar (no animation)'.LinealGradient1&", "& 'status bar (no animation)'.LinealGradient2 &");
-                        border-radius: 8px;
+                        border-radius: 10px;
                     '>
                 </div>
             </div>"
