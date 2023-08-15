@@ -14,7 +14,7 @@
     OnReset: =
     Text: =If(T_TextInput.Text=Blank(),'Text input'.iniData,T_TextInput.Text)
     textOrNumber: =TextFormat.Text
-    Width: =250
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =13

@@ -5,7 +5,7 @@ Switch As CanvasComponent:
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     fontsize: =50
-    Height: =640
+    Height: =500
     IconColorActive: |-
         ="#1E56C8"
     IconColour: |-
@@ -19,7 +19,7 @@ Switch As CanvasComponent:
         ="#3498db"
     OnSelect: =
     TextInput: ="テキスト"
-    Width: =640
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =17

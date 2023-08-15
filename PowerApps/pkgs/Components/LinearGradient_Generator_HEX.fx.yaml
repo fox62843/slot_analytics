@@ -2,6 +2,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
     Borderradius: =100
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
+    fontsize: =15
     G_GL1: |-
         ="#" & T_TextInput_1.Text
     G_GL2: |-
@@ -9,7 +10,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
     Height: =237
     IconLinealGradient1: =Self.G_GL1
     IconLinealGradient2: =Self.G_GL2
-    Width: =527
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =8
@@ -100,7 +101,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
                     RGBA(255, 255, 255, 1),
                     RGBA(0, 0, 0, 1)
                 )
-            Height: =Parent.Height
+            Height: =112.5
             HtmlText: |-
                 ="<div
                     style='
@@ -166,7 +167,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
             MaxLength: =10
             OnChange: =Set(varIsSelected, false); 
             OnSelect: =Set(varIsSelected, true); 
-            Size: =Self.Height/4
+            Size: =LinearGradient_Generator_HEX.fontsize
             Width: =T_HTML_2.Width - Self.X*2 -10
             X: =25
             Y: =18
@@ -186,7 +187,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
                     RGBA(255, 255, 255, 1),
                     RGBA(0, 0, 0, 1)
                 )
-            Height: =Parent.Height
+            Height: =112.5
             HtmlText: |-
                 ="<div
                     style='
@@ -252,7 +253,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
             MaxLength: =10
             OnChange: =Set(varIsSelected, false); 
             OnSelect: =Set(varIsSelected, true); 
-            Size: =Self.Height/4
+            Size: =LinearGradient_Generator_HEX.fontsize
             Width: =T_HTML_1.Width - Self.X*2 -10
             X: =25
             Y: =18

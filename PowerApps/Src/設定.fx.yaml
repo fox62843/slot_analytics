@@ -12,7 +12,7 @@
 
     NeonGlowNavMenu_4 As NeonGlowNavMenu:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =120
+        Height: =Parent.Height - Self.Y
         MenuItems: |-
             =Table(
                 {
@@ -48,9 +48,9 @@
             )
         SVGActiveIconColour: =gradation1
         SVGActiveIconColour2: =gradation2
-        Width: =1560
+        Width: =Parent.Width
         X: =0.00
-        Y: =597
+        Y: =600
 
     background_4 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)

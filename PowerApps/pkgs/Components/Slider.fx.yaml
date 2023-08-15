@@ -10,7 +10,7 @@ Slider As CanvasComponent:
     Max: =100
     Min: =0
     Value: =Slider1.Value
-    Width: =1500
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =15

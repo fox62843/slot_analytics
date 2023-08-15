@@ -2,8 +2,8 @@ background As CanvasComponent:
     BorderRadius: =10
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =640
-    Width: =640
+    Height: =500
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =12

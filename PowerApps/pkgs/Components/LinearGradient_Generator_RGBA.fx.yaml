@@ -103,7 +103,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         Y: =35
         ZIndex: =2
 
-    Container1_1 As groupContainer.manualLayoutContainer:
+    LG_Container As groupContainer.manualLayoutContainer:
         Height: =Parent.Height -Self.Y*1.5
         Width: =Parent.Width- Self.X*2
         X: =LG_sampleView.X
@@ -204,23 +204,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 PaddingRight: =
                 PaddingTop: =1
                 Width: =If(LG_Slider_8.Height >=231,231,Self.Height)
-                X: |-
-                    =If(
-                        //「現在の位置=Xが0以下になる場合、0とする」
-                       ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2<= 0,
-                            0,
-                            //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」
-                            (((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,
-                                Parent.Width -Self.Width,
-                                //「現在の位置=X」
-                                ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2
-                    )
+                X: =231.26310341789997
                 ZIndex: =2
 
             Slider1_9 As slider:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =255
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -349,6 +340,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =93
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -477,6 +469,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =195
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -605,6 +598,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =128
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -716,23 +710,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 PaddingRight: =
                 PaddingTop: =1
                 Width: =If(LG_Slider_4.Height >=231,231,Self.Height)
-                X: |-
-                    =If(
-                        //「現在の位置=Xが0以下になる場合、0とする」
-                       ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2<= 0,
-                            0,
-                            //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」
-                            (((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,
-                                Parent.Width -Self.Width,
-                                //「現在の位置=X」
-                                ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2
-                    )
+                X: =231.26310341789997
                 ZIndex: =2
 
             Slider1_5 As slider:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =255
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -861,6 +846,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =113
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -989,6 +975,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =148
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =
@@ -1117,6 +1104,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 BorderColor: =RGBA(168, 0, 0, 1)
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =10
+                Default: =86
                 DisabledBorderColor: =
                 FocusedBorderThickness: =0
                 HandleActiveFill: =

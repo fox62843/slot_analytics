@@ -54,10 +54,10 @@ TOP As screen:
 
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =250
+        Height: =160
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =478
+        Width: =492
         X: =128
         Y: =175
         ZIndex: =3

@@ -3,7 +3,7 @@ Check As CanvasComponent:
     Checked: =If(IsBlank(varChecked), false, varChecked)
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =100
+    Height: =500
     IconColorActive: |-
         ="#1e56c8"
     IconColour: |-
@@ -13,7 +13,7 @@ Check As CanvasComponent:
         ="#2c3e50"
     LinealGradientColor2: |-
         ="#3498db"
-    Width: =100
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =20

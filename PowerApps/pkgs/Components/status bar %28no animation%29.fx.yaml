@@ -1,4 +1,5 @@
 "'status bar (no animation)' As CanvasComponent":
+    borderRadius: =100
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =80
@@ -21,7 +22,7 @@
                     margin:6px;
                     height: "& Parent.Height -33 &"px;
                     width:"&Parent.Width -25&"px;
-                    border-radius: 15px;
+                    border-radius: "&'status bar (no animation)'.borderRadius&"px;
                     background: "&If(
                         'status bar (no animation)'.DarkMode = true,
                         "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
@@ -45,7 +46,7 @@
                         width:"& ('status bar (no animation)'.Value/'status bar (no animation)'.MaxValue)*100 &"%;
                         height: 101%;
                         background:linear-gradient(to right, "& 'status bar (no animation)'.LinealGradient1&", "& 'status bar (no animation)'.LinealGradient2 &");
-                        border-radius: 10px;
+                        border-radius: "&'status bar (no animation)'.borderRadius&"px;
                     '>
                 </div>
             </div>"

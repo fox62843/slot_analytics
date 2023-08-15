@@ -2,7 +2,7 @@ ComboBox As CanvasComponent:
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     fontsize: =15
-    Height: =131
+    Height: =100
     IconLinealGradient1: |-
         ="#eb1f5a"
     IconLinealGradient2: |-
@@ -10,7 +10,7 @@ ComboBox As CanvasComponent:
     iniData: =[11]
     TableComp: =["1","2","3","4","5","6","7","8","aaaaaaa"]
     valueSelected: =First(ComboBox1.SelectedItems).Value
-    Width: =1000
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =3

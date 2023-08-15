@@ -92,6 +92,7 @@ Navigation As CanvasComponent:
         ShowScrollbar: =false
         TemplatePadding: =0
         TemplateSize: =Self.Height
+        Transition: =Transition.Push
         Width: =N_HTML.Width - Self.X*2 - N_HTML.PaddingRight
         WrapCount: =CountRows(Navigation.MenuItems)
         X: =40

@@ -1,15 +1,15 @@
 Toggle As CanvasComponent:
-    borderRadius: =100
+    borderRadius: =200
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =85
+    Height: =169
     IconVisible: =true
     LinealGradientColour1: |-
         ="#2c3e50"
     LinealGradientColour2: |-
         ="#2398db"
     Toggled: =If(IsBlank(varToggled), true, varToggled)
-    Width: =150
+    Width: =500
     X: =0
     Y: =0
     ZIndex: =19
@@ -19,65 +19,51 @@ Toggle As CanvasComponent:
         HtmlText: |-
             ="<div
                 style='
-                    margin:15px;
+                    margin:4px;
                     background: 
-                    "&If(
-                        Toggle.DarkMode = true,
-                        If(
-                            Toggle.Toggled = false,
-                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
-                            "linear-gradient(to right, "& Toggle.LinealGradientColour1 &", "& Toggle.LinealGradientColour2 &")"
-                        ),
-                        If(
-                            Toggle.Toggled = false,
-                            "#e8eaec",
-                            "linear-gradient(to right, "& Toggle.LinealGradientColour1 &", "& Toggle.LinealGradientColour2 &")"
-                        )
-                    )&";
+                        "&If(
+                            Toggle.DarkMode = true,
+                            If(
+                                Toggle.Toggled = false,
+                                "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                                "linear-gradient(to right, "& Toggle.LinealGradientColour1 &", "& Toggle.LinealGradientColour2 &")"
+                            ),
+                            If(
+                                Toggle.Toggled = false,
+                                "#e8eaec",
+                                "linear-gradient(to right, "& Toggle.LinealGradientColour1 &", "& Toggle.LinealGradientColour2 &")"
+                            )
+                        )&";
                     isolation: isolate;
                     position: relative;
-                    height: "&Self.Height/2&"px;
-                    width: "&Self.Width - Toggle_Button.Width -10&"px;
+                    height: "&Self.Height-24&"px;
+                    width: "&Self.Width -27&"px;
                     border-radius: "&Toggle.borderRadius&"px;
                     overflow: hidden;
                     box-shadow:
                         "&If(
                             Toggle.DarkMode = true ,
                             "inset 3px 3px 3px 0px #1e2126, inset -3px -3px 3px 0px rgba(61,61,69,1)",
-                            "inset 4px 4px 7px #bec0c2,inset -2px -5px 7px #ffffff, 12px 3px 12px rgba(13, 39, 80, 0.25), -5px -5px 11px white, inset -15px -1px 10px rgba(13, 39, 80, 0.25), inset 8px 8px 20px rgba(13, 39, 80, 0.2)"
+                            "inset 4px 4px 12px #bec0c2,inset -2px -5px 10px #ffffff, 6px 5px 12px rgba(13, 39, 80, 0.25), 4px 2px 10px white, inset -15px -1px 10px rgba(13, 39, 80, 0.25), inset 8px 8px 20px rgba(13, 39, 80, 0.2)"
                         )&";
             '>  
-            <div
-                style='
-                    margin:0px;
-                    width:80px;
-                    height:44px;
-                    background-color:#;
-                    "&If(
-                        Toggle.Toggled = true,
-                        "height: "&Parent.Height/2&"px;
-                          width: "&Parent.Width/3&"px;",
-                        "height: "&Parent.Height/2&"px;
-                          width: "&Parent.Width/3.5&"px;"
-                    )&"
-                    background:
-                        "&If(
-                            Toggle.DarkMode = true,
-                            "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
-                            "#e8eaec"
-                        )&";
-                    border-radius: "&Toggle.borderRadius&"px;
-                    transform: translate(
-                        "& If(
-                            Toggle.Toggled = true,
-                            ""&Toggle_Button.X-20&"px",
-                            "0px"
-                        )&"
-                        , 0
-                    );
-                    box-shadow: 
-                        "&
-                            If(Toggle.DarkMode = true,
+                <div
+                    style='
+                        margin:0px;
+                        background-color:#;
+                        transform:translate("&Toggle_Button.X - Toggle_HTML.PaddingRight*1.3&"px,0);
+                        height: "&Toggle_Button.Height&"px;
+                        width: "&Toggle_Button.Width &"px;
+                        background:
+                            "&If(
+                                Toggle.DarkMode = true,
+                                "linear-gradient(135deg, rgba(36,36,44,1) 0%, rgba(52,57,61,1) 100%)",
+                                "#e8eaec"
+                                )&";
+                        border-radius: "&Toggle.borderRadius&"px;
+                        box-shadow: 
+                            "&If(
+                                Toggle.DarkMode = true,
                                 If(
                                     Toggle.Toggled = false,
                                     "-8px -8px 10px 0px rgba(61,61,69,1), 8px 8px 10px 0px #1e2126;",
@@ -89,8 +75,8 @@ Toggle As CanvasComponent:
                                     "inset 4px 4px 7px #bec0c2,inset -4px -4px 7px #ffffff, inset -15px -15px 20px rgba(255, 255, 255, 0.7), inset 8px 8px 30px rgba(13, 39, 80, 0.2)"
                                 )
                             )&";'
-            >  
-            </div>
+                >
+                </div>
             </div>"
         Width: =Parent.Width
         ZIndex: =1
@@ -123,7 +109,8 @@ Toggle As CanvasComponent:
         BorderThickness: =0
         Fill: =RGBA(0, 0, 0, 0)
         FocusedBorderThickness: =0
-        Height: =Toggle_HTML.Height/2.0
+        FontWeight: =FontWeight.Bold
+        Height: =Toggle_HTML.Height -24
         HoverFill: =RGBA(196,196,196,0.2)
         OnSelect: =Set(varToggled, If(Toggle.Toggled = true, false, true))
         PressedFill: =RGBA(196,196,196,0.5)
@@ -133,8 +120,8 @@ Toggle As CanvasComponent:
         RadiusTopRight: =Toggle.borderRadius
         Size: =24
         Text: =""
-        Width: =(Toggle_HTML.Width - Toggle_HTML.PaddingRight*2)/3.5
-        X: =If(Toggle.Toggled = true ,Toggle_HTML.Width- Toggle_Button.Width*2+Toggle_Button.PaddingRight+4,20)
-        Y: =21
+        Width: =Self.Height
+        X: =If(Toggle.Toggled = true ,Toggle_HTML.Width- Self.Width - Toggle_HTML.PaddingLeft*4,Toggle_HTML.PaddingLeft*2)
+        Y: =9
         ZIndex: =4
 
