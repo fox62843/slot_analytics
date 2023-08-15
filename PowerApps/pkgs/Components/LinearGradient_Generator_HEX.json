@@ -453,7 +453,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "112.5",
+                "InvariantScript": "Parent.Height",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -1373,7 +1373,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "112.5",
+                "InvariantScript": "Parent.Height",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
@@ -2131,7 +2131,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638277026355479692",
+    "LastModifiedTimestamp": "638277058124321340",
     "Name": "LinearGradient_Generator_HEX",
     "Rules": [
       {
@@ -2296,7 +2296,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638277026355479692",
+  "LastModifiedTimestamp": "638277058124321340",
   "Name": "7eaa65074408444584bd3bdeccda0f55",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

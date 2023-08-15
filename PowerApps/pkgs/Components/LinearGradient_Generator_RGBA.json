@@ -694,7 +694,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -1300,7 +1300,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width - Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -1904,7 +1904,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -2510,7 +2510,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width -Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -2735,7 +2735,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "444.2395833333333",
+                "InvariantScript": "LG2_R.X + LG2_R.Width",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -3114,7 +3114,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -3720,7 +3720,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width - Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -4324,7 +4324,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -4930,7 +4930,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width - Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -5155,7 +5155,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "444.2395833333333",
+                "InvariantScript": "LG2_G.X + LG2_G.Width",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -5534,7 +5534,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -6140,7 +6140,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width -Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -6744,7 +6744,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -7350,7 +7350,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width - Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -7575,7 +7575,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "444.2395833333333",
+                "InvariantScript": "LG2_B.X + LG2_B.Width",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -7954,7 +7954,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -8160,7 +8160,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "231.26310341789997",
+                    "InvariantScript": "If(\r\n    //「現在の位置=Xが0以下になる場合、0とする」\r\n   ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2<= 0,\r\n        0,\r\n        //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」\r\n        (((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,\r\n            Parent.Width -Self.Width,\r\n            //「現在の位置=X」\r\n            ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2\r\n)",
                     "Property": "X",
                     "RuleProviderType": "Unknown"
                   },
@@ -8560,7 +8560,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width -Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -9164,7 +9164,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -9370,7 +9370,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "231.26310341789997",
+                    "InvariantScript": "If(\r\n    //「現在の位置=Xが0以下になる場合、0とする」\r\n   ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2<= 0,\r\n        0,\r\n        //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」\r\n        (((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,\r\n            Parent.Width -Self.Width,\r\n            //「現在の位置=X」\r\n            ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2\r\n)",
                     "Property": "X",
                     "RuleProviderType": "Unknown"
                   },
@@ -9770,7 +9770,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "280.36458333333337",
+                    "InvariantScript": "Parent.Width - Self.X*2",
                     "Property": "Width",
                     "RuleProviderType": "Unknown"
                   },
@@ -9995,7 +9995,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "444.2395833333333",
+                "InvariantScript": "LG2_A.X + LG2_A.Width",
                 "Property": "X",
                 "RuleProviderType": "Unknown"
               },
@@ -10287,7 +10287,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638277026355450051",
+    "LastModifiedTimestamp": "638277058124583049",
     "Name": "LinearGradient_Generator_RGBA",
     "Rules": [
       {
@@ -10437,7 +10437,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638277026355450051",
+  "LastModifiedTimestamp": "638277058124583049",
   "Name": "4523e6ccd2bd49eba6b5e3e20e369668",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

@@ -7,7 +7,7 @@
         SVGActiveIconColour: =gradation1
         SVGActiveIconColour2: =gradation2
         Width: =Parent.Width - Self.X -40
-        X: =1370.42
+        X: =1200.00
         Y: =36
 
     NeonGlowNavMenu_4 As NeonGlowNavMenu:
@@ -50,7 +50,7 @@
         SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
-        Y: =600
+        Y: =650
 
     background_4 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
@@ -66,8 +66,8 @@
             =If(Button_4.DarkMode = true,"#BDBDBD","#454545")
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =322.05
-        X: =1035
+        Width: =282.00
+        X: =906.29
         Y: =36
         ZIndex: =2
 
@@ -79,8 +79,8 @@
         Height: =216
         Mode: =TextMode.MultiLine
         Text: =If(T_TextInput.Text=Blank(),'Text input_1'.iniData,T_TextInput.Text)
-        Width: =646
-        X: =44
+        Width: =565.66
+        X: =38.53
         Y: =29
         ZIndex: =5
 
@@ -89,7 +89,8 @@
         Height: =174
         IconLinealGradient1: =gradation1
         IconLinealGradient2: =gradation2
-        X: =72
+        Width: =437.82
+        X: =63.05
         Y: =248
         ZIndex: =7
 

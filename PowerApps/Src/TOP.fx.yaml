@@ -6,12 +6,12 @@ TOP As screen:
         Color: =If(Toggle_1.DarkMode= true,RGBA(255, 255, 255, 1),RGBA(0, 0, 0, 1))
         Font: =Font.'Dancing Script'
         Height: =120
-        PaddingRight: =5.71
-        PaddingTop: =5.71
-        Size: =68.52
+        PaddingRight: =5.00
+        PaddingTop: =5.00
+        Size: =60.00
         Text: ="Slot Analytics"
-        Width: =877
-        X: =34
+        Width: =767.94
+        X: =29.77
         Y: =40
         ZIndex: =1
 
@@ -49,7 +49,7 @@ TOP As screen:
         SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
-        Y: =600
+        Y: =650
         ZIndex: =2
 
     Toggle_1 As Toggle:
@@ -57,8 +57,8 @@ TOP As screen:
         Height: =160
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =492
-        X: =128
+        Width: =430.82
+        X: =112.08
         Y: =175
         ZIndex: =3
 
@@ -71,8 +71,8 @@ TOP As screen:
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
         OnSelect: =Set(vis1,true)
-        Width: =294
-        X: =892
+        Width: =257.44
+        X: =781.07
         Y: =52
         ZIndex: =4
 
@@ -81,8 +81,8 @@ TOP As screen:
         Height: =600
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =126
-        X: =1413
+        Width: =110.33
+        X: =1237.28
         ZIndex: =5
 
     Slider_4 As Slider:
@@ -90,8 +90,8 @@ TOP As screen:
         Height: =74
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =947
-        X: =76
+        Width: =829.23
+        X: =66.55
         Y: =351
         ZIndex: =6
 
@@ -100,8 +100,8 @@ TOP As screen:
         Height: =600
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =93
-        X: =1278
+        Width: =81.43
+        X: =1119.07
         ZIndex: =7
 
     Slider_6 As Slider:
@@ -109,21 +109,25 @@ TOP As screen:
         Height: =105
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =949
-        X: =74
+        Width: =830.98
+        X: =64.80
         Y: =437
         ZIndex: =8
 
     Container1 As groupContainer.manualLayoutContainer:
         Height: =600
+        PaddingRight: =0.00
+        PaddingTop: =0.00
         Visible: =vis1
-        Width: =1560
+        Width: =1366.00
+        X: =0.00
         ZIndex: =9
 
         background_2 As background:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =Parent.Height
-            Width: =Parent.Width
+            Width: =1366.00
+            X: =0.00
             ZIndex: =1
 
         Button_5 As Button:
@@ -141,23 +145,24 @@ TOP As screen:
                 Set(gradation2,LinearGradient_Generator_RGBA_1.G_GL2);
                 Set(vis1,false)
             TextInput: ="適用"
-            Width: =294
-            X: =256
+            Width: =257.44
+            X: =224.16
             Y: =380
             ZIndex: =2
 
         LinearGradient_Generator_HEX_1 As LinearGradient_Generator_HEX:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =236
-            Width: =736
-            X: =824
+            Width: =644.47
+            X: =721.53
             Y: =36
             ZIndex: =3
 
         LinearGradient_Generator_RGBA_1 As LinearGradient_Generator_RGBA:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =404
-            Width: =870
+            Width: =761.81
+            X: =0.00
             ZIndex: =4
 
         Button_6 As Button:
@@ -175,8 +180,8 @@ TOP As screen:
                 Set(gradation2,LinearGradient_Generator_HEX_1.G_GL2);
                 Set(vis1,false)
             TextInput: ="適用"
-            Width: =294
-            X: =1045
+            Width: =257.44
+            X: =915.04
             Y: =272
             ZIndex: =5
 

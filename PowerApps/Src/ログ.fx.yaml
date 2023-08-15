@@ -41,7 +41,7 @@
         SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
-        Y: =600
+        Y: =650
 
     background_3 As background:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
@@ -55,8 +55,8 @@
         Height: =267
         IconColour: |-
             =If(Button_3.DarkMode = true,"#BDBDBD","#454545")
-        Width: =322.05
-        X: =782.28
+        Width: =282.00
+        X: =685.00
         Y: =119
         ZIndex: =2
 
@@ -69,8 +69,8 @@
         glasslevel: =Slider_1.Value
         Height: =369
         lightLevel: =3
-        Width: =721.76
-        X: =782.28
+        Width: =632.00
+        X: =685.00
         Y: =49
         ZIndex: =3
 
@@ -79,8 +79,8 @@
         Height: =110
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =832
-        X: =680
+        Width: =728.53
+        X: =595.44
         Y: =426
         ZIndex: =5
 
@@ -89,8 +89,8 @@
         Height: =107
         LinealGradient1: =gradation1
         LinealGradient2: =gradation2
-        Width: =363
-        X: =240
+        Width: =317.86
+        X: =210.15
         Y: =49
         ZIndex: =6
 
@@ -102,8 +102,8 @@
         IconLinealGradient2: =gradation2
         iniData: =[1]
         TableComp: =["俺は","ジャイアン","だと","思った？","残念！","岸田","でした","ｳﾞｧｰｶ","嘘だｯ"]
-        Width: =669
-        X: =40
+        Width: =585.80
+        X: =35.03
         Y: =180
         ZIndex: =7
 
@@ -115,8 +115,8 @@
         Height: =267
         Mode: =TextMode.MultiLine
         Text: =If(T_TextInput.Text=Blank(),'Text input_2'.iniData,T_TextInput.Text)
-        Width: =640
-        X: =40
+        Width: =560.41
+        X: =35.03
         Y: =266
         ZIndex: =8
 

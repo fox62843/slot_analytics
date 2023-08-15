@@ -211,7 +211,7 @@
     "Slider1_8": 306,
     "Slider1_9": 316,
     "Slider2_1": 319,
-    "slot_main列(_C)1": 179,
+    "slot_main列(_C)1": 180,
     "SR_Button": 196,
     "SR_garally": 193,
     "SR_HTML": 192,
@@ -241,12 +241,12 @@
     "Value1": 244,
     "ログ": 160,
     "記録画面": 176,
-    "作成日列(_C)1": 180,
+    "作成日列(_C)1": 179,
     "設定": 169
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/15/2023 13:24:33",
+  "HeaderLastSavedDateTimeUTC": "08/15/2023 14:21:13",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -265,18 +265,18 @@
     "twttt": "943efcae-f461-46b2-a8a2-06e82152ae67.PNG"
   },
   "LocalResourceRootPaths": {
-    "F15cg5zXsAcBdaN": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images012679aba-38ab-4769-bdb3-5258fdeb2c1a.jpg?sv=2018-03-28&sr=b&sig=HmArJAYWJb7mmATJf70bhGV8Ozwa93ZK9K4u8%2BIdNVs%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "facebook-svgrepo-com": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0e331a705-f72c-467b-8671-8807061b9976.svg?sv=2018-03-28&sr=b&sig=j7aan7QHrb58TgcQXfbVlIrDcqmQYZkIE9ermMvFcL8%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "ffffff": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0a08f2582-a8a7-4ba7-b8ff-c449b650da60.PNG?sv=2018-03-28&sr=b&sig=3dGwC7iUlRa%2B1i7DTIuJc3USK8m2NRAKBrgRbkIeFWo%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "gggggggg": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images08f3b2a13-28ed-4afb-9054-50d61ccf60a1.PNG?sv=2018-03-28&sr=b&sig=uUz6rqPUyEbfTk8DyQiSF4KIMJaRWf%2B%2BG9LvkHUSlas%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "Google__G__Logo": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0a7e92925-6a12-464f-9a4d-047fbe0fb7c3.svg?sv=2018-03-28&sr=b&sig=%2F1ucpqWOG5DjCFr%2B5PVyFXvqtPfodjJNCLd5E4e35%2BM%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "logo1-removebg-preview": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0f70e6c0c-27d3-415c-bf0b-ef276a141b3f.png?sv=2018-03-28&sr=b&sig=2y06JR6ONjHlNer2Dnf0Wqggovs3zpRTRlFY378CPZM%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "logo1-removebg-preview_1": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images00ea7b4ee-b975-453d-bcf0-c0988ba2b35b.svg?sv=2018-03-28&sr=b&sig=jrbvoqgMg48LniNhA96YEp4%2FieyffiYOJs7AFFyx%2BRY%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "MG_1_1_New_York_City-1": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images061e9cdfc-123a-48c1-9ac4-d1516688309a.jpg?sv=2018-03-28&sr=b&sig=pbDoAgUwi1aHE3%2Be%2By%2F2sj6%2Fx7IodejLsA%2B4r%2Ftn8gA%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "s_phanahana-haitou01": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0b89322b3-df9a-4ba0-ae75-54a35ed22e2e.svg?sv=2018-03-28&sr=b&sig=C%2Bs8NM8SptfDa03%2BFdvPpwriMhdmuNBFZPKt8olNAs4%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "sm25486291": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Video09b4e7bd7-596d-4e0a-af2f-130c4bb614be.mp4?sv=2018-03-28&sr=b&sig=AcENaqmD4dK%2Fujwtq2mdqQ2YDMHZ%2BezQ5EwX%2Ft%2FRwxI%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "Twitter_bird_logo_2012.svg": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0b549e588-e773-4266-a795-d403f222bf7a.png?sv=2018-03-28&sr=b&sig=RH8qxSO%2BHh2TU9ocj3MWoRImp%2BAAu7vpyoB5NWXVlUY%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r",
-    "twttt": "https://docserverpwaprodwjp.blob.core.windows.net/a27e2c61-2261-4e3c-8e17-5bf79f610b88-1/resource/Assets0Images0943efcae-f461-46b2-a8a2-06e82152ae67.PNG?sv=2018-03-28&sr=b&sig=ovLqkXSZbc0cqQGdbg7pXb8B9Y6sTnLf1c6NpkXzZU4%3D&spr=https&se=2023-08-16T13%3A37%3A46Z&sp=r"
+    "F15cg5zXsAcBdaN": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images012679aba-38ab-4769-bdb3-5258fdeb2c1a.jpg?sv=2018-03-28&sr=b&sig=GPyEi23%2FtueniqxgC0UNuxsWjU7LKSzX%2BtBYOxZXi4w%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "facebook-svgrepo-com": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0e331a705-f72c-467b-8671-8807061b9976.svg?sv=2018-03-28&sr=b&sig=xke37GNG%2Fr9JrkAWVEfqhjyslZ38r6i6m8ydxxT3oVc%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "ffffff": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0a08f2582-a8a7-4ba7-b8ff-c449b650da60.PNG?sv=2018-03-28&sr=b&sig=6isLFt1R8Dn0CholSqkujTFy2zFRL%2FM1RALaKTpMMZg%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "gggggggg": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images08f3b2a13-28ed-4afb-9054-50d61ccf60a1.PNG?sv=2018-03-28&sr=b&sig=WK%2BQ1p8Li7cEj%2FUixzk%2FVTa%2FGDg94NzN0hQ2xPU9wTQ%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "Google__G__Logo": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0a7e92925-6a12-464f-9a4d-047fbe0fb7c3.svg?sv=2018-03-28&sr=b&sig=5g6ynfEmeAry2JcPt9%2BQdSbKryx9OVAhtSVCd8r3wvk%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "logo1-removebg-preview": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0f70e6c0c-27d3-415c-bf0b-ef276a141b3f.png?sv=2018-03-28&sr=b&sig=Wqpfh9q5Oz5K56jXZScXvebW8khNu%2FVwfUpCFL2o7a4%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "logo1-removebg-preview_1": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images00ea7b4ee-b975-453d-bcf0-c0988ba2b35b.svg?sv=2018-03-28&sr=b&sig=n4qgU2%2BGYBAxrdfOx3yab7oIv%2FhVpFhCydT61XLnRIc%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "MG_1_1_New_York_City-1": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images061e9cdfc-123a-48c1-9ac4-d1516688309a.jpg?sv=2018-03-28&sr=b&sig=KNdu0I4s7IZ5PU3ilL2EP%2B1RtzPftVxbC2fbSlSeD7k%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "s_phanahana-haitou01": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0b89322b3-df9a-4ba0-ae75-54a35ed22e2e.svg?sv=2018-03-28&sr=b&sig=0PjrWberPOIkWTECWQy38HNsoJirR4ys%2FBls0SPks3A%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "sm25486291": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Video09b4e7bd7-596d-4e0a-af2f-130c4bb614be.mp4?sv=2018-03-28&sr=b&sig=niL3X%2BDghghKhR%2FoYfEmuVi7fJ87sOzN831veEqGoQc%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "Twitter_bird_logo_2012.svg": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0b549e588-e773-4266-a795-d403f222bf7a.png?sv=2018-03-28&sr=b&sig=JEgEYAfCAK512KS7gSt1HrVZdJe30QyIfqpIWjv3Od8%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r",
+    "twttt": "https://docserverpwaprodwjp.blob.core.windows.net/97ce6ad6-839a-451c-a83c-b5f5dde85cd9-1/resource/Assets0Images0943efcae-f461-46b2-a8a2-06e82152ae67.PNG?sv=2018-03-28&sr=b&sig=BBt1zni80PG1dXXVs2vkxK0kcjYOJrSy6NnAmr48aoc%3D&spr=https&se=2023-08-16T14%3A31%3A02Z&sp=r"
   },
   "OldLogoFileName": "sjl3zngm.jpg",
   "OrderComponentMetadata": {
@@ -863,7 +863,7 @@
     "Slider1_8": 137,
     "Slider1_9": 147,
     "Slider2_1": 149,
-    "slot_main列(_C)1": 17,
+    "slot_main列(_C)1": 16,
     "SR_Button": 45,
     "SR_garally": 42,
     "SR_HTML": 41,
@@ -893,7 +893,7 @@
     "Value1": 80,
     "ログ": 0,
     "記録画面": 0,
-    "作成日列(_C)1": 16,
+    "作成日列(_C)1": 17,
     "設定": 0
   },
   "ResourcesJsonIndices": {
@@ -914,7 +914,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 1.5566801,
+    "AnalysisLoadTime": 1.2613098,
     "ControlCount": {
       "07a037ade94f42c9a60456c36dcd4e17": 9,
       "0c10ab5a61d34099aba4b4f02fce0a4b": 5,
@@ -956,7 +956,7 @@
       "slider": 20,
       "text": 6
     },
-    "DeserializationLoadTime": 6.8389255
+    "DeserializationLoadTime": 5.8052054
   },
   "WasLocalDatabaseReferencesEmpty": false
 }
