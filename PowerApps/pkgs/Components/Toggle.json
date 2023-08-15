@@ -66,7 +66,7 @@
         "Name": "Toggle_HTML",
         "Parent": "Toggle",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 48,
+        "PublishOrderIndex": 67,
         "Rules": [
           {
             "Category": "Data",
@@ -371,7 +371,7 @@
         "Name": "Toggle_Button",
         "Parent": "Toggle",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 49,
+        "PublishOrderIndex": 68,
         "Rules": [
           {
             "Category": "Data",
@@ -714,7 +714,7 @@
         "Name": "Toggle_Image",
         "Parent": "Toggle",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 50,
+        "PublishOrderIndex": 69,
         "Rules": [
           {
             "Category": "Data",
@@ -963,7 +963,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638277023893217752",
+    "LastModifiedTimestamp": "638277025678444715",
     "Name": "Toggle",
     "Rules": [
       {
@@ -1116,7 +1116,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638277023893217752",
+  "LastModifiedTimestamp": "638277025678444715",
   "Name": "b4411d2d9fb547e48d0c96dac433849e",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
