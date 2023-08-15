@@ -78,7 +78,6 @@
         FontSize: =20
         Height: =216
         Mode: =TextMode.MultiLine
-        Text: =If(T_TextInput.Text=Blank(),'Text input_1'.iniData,T_TextInput.Text)
         Width: =565.66
         X: =38.53
         Y: =29

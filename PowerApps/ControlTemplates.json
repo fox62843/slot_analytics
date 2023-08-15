@@ -210,6 +210,21 @@
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
+  "Spinner": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Spinner",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Spinner",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Spinner",
+    "Version": "1.0.17"
+  },
   "text": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -253,6 +268,21 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "ラベル",
     "Version": "1.6.0"
+  },
+  "進行状況バー": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Progress",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Progress",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "進行状況バー",
+    "Version": "1.1.8"
   },
   "日付の選択": {
     "CustomGroupControlTemplateName": "",
