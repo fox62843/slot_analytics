@@ -2131,7 +2131,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638277021886655944",
+    "LastModifiedTimestamp": "638277024322105472",
     "Name": "LinearGradient_Generator_HEX",
     "Rules": [
       {
@@ -2296,7 +2296,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638277021886655944",
+  "LastModifiedTimestamp": "638277024322105472",
   "Name": "7eaa65074408444584bd3bdeccda0f55",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",
