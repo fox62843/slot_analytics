@@ -209,21 +209,3 @@ TOP As screen:
         Y: =0
         ZIndex: =11
 
-    HtmlText1 As htmlViewer:
-        Height: =394
-        HtmlText: |-
-            ="<div
-                style='
-                    margin:30px;
-                    width: "& Self.Width -70 &"px;
-                    height: "& Self.Height - 80 &"px;
-                    background: #e8eaec;
-                    box-shadow:12px 12px 32px rgba(13, 39, 80, 0.25),-10px -10px 15px white;
-                    border-radius:20px'
-            >
-            </div>"
-        Width: =708
-        X: =90
-        Y: =52
-        ZIndex: =12
-
