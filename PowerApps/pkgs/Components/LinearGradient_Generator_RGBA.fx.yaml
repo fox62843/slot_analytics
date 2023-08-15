@@ -113,7 +113,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
         LG_Slider_8 As groupContainer.manualLayoutContainer:
             Height: =LG_Slider_1.Height
             Width: =LG_Slider_1.Width
-            X: =LG2_A.X + LG2_A.Width
+            X: =444.2395833333333
             Y: =LG2_A.Y
             ZIndex: =1
 
@@ -169,7 +169,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_9 As htmlViewer:
@@ -204,17 +204,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 PaddingRight: =
                 PaddingTop: =1
                 Width: =If(LG_Slider_8.Height >=231,231,Self.Height)
-                X: |-
-                    =If(
-                        //「現在の位置=Xが0以下になる場合、0とする」
-                       ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2<= 0,
-                            0,
-                            //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」
-                            (((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,
-                                Parent.Width -Self.Width,
-                                //「現在の位置=X」
-                                ((Slider1_9.Value/Slider1_9.Max) * (Slider1_9.Width)) - Parent.Height/2
-                    )
+                X: =231.26310341789997
                 ZIndex: =2
 
             Slider1_9 As slider:
@@ -235,14 +225,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width - Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
         LG_Slider_7 As groupContainer.manualLayoutContainer:
             Height: =LG_Slider_1.Height
             Width: =LG_Slider_1.Width
-            X: =LG2_B.X + LG2_B.Width
+            X: =444.2395833333333
             Y: =LG2_B.Y
             ZIndex: =2
 
@@ -298,7 +288,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_8 As htmlViewer:
@@ -364,14 +354,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width - Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
         LG_Slider_6 As groupContainer.manualLayoutContainer:
             Height: =LG_Slider_1.Height
             Width: =LG_Slider_1.Width
-            X: =LG2_G.X + LG2_G.Width
+            X: =444.2395833333333
             Y: =LG2_G.Y
             ZIndex: =3
 
@@ -427,7 +417,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_7 As htmlViewer:
@@ -493,14 +483,14 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width - Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
         LG_Slider_5 As groupContainer.manualLayoutContainer:
             Height: =LG_Slider_1.Height
             Width: =LG_Slider_1.Width
-            X: =LG2_R.X + LG2_R.Width
+            X: =444.2395833333333
             Y: =LG2_R.Y
             ZIndex: =4
 
@@ -556,7 +546,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_6 As htmlViewer:
@@ -622,7 +612,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width -Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
@@ -685,7 +675,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_5 As htmlViewer:
@@ -720,17 +710,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 PaddingRight: =
                 PaddingTop: =1
                 Width: =If(LG_Slider_4.Height >=231,231,Self.Height)
-                X: |-
-                    =If(
-                        //「現在の位置=Xが0以下になる場合、0とする」
-                       ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2<= 0,
-                            0,
-                            //「現在の位置=Xが親コンの幅を超える場合、親コンの最大幅で停止とする」
-                            (((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2) + Self.Width >=Parent.Width ,
-                                Parent.Width -Self.Width,
-                                //「現在の位置=X」
-                                ((Slider1_5.Value/Slider1_5.Max) * (Slider1_5.Width)) - Parent.Height/2
-                    )
+                X: =231.26310341789997
                 ZIndex: =2
 
             Slider1_5 As slider:
@@ -751,7 +731,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width -Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
@@ -814,7 +794,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_4 As htmlViewer:
@@ -880,7 +860,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width -Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
@@ -943,7 +923,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_3 As htmlViewer:
@@ -1009,7 +989,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =0
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width - Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 
@@ -1072,7 +1052,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                             border-radius:"&LinearGradient_Generator_RGBA.borderradius&"px'
                     >
                     </div>"
-                Width: =Parent.Width
+                Width: =280.36458333333337
                 ZIndex: =1
 
             Slider_circleHTML_2 As htmlViewer:
@@ -1138,7 +1118,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                 RailFill: =RGBA(0, 0, 0, 0)
                 RailThickness: =5
                 ValueFill: =RGBA(0, 0, 0, 0)
-                Width: =Parent.Width - Self.X*2
+                Width: =280.36458333333337
                 Y: =5
                 ZIndex: =3
 

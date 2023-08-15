@@ -101,7 +101,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
                     RGBA(255, 255, 255, 1),
                     RGBA(0, 0, 0, 1)
                 )
-            Height: =Parent.Height
+            Height: =112.5
             HtmlText: |-
                 ="<div
                     style='
@@ -187,7 +187,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
                     RGBA(255, 255, 255, 1),
                     RGBA(0, 0, 0, 1)
                 )
-            Height: =Parent.Height
+            Height: =112.5
             HtmlText: |-
                 ="<div
                     style='
