@@ -1,8 +1,9 @@
 Slider As CanvasComponent:
-    borderradius: =100
+    borderradius: =200
     DarkMode: =false
+    defaultValue: =50
     Fill: =RGBA(0, 0, 0, 0)
-    Height: =200
+    Height: =100
     LinealGradientColour1: |-
         ="#2c3e50"
     LinealGradientColour2: |-
@@ -10,7 +11,7 @@ Slider As CanvasComponent:
     Max: =100
     Min: =0
     Value: =Slider1.Value
-    Width: =500
+    Width: =700
     X: =0
     Y: =0
     ZIndex: =15
@@ -50,11 +51,11 @@ Slider As CanvasComponent:
                 style='
                     margin:1px;
                     width: "&If(
-                                (Slider1.Value/Slider1.Max) * Parent.Width - Slider_circleHTML.Width <= -100,
+                                ((Slider1.Value/Slider1.Max) * (Slider1.Width)) - Parent.Height/2<= 0,
                                 Slider_circleHTML.Width -20,
                                 (Slider1.Value/Slider1.Max) * Parent.Width >=Parent.Width -2,
                                 Parent.Width -Self.Width*2,
-                                Slider_circleHTML.X + (Slider_circleHTML.Width/1.5-5) -10
+                                Slider_circleHTML.X + Slider_circleHTML.Width/1.1 -20
                             )&"px;
                     height: "& Slider_BorderHTML.Height - 20 &"px;
                     background: linear-gradient(to right, "& Slider.LinealGradientColour1 &", "& Slider.LinealGradientColour2&");
@@ -101,7 +102,7 @@ Slider As CanvasComponent:
         PaddingLeft: =0
         PaddingRight: =
         PaddingTop: =1
-        Width: =If(Slider.Height >=231,231,Self.Height)
+        Width: =Self.Height
         X: |-
             =If(
                 //「現在の位置=Xが0以下になる場合、0とする」
@@ -119,6 +120,7 @@ Slider As CanvasComponent:
         BorderColor: =RGBA(168, 0, 0, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =10
+        Default: =Slider.defaultValue
         DisabledBorderColor: =
         FocusedBorderThickness: =0
         HandleActiveFill: =

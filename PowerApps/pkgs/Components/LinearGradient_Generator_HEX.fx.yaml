@@ -13,7 +13,7 @@ LinearGradient_Generator_HEX As CanvasComponent:
     Width: =500
     X: =0
     Y: =0
-    ZIndex: =8
+    ZIndex: =1
 
     flame_HtmlText_1 As htmlViewer:
         Height: =Parent.Height

@@ -1,6 +1,7 @@
 Slider_2 As CanvasComponent:
     borderradius: =100
     DarkMode: =false
+    defaultValue: =50
     Fill: =RGBA(0, 0, 0, 0)
     Height: =500
     LinealGradientColour1: |-
@@ -74,7 +75,7 @@ Slider_2 As CanvasComponent:
 
     Slider_circleHTML_2_1 As htmlViewer:
         Fill: =RGBA(0, 0, 0, 0)
-        Height: =If(Slider_2.Width >=231,231,Self.Width)
+        Height: =Self.Width
         HtmlText: |-
             ="<div
                 style='
@@ -122,6 +123,7 @@ Slider_2 As CanvasComponent:
         BorderColor: =RGBA(168, 0, 0, 1)
         BorderStyle: =BorderStyle.None
         BorderThickness: =1
+        Default: =Slider_2.defaultValue
         DisabledBorderColor: =
         FocusedBorderThickness: =0
         HandleActiveFill: =

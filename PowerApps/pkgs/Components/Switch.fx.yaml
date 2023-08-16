@@ -902,7 +902,7 @@ Switch As CanvasComponent:
         Height: =S_HTML.Height - 40
         HoverColor: =RGBA(128, 128, 128, 1)
         HoverFill: =RGBA(196,196,196,0.2)
-        OnSelect: =Set(varButtonSelected, If(Switch.vbs = Blank(),!varButtonSelected,Switch.vbs)); Switch.OnSelect(); 
+        OnSelect: =Set(varButtonSelected, !varButtonSelected); Switch.OnSelect(); 
         PressedColor: =RGBA(51, 51, 51, 1)
         PressedFill: =RGBA(196,196,196,0.4)
         RadiusBottomLeft: =Parent.BorderRadius

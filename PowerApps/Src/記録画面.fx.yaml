@@ -41,7 +41,7 @@
         SVGActiveIconColour2: =gradation2
         Width: =Parent.Width
         X: =0.00
-        Y: =650
+        Y: =800
         ZIndex: =1
 
     background_1 As background:
@@ -61,8 +61,8 @@
         IconName: ="hanahana"
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =249.00
-        X: =26.27
+        Width: =349.99
+        X: =36.92
         Y: =332
         ZIndex: =3
 
@@ -77,9 +77,9 @@
         Items: =slot_bonus
         SelectedColor: =RGBA(255, 255, 255, 1)
         SelectedFill: =RGBA(34, 55, 79, 1)
-        Size: =13.00
-        Width: =700.51
-        X: =27.00
+        Size: =18.27
+        Width: =984.61
+        X: =37.95
         Y: =40
         ZIndex: =4
 
@@ -92,7 +92,7 @@
             LayoutHeight: =Parent.Height
             Order: =3
             Text: =Text(ThisItem.作成日,DateTimeFormat.LongDateTime)
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =2
@@ -106,7 +106,7 @@
             LayoutHeight: =Parent.Height
             Order: =2
             Text: =ThisItem.slot_main.PlayID
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =3
@@ -120,7 +120,7 @@
             LayoutHeight: =Parent.Height
             Order: =4
             Text: =ThisItem.art
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =4
@@ -134,7 +134,7 @@
             LayoutHeight: =Parent.Height
             Order: =5
             Text: =ThisItem.at
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =5
@@ -148,7 +148,7 @@
             LayoutHeight: =Parent.Height
             Order: =6
             Text: =ThisItem.big
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =6
@@ -162,7 +162,7 @@
             LayoutHeight: =Parent.Height
             Order: =7
             Text: =ThisItem.reg
-            Width: =100.00
+            Width: =140.56
             X: =0.00
             Y: =0
             ZIndex: =7
@@ -174,8 +174,8 @@
             =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =175.13
-        X: =294.22
+        Width: =246.16
+        X: =413.54
         Y: =344
         ZIndex: =5
 
@@ -187,8 +187,8 @@
         IconName: ="hanahana"
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =804.71
-        X: =496.49
+        Width: =1131.07
+        X: =697.85
         Y: =344
         ZIndex: =6
 

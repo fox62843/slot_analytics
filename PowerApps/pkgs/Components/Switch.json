@@ -124,15 +124,6 @@
     },
     {
       "Category": 0,
-      "DisplayName": "オン・オフ強制化 -vbs-",
-      "Hidden": false,
-      "Name": "vbs",
-      "PropertyDataTypeKey": "Boolean",
-      "Tooltip": "オンにしたい場合→true ,オフにしたい場合→false",
-      "Type": "{\"Version\":\"1.334\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Boolean\",\"EnumString\":\"\",\"Type\":[]}}"
-    },
-    {
-      "Category": 0,
       "DisplayName": "ダークモード -DarkMode-",
       "Hidden": false,
       "Name": "DarkMode",
@@ -149,7 +140,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638277650544207998",
+  "LastModifiedTimestamp": "638277657315699623",
   "Name": "47a384fcd5224948aa604a5daad1b5cf",
   "OverridableProperties": {},
   "SourceLibraryId": "eb3f68a1-0a34-492f-9367-b4769bbf35a8",

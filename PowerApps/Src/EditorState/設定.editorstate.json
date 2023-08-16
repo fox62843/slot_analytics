@@ -503,7 +503,7 @@
       "Metadata": {
         "AllowAccessToGlobals": false,
         "AllowCustomization": true,
-        "Description": ""
+        "Description": "上下用ナビゲーション"
       },
       "MetaDataIDKey": "",
       "Name": "NeonGlowNavMenu_4",
@@ -661,7 +661,7 @@
       "Metadata": {
         "AllowAccessToGlobals": false,
         "AllowCustomization": true,
-        "Description": ""
+        "Description": "左右用ナビゲーション"
       },
       "MetaDataIDKey": "",
       "Name": "NeonGlowNavMenu_vertical_1",

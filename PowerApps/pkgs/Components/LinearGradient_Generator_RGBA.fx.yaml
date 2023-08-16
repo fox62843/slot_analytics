@@ -156,7 +156,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_9.Width -20,
                                         (Slider1_9.Value/Slider1_9.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_9.X + (Slider_circleHTML_9.Width/2) +2
+                                        Slider_circleHTML_9.X + Slider_circleHTML_9.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_9.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -285,7 +285,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_8.Width -20,
                                         (Slider1_8.Value/Slider1_8.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_8.X + (Slider_circleHTML_8.Width/2) +2
+                                        Slider_circleHTML_8.X + Slider_circleHTML_8.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_8.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -414,7 +414,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_7.Width -20,
                                         (Slider1_7.Value/Slider1_7.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_7.X + (Slider_circleHTML_7.Width/2) +2
+                                        Slider_circleHTML_7.X + Slider_circleHTML_7.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_7.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -543,7 +543,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_6.Width -20,
                                         (Slider1_6.Value/Slider1_6.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_6.X + (Slider_circleHTML_6.Width/2) +2
+                                        Slider_circleHTML_6.X + Slider_circleHTML_6.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_6.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -672,7 +672,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_5.Width -20,
                                         (Slider1_5.Value/Slider1_5.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_5.X + (Slider_circleHTML_5.Width/2) +2
+                                        Slider_circleHTML_5.X + Slider_circleHTML_5.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_5.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -801,7 +801,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_4.Width -20,
                                         (Slider1_4.Value/Slider1_4.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_4.X + (Slider_circleHTML_4.Width/2) +2
+                                        Slider_circleHTML_4.X + Slider_circleHTML_4.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_4.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -930,7 +930,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_3.Width -20,
                                         (Slider1_3.Value/Slider1_3.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_3.X + (Slider_circleHTML_3.Width/2) +2
+                                        Slider_circleHTML_3.X + Slider_circleHTML_3.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_3.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");
@@ -1059,7 +1059,7 @@ LinearGradient_Generator_RGBA As CanvasComponent:
                                         Slider_circleHTML_2.Width -20,
                                         (Slider1_2.Value/Slider1_2.Max) * Parent.Width >=Parent.Width -15,
                                         Parent.Width -Self.Width*2,
-                                        Slider_circleHTML_2.X + (Slider_circleHTML_2.Width/2) +2
+                                        Slider_circleHTML_2.X + Slider_circleHTML_2.Width/1.1 -20
                                     )&"px;
                             height: "& Slider_BorderHTML_2.Height - 20 &"px;
                             background: linear-gradient(to right, "& LinearGradient_Generator_RGBA.IconLinealGradient1 &", "& LinearGradient_Generator_RGBA.IconLinealGradient2&");

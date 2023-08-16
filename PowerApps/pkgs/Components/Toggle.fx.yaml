@@ -1,5 +1,6 @@
 Toggle As CanvasComponent:
     borderRadius: =200
+    BWidth: =1.0
     DarkMode: =false
     Fill: =RGBA(0, 0, 0, 0)
     Height: =169
@@ -120,7 +121,7 @@ Toggle As CanvasComponent:
         RadiusTopRight: =Toggle.borderRadius
         Size: =24
         Text: =""
-        Width: =Self.Height
+        Width: =Self.Height*Toggle.BWidth
         X: =If(Toggle.Toggled = true ,Toggle_HTML.Width- Self.Width - Toggle_HTML.PaddingLeft*4,Toggle_HTML.PaddingLeft*2)
         Y: =9
         ZIndex: =4
