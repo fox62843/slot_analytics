@@ -54,12 +54,12 @@ TOP As screen:
 
     Toggle_1 As Toggle:
         DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =160
+        Height: =122
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =605.54
-        X: =157.54
-        Y: =175
+        Width: =318
+        X: =1120
+        Y: =248
         ZIndex: =3
 
     Button_2 As Button:
@@ -78,26 +78,16 @@ TOP As screen:
 
     Slider_3 As Slider_2:
         DarkMode: =If(Toggle_1.Toggled = true,true,false)
-        Height: =600
+        Height: =766
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
         Width: =155.08
         X: =1739.08
         ZIndex: =5
 
-    Slider_4 As Slider:
-        DarkMode: =If(Toggle_1.Toggled = true,true,false)
-        Height: =70
-        LinealGradientColour1: =gradation1
-        LinealGradientColour2: =gradation2
-        Width: =313.44
-        X: =93.54
-        Y: =351
-        ZIndex: =6
-
     Slider_5 As Slider_2:
         DarkMode: =If(Toggle_1.Toggled = true,true,false)
-        Height: =600
+        Height: =766
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
         Width: =114.46
@@ -110,23 +100,24 @@ TOP As screen:
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
         Width: =1168.00
-        X: =91.08
-        Y: =437
+        X: =157
+        Y: =650
         ZIndex: =8
 
     Container1 As groupContainer.manualLayoutContainer:
-        Height: =600
+        Height: =654
         PaddingRight: =0.00
         PaddingTop: =0.00
         Visible: =vis1
         Width: =1920.00
         X: =0.00
+        Y: =146
         ZIndex: =9
 
         background_2 As background:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Height: =Parent.Height
-            Width: =1920.00
+            Width: =Parent.Width
             X: =0.00
             ZIndex: =1
 
@@ -137,34 +128,13 @@ TOP As screen:
             X: =0.00
             ZIndex: =2
 
-        Button_6 As Button:
-            DarkMode: =If(Toggle_1.Toggled = true,true,false)
-            Fontsizes: =39
-            Height: =174
-            IconColour: |-
-                =If(Button_6.DarkMode = true,"#BDBDBD","#454545")
-            IconName: ="new"
-            icontext: =false
-            LinealGradientColor1: =gradation1
-            LinealGradientColor2: =gradation2
-            OnSelect: |-
-                =Set(gradation1,LinearGradient_Generator_HEX_1.G_GL1);
-                Set(gradation2,LinearGradient_Generator_HEX_1.G_GL2);
-                Set(vis1,false)
-            TextInput: ="適用"
-            Width: =361.85
-            X: =870
-            Y: =375
-            ZIndex: =3
-
         Button_5 As Button:
             DarkMode: =If(Toggle_1.Toggled = true,true,false)
             Fontsizes: =39
             Height: =174
             IconColour: |-
                 =If(Button_5.DarkMode = true,"#BDBDBD","#454545")
-            IconName: ="new"
-            icontext: =false
+            IconName: ="arrowUp"
             LinealGradientColor1: =gradation1
             LinealGradientColor2: =gradation2
             OnSelect: |-
@@ -173,9 +143,36 @@ TOP As screen:
                 Set(vis1,false)
             TextInput: ="適用"
             Width: =361.85
-            X: =1416
-            Y: =339
+            X: =1559
+            Y: =330
+            ZIndex: =3
+
+        LinearGradient_Generator_HEX_1 As LinearGradient_Generator_HEX:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
+            Height: =211
+            Width: =869
+            X: =41
+            Y: =365
             ZIndex: =4
+
+        Button_6 As Button:
+            DarkMode: =If(Toggle_1.Toggled = true,true,false)
+            Fontsizes: =39
+            Height: =174
+            IconColour: |-
+                =If(Button_6.DarkMode = true,"#BDBDBD","#454545")
+            IconName: ="arrowUp"
+            LinealGradientColor1: =gradation1
+            LinealGradientColor2: =gradation2
+            OnSelect: |-
+                =Set(gradation1,LinearGradient_Generator_HEX_1.G_GL1);
+                Set(gradation2,LinearGradient_Generator_HEX_1.G_GL2);
+                Set(vis1,false)
+            TextInput: ="適用"
+            Width: =361.85
+            X: =810
+            Y: =459
+            ZIndex: =5
 
     Spinner1 As Spinner:
         Appearance: ='Spinner.Appearance'.Primary
@@ -200,12 +197,4 @@ TOP As screen:
         X: =0.00
         Y: =0
         ZIndex: =11
-
-    LinearGradient_Generator_HEX_1 As LinearGradient_Generator_HEX:
-        DarkMode: =If(Toggle_1.Toggled = true,true,false)
-        Height: =211
-        Width: =869
-        X: =41
-        Y: =365
-        ZIndex: =12
 
