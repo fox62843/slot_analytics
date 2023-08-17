@@ -197,6 +197,21 @@
     "OverridableProperties": {},
     "Version": "2.1.0"
   },
+  "Slider": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_Slider",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_Slider",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "Slider",
+    "Version": "1.0.8"
+  },
   "Spinner": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -241,6 +256,21 @@
     "TemplateDisplayName": "コンボ ボックス",
     "Version": "1.5.0"
   },
+  "タブ一覧": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TabList",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TabList",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "タブ一覧",
+    "Version": "2.1.4"
+  },
   "チェック ボックス": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
@@ -255,6 +285,21 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "チェック ボックス",
     "Version": "0.0.13"
+  },
+  "テキスト入力": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_TextInputCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_TextInputCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "テキスト入力",
+    "Version": "0.0.14"
   },
   "ドロップダウン": {
     "CustomGroupControlTemplateName": "",
@@ -300,6 +345,21 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "ラベル",
     "Version": "1.6.0"
+  },
+  "情報ボタン": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_InfoButtonCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_InfoButtonCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "情報ボタン",
+    "Version": "0.0.15"
   },
   "進行状況バー": {
     "CustomGroupControlTemplateName": "",

@@ -74,7 +74,7 @@
         Y: =49
         ZIndex: =3
 
-    Slider_1 As Slider:
+    "Slider_1 As '0c10ab5a61d34099aba4b4f02fce0a4b'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Height: =180
         LinealGradientColour1: =gradation1
@@ -114,7 +114,6 @@
         FontSize: =34
         Height: =267
         Mode: =TextMode.MultiLine
-        Text: =If(T_TextInput.Text=Blank(),'Text input_2'.iniData,T_TextInput.Text)
         Width: =787.69
         X: =49
         Y: =459

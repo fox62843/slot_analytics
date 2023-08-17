@@ -1,20 +1,4 @@
-Slider As CanvasComponent:
-    borderradius: =200
-    DarkMode: =false
-    defaultValue: =50
-    Fill: =RGBA(0, 0, 0, 0)
-    Height: =100
-    LinealGradientColour1: |-
-        ="#2c3e50"
-    LinealGradientColour2: |-
-        ="#3498db"
-    Max: =100
-    Min: =0
-    Value: =Slider1.Value
-    Width: =700
-    X: =0
-    Y: =0
-    ZIndex: =15
+"Slider As '0c10ab5a61d34099aba4b4f02fce0a4b'":
 
     Slider_BorderHTML As htmlViewer:
         Color: =RGBA(250, 250, 250, 1)

@@ -1,17 +1,17 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_crff0_slot_bonus_forms",
-      "Namespace": "slot_bonus (フォーム)",
-      "Values": {
-        "情報": "2fd1372c-fcb0-47a7-8a26-fae6b398187c"
-      }
-    },
-    {
       "Kind": "default.cds_crff0_slot_main_forms",
       "Namespace": "slot_mains (フォーム)",
       "Values": {
         "情報": "4c800b1f-821f-4490-a1d0-e654f476b23c"
+      }
+    },
+    {
+      "Kind": "default.cds_crff0_slot_bonus_forms",
+      "Namespace": "slot_bonus (フォーム)",
+      "Values": {
+        "情報": "2fd1372c-fcb0-47a7-8a26-fae6b398187c"
       }
     }
   ]

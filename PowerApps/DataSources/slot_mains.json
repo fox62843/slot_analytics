@@ -149,6 +149,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "crff0_slot_main",
+    "MaxGetRowsCount": 500,
     "Name": "slot_mains",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "所有者",
