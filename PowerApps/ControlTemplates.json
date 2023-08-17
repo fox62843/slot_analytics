@@ -27,33 +27,20 @@
     "OverridableProperties": {},
     "Version": "2.2.0"
   },
-  "dataTable": {
+  "Combobox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTable",
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_ComboboxCanvas",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
+    "IsPcfControl": true,
     "IsPremiumPcfControl": false,
     "IsWidgetTemplate": false,
     "LastModifiedTimestamp": "0",
-    "Name": "dataTable",
+    "Name": "PowerApps_CoreControls_ComboboxCanvas",
     "OverridableProperties": {},
-    "Version": "1.0.2"
-  },
-  "dataTableColumn": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/dataTableColumn",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
-    "LastModifiedTimestamp": "0",
-    "Name": "dataTableColumn",
-    "OverridableProperties": {},
-    "Version": "1.0.1"
+    "TemplateDisplayName": "Combobox",
+    "Version": "0.0.13"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -253,6 +240,51 @@
     "OverridableProperties": {},
     "TemplateDisplayName": "コンボ ボックス",
     "Version": "1.5.0"
+  },
+  "チェック ボックス": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_CheckboxCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_CheckboxCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "チェック ボックス",
+    "Version": "0.0.13"
+  },
+  "ドロップダウン": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_DropdownCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_DropdownCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "ドロップダウン",
+    "Version": "0.0.15"
+  },
+  "ラジオ": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_RadioGroupCanvas",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "PowerApps_CoreControls_RadioGroupCanvas",
+    "OverridableProperties": {},
+    "TemplateDisplayName": "ラジオ",
+    "Version": "0.0.8"
   },
   "ラベル": {
     "CustomGroupControlTemplateName": "",

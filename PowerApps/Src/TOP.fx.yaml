@@ -53,12 +53,13 @@ TOP As screen:
         ZIndex: =2
 
     Toggle_1 As Toggle:
+        BWidth: =1.2
         DarkMode: =If(Self.Toggled = true,true,false)
-        Height: =122
+        Height: =196
         LinealGradientColour1: =gradation1
         LinealGradientColour2: =gradation2
-        Width: =318
-        X: =1120
+        Width: =486
+        X: =951
         Y: =248
         ZIndex: =3
 
@@ -197,4 +198,87 @@ TOP As screen:
         X: =0.00
         Y: =0
         ZIndex: =11
+
+    ComboboxCanvas1 As Combobox.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =128
+        Items: =slot_mains
+        Width: =442
+        X: =41
+        Y: =188
+        ZIndex: =12
+
+        PlayID1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="PlayID"
+            FieldName: ="crff0_playid"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =6
+
+        作成日1 As pcfDataField.textualColumn:
+            FieldDisplayName: ="作成日"
+            FieldName: ="createdon"
+            FieldType: ="d"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =7
+
+    RadioGroupCanvas1 As ラジオ.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =86
+        Items: =slot_mains
+        Width: =200
+        X: =52
+        Y: =340
+        ZIndex: =13
+
+        PlayID2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="PlayID"
+            FieldName: ="crff0_playid"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =8
+
+        作成日2 As pcfDataField.textualColumn:
+            FieldDisplayName: ="作成日"
+            FieldName: ="createdon"
+            FieldType: ="d"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =9
+
+    "CheckboxCanvas1 As 'チェック ボックス'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =40
+        Width: =192
+        X: =252
+        Y: =341
+        ZIndex: =14
+
+    DropdownCanvas1 As ドロップダウン.pcfdataset:
+        DisplayMode: =DisplayMode.Edit
+        Height: =122
+        Items: =slot_mains
+        Width: =378
+        X: =514
+        Y: =194
+        ZIndex: =15
+
+        PlayID3 As pcfDataField.textualColumn:
+            FieldDisplayName: ="PlayID"
+            FieldName: ="crff0_playid"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =10
+
+        作成日3 As pcfDataField.textualColumn:
+            FieldDisplayName: ="作成日"
+            FieldName: ="createdon"
+            FieldType: ="d"
+            FieldVariantName: ="textualColumn"
+            Order: =2
+            ZIndex: =11
 

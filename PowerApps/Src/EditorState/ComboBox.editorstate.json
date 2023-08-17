@@ -588,17 +588,17 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "Width",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
@@ -608,12 +608,12 @@
         {
           "Category": "Design",
           "PropertyName": "Y",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",
           "PropertyName": "X",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         }
       ],
       "StyleName": "",
@@ -811,7 +811,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Color",
+          "PropertyName": "UncheckedOptionBackgroundFill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -831,7 +831,7 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "UncheckedOptionBackgroundFill",
+          "PropertyName": "Color",
           "RuleProviderType": "Unknown"
         },
         {
@@ -846,12 +846,12 @@
         },
         {
           "Category": "Data",
-          "PropertyName": "Items",
+          "PropertyName": "DefaultSelectedItems",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Data",
-          "PropertyName": "DefaultSelectedItems",
+          "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
         {

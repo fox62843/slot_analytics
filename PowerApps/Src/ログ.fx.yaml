@@ -86,12 +86,12 @@
 
     "'Star rating_1' As 'Star rating'":
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =167
+        Height: =204
         LinealGradient1: =gradation1
         LinealGradient2: =gradation2
-        Width: =374
-        X: =255
-        Y: =119
+        Width: =434
+        X: =300
+        Y: =75
         ZIndex: =6
 
     ComboBox_1 As ComboBox:
@@ -114,6 +114,7 @@
         FontSize: =34
         Height: =267
         Mode: =TextMode.MultiLine
+        Text: =If(T_TextInput.Text=Blank(),'Text input_2'.iniData,T_TextInput.Text)
         Width: =787.69
         X: =49
         Y: =459

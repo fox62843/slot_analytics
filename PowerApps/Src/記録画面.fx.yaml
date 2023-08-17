@@ -55,140 +55,26 @@
         BorderRadius: =12
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
         Fontsizes: =12
-        Height: =216
+        Height: =612
         IconColour: |-
             =If(Button_1.DarkMode = true,"#BDBDBD","#454545")
         IconName: ="hanahana"
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =349.99
-        X: =36.92
-        Y: =332
+        Width: =608
+        X: =90
+        Y: =90
         ZIndex: =3
-
-    DataTable1 As dataTable.datatable:
-        BorderStyle: =BorderStyle.Solid
-        Color: =RGBA(255, 255, 255, 1)
-        DisplayMode: =DisplayMode.Edit
-        Fill: =RGBA(0, 0, 0, 0)
-        HeadingFill: =RGBA(49, 53, 58, 1)
-        Height: =280
-        HoverColor: =RGBA(255, 255, 255, 1)
-        Items: =slot_bonus
-        SelectedColor: =RGBA(255, 255, 255, 1)
-        SelectedFill: =RGBA(34, 55, 79, 1)
-        Size: =18.27
-        Width: =984.61
-        X: =37.95
-        Y: =40
-        ZIndex: =4
-
-        "'作成日列(_C)1' As dataTableColumn.dateTimeColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="作成日"
-            FieldName: ="createdon"
-            FieldVariantName: ="dateTimeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =3
-            Text: =Text(ThisItem.作成日,DateTimeFormat.LongDateTime)
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =2
-
-        "'slot_main列(_C)1' As dataTableColumn.complexTypeColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="台ID"
-            FieldName: ="crff0_slot_main"
-            FieldVariantName: ="complexTypeColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.slot_main.PlayID
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =3
-
-        "'art列(_C)1' As dataTableColumn.numberColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ART当選G数"
-            FieldName: ="crff0_art"
-            FieldVariantName: ="numberColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =4
-            Text: =ThisItem.art
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =4
-
-        "'at列(_C)1' As dataTableColumn.numberColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="AT当選G数"
-            FieldName: ="crff0_at"
-            FieldVariantName: ="numberColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.at
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =5
-
-        "'big列(_C)1' As dataTableColumn.numberColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="BIG当選G数"
-            FieldName: ="crff0_big"
-            FieldVariantName: ="numberColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =6
-            Text: =ThisItem.big
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =6
-
-        "'reg列(_C)1' As dataTableColumn.numberColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="REG当選G数"
-            FieldName: ="crff0_reg"
-            FieldVariantName: ="numberColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.reg
-            Width: =140.56
-            X: =0.00
-            Y: =0
-            ZIndex: =7
 
     Check_1 As Check:
         DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =191
+        Height: =570
         IconColour: |-
             =If(Check_1.DarkMode=true,"#BDBDBD","#656565")
         LinealGradientColor1: =gradation1
         LinealGradientColor2: =gradation2
-        Width: =246.16
-        X: =413.54
-        Y: =344
+        Width: =548
+        X: =1209
+        Y: =108
         ZIndex: =5
-
-    Button_7 As Button:
-        DarkMode: =If(Toggle_1.DarkMode= true,true,false)
-        Height: =189
-        IconColour: |-
-            =If(Button_7.DarkMode = true,"#BDBDBD","#454545")
-        IconName: ="hanahana"
-        LinealGradientColor1: =gradation1
-        LinealGradientColor2: =gradation2
-        Width: =1131.07
-        X: =697.85
-        Y: =344
-        ZIndex: =6
 
